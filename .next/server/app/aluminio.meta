@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/aluminio/layout,_N_T_/aluminio/page,_N_T_/aluminio"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/aluminio/__PAGE__",
+    "/aluminio",
+    "/_index",
+    "/_head"
+  ]
+}

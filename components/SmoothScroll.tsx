@@ -6,7 +6,7 @@ export default function SmoothScroll() {
     let animId: number
     let observer: IntersectionObserver | null = null
 
-    import('@studio-freight/lenis').then(({ default: Lenis }) => {
+    import('lenis').then(({ default: Lenis }) => {
       const lenis = new Lenis({
         duration: 1.2,
         easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),

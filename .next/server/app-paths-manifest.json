@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/aluminio/page": "app/aluminio/page.js",
+  "/aviso-legal/page": "app/aviso-legal/page.js",
+  "/contacto/page": "app/contacto/page.js",
+  "/devoluciones/page": "app/devoluciones/page.js",
+  "/maquinaria/page": "app/maquinaria/page.js",
+  "/nosotros/page": "app/nosotros/page.js",
+  "/page": "app/page.js",
+  "/papel/page": "app/papel/page.js",
+  "/plastico/page": "app/plastico/page.js",
+  "/privacidad/page": "app/privacidad/page.js",
+  "/productos/page": "app/productos/page.js"
+}

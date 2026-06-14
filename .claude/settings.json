@@ -3,7 +3,9 @@
     "allow": [
       "Skill(impeccable)",
       "Skill(impeccable:*)",
-      "Bash(node \"C:\\\\Users\\\\Javier\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\load-context.mjs\")"
+      "Bash(node \"C:\\\\Users\\\\Javier\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\load-context.mjs\")",
+      "Bash(npm show *)",
+      "Bash(npm run *)"
     ]
   }
 }
