@@ -12,7 +12,7 @@ export default function SmoothScroll() {
         easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       })
 
-      const opts = lenis.options as Record<string, unknown>
+      const lenisAny = lenis as unknown as Record<string, unknown>
 
       const slowSections = document.querySelectorAll('.about, .al-props, .nos-history')
       if (slowSections.length) {
@@ -21,7 +21,7 @@ export default function SmoothScroll() {
           (entries) => {
             entries.forEach(e => { slowCount += e.isIntersecting ? 1 : -1 })
             slowCount = Math.max(0, slowCount)
-            opts.wheelMultiplier = slowCount > 0 ? 0.35 : 1
+            lenisAny['wheelMultiplier'] = slowCount > 0 ? 0.35 : 1
           },
           { threshold: 0.15 }
         )
