@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REF — Digital Agency</title>
+  <style>
+    /* =====================================================
+       FONTS
+    ===================================================== */
+    @font-face {
+      font-family: 'Habitus';
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+      src: url('habitus-book.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Habitus';
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+      src: url('habitus-medium.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'Aeonik';
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url('aeonik-regular.woff2') format('woff2');
+    }
+
+    /* =====================================================
+       CSS VARIABLES
+    ===================================================== */
+    :root {
+      --beige:        #c4bab0;
+      --beige-light:  #e1ddd7;
+      --black:        #000000;
+      --white:        #ffffff;
+      --dark:         #111111;
+      --blue:         #1a3fbe;
+      --ease-out:     cubic-bezier(.32, .94, .6, 1);
+      --ease-std:     cubic-bezier(.4, 0, .2, 1);
+    }
+
+    /* =====================================================
+       RESET & BASE
+    ===================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 10px; }
+
+    body {
+      font-family: 'Habitus', ui-sans-serif, system-ui, sans-serif;
+      font-weight: 300;
+      color: var(--black);
+      background: var(--beige);
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { background: none; border: none; cursor: none; font: inherit; color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    /* =====================================================
+       CUSTOM CURSOR
+    ===================================================== */
+    .cursor {
+      position: fixed;
+      top: 0; left: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Habitus', sans-serif;
+      font-weight: 500;
+      font-size: 1.05rem;
+      letter-spacing: .08em;
+      padding: 5px 12px;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: opacity .18s var(--ease-out);
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    .cursor.visible { opacity: 1; }
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+    .nav {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.8rem;
+      height: 5.6rem;
+      transition: background .35s var(--ease-out), backdrop-filter .35s;
+    }
+    .nav.scrolled {
+      background: rgba(196,186,176,.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      color: var(--black);
+      flex-shrink: 0;
+    }
+    .nav__logo svg { width: 7.2rem; height: auto; }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 3.6rem;
+    }
+    .nav__links a {
+      font-size: 1.15rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      transition: opacity .2s;
+    }
+    .nav__links a:hover { opacity: .55; }
+
+    .nav__right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+    .nav__contact {
+      font-size: 1.15rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      border: 1px solid var(--black);
+      padding: .55rem 1.6rem;
+      transition: background .25s var(--ease-out), color .25s;
+    }
+    .nav__contact:hover { background: var(--black); color: var(--white); }
+
+    .nav__star {
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    /* =====================================================
+       HERO TEXT
+    ===================================================== */
+    .hero-text {
+      background: var(--beige);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: end;
+      padding: 9rem 2.8rem 3.2rem;
+      gap: 2rem;
+      min-height: 36vh;
+    }
+    .hero-text__copy {
+      grid-column: 2;
+      grid-row: 1;
+      font-size: 1.35rem;
+      line-height: 1.65;
+      max-width: 30rem;
+      color: #333;
+      align-self: start;
+      padding-top: 1rem;
+    }
+    .hero-text__headline {
+      grid-column: 2;
+      grid-row: 2;
+      font-family: 'Habitus', sans-serif;
+      font-weight: 300;
+      font-size: clamp(4rem, 5.4vw, 7rem);
+      letter-spacing: -.03em;
+      line-height: .98;
+      color: var(--black);
+    }
+
+    /* =====================================================
+       HERO CAROUSEL
+    ===================================================== */
+    .hero-carousel {
+      position: relative;
+      width: 100%;
+      background-color: var(--project-color, #1a3fbe);
+      overflow: hidden;
+      transition: background-color .7s var(--ease-out);
+    }
+    /* Aspect ratio: approximate 1440:810 */
+    .hero-carousel::before {
+      content: '';
+      display: block;
+      padding-top: 56.25%;
+    }
+    .hero-carousel__inner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-carousel__media {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+    .hero-carousel__media-item {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-carousel__media-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity .5s var(--ease-out);
+    }
+    .hero-carousel__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.4rem 2.8rem;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .hero-carousel__project-name {
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: -.01em;
+      min-width: 14rem;
+    }
+    .hero-carousel__thumbs {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .hero-carousel__thumb {
+      width: 7.5rem;
+      height: 4.2rem;
+      overflow: hidden;
+      opacity: .45;
+      transition: opacity .3s;
+      position: relative;
+    }
+    .hero-carousel__thumb.active { opacity: 1; }
+    .hero-carousel__thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-carousel__ref {
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: .06em;
+      font-family: 'Courier New', monospace;
+      min-width: 14rem;
+      text-align: right;
+    }
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
+    .about {
+      background: var(--beige);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 4.8rem 2.8rem 4rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .about__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .section-label {
+      font-size: 1.05rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .section-label::before {
+      content: '■';
+      font-size: .7rem;
+    }
+    .about__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.8rem;
+    }
+    .about__copy {
+      font-size: clamp(2.2rem, 3vw, 3.6rem);
+      font-weight: 300;
+      line-height: 1.22;
+      letter-spacing: -.03em;
+      color: var(--black);
+    }
+    .about__copy .blue { color: var(--blue); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: .8rem;
+      font-family: 'Habitus', sans-serif;
+      font-weight: 500;
+      font-size: 1.05rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      border: 1px solid var(--black);
+      padding: .85rem 1.6rem;
+      transition: background .28s var(--ease-out), color .28s;
+    }
+    .btn-outline:hover { background: var(--black); color: var(--white); }
+
+    .about__media {
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: 3rem;
+    }
+    .about__media-box {
+      width: 58%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #888;
+    }
+    .about__media-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* =====================================================
+       WORK CTA
+    ===================================================== */
+    .work-cta {
+      background: var(--white);
+      padding: 7rem 2.8rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+      position: sticky;
+      top: 0;
+      z-index: 11;
+    }
+    .work-cta__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.8rem;
+    }
+    .work-cta__headline {
+      font-size: clamp(2.8rem, 3.4vw, 4.4rem);
+      font-weight: 300;
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+    .work-cta__headline em {
+      font-style: normal;
+      color: var(--blue);
+    }
+
+    /* =====================================================
+       SERVICES GRID
+    ===================================================== */
+    .sg-section {
+      background: var(--white);
+      padding: 6rem 2.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 12;
+    }
+    .sg-outer {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 2.4rem;
+    }
+    .sg-center {
+      width: clamp(30rem, 42vw, 54rem);
+    }
+    .sg-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0;
+    }
+    .sg-cell {
+      aspect-ratio: 1;
+      overflow: hidden;
+      position: relative;
+    }
+    .sg-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .55s var(--ease-out);
+    }
+    .sg-cell:hover img { transform: scale(1.04); }
+
+    .sg-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: clamp(30rem, 42vw, 54rem);
+    }
+    .sg-side--right { align-items: flex-end; text-align: right; }
+
+    .sg-label {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .sg-label__title {
+      font-family: 'Aeonik', ui-serif, serif;
+      font-size: clamp(2rem, 2.4vw, 2.8rem);
+      font-weight: 400;
+      letter-spacing: -.02em;
+      line-height: 1;
+    }
+    .sg-label__desc {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      opacity: .65;
+      max-width: 18rem;
+      line-height: 1.4;
+    }
+
+    /* =====================================================
+       SERVICES DIAGRAM
+    ===================================================== */
+    .sd-section {
+      background: var(--beige);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 4.8rem 2.8rem 4rem;
+      position: sticky;
+      top: 0;
+      z-index: 13;
+    }
+    .sd-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+      margin-bottom: 2rem;
+    }
+    .sd-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.4rem;
+    }
+    .sd-copy {
+      font-size: clamp(2rem, 2.6vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.22;
+      letter-spacing: -.03em;
+    }
+    .sd-canvas {
+      flex: 1;
+      position: relative;
+      min-height: 48vh;
+    }
+    .sd-svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      overflow: visible;
+    }
+
+    /* SVG diagram lines initial state (animated in via JS) */
+    .diag-line {
+      stroke: #2d2d2d;
+      fill: none;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+    }
+
+    /* Node labels in SVG */
+    .node-text {
+      font-family: 'Habitus', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      fill: #111;
+      text-transform: uppercase;
+    }
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+    .footer {
+      background: var(--beige);
+      padding: 0 2.8rem;
+      position: relative;
+      z-index: 14;
+    }
+    .footer__inner {
+      border-top: 1px solid var(--beige-light);
+      padding-top: 4rem;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.6fr;
+      gap: 2rem;
+      padding-bottom: 5rem;
+    }
+    .footer__col-empty { /* spacer */ }
+
+    .footer__nav,
+    .footer__social {
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+    }
+    .footer__nav a,
+    .footer__social a {
+      font-size: 1.15rem;
+      font-weight: 500;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: .2rem;
+      transition: opacity .2s;
+    }
+    .footer__nav a:hover,
+    .footer__social a:hover { opacity: .55; }
+
+    .crochet { opacity: .5; font-weight: 300; }
+
+    .footer__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    .footer__contact-row {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+    .footer__contact-key {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      opacity: .5;
+      flex-shrink: 0;
+      width: 1.4rem;
+    }
+    .footer__contact-val {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .footer__contact-val a { transition: opacity .2s; }
+    .footer__contact-val a:hover { opacity: .6; }
+
+    .footer__logo-wrap {
+      padding: 2rem 0 3rem;
+    }
+    .footer__logo {
+      width: clamp(28rem, 40vw, 56rem);
+      height: auto;
+      color: var(--black);
+    }
+
+    .footer__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--beige-light);
+      padding: 2rem 0;
+    }
+    .footer__lang {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .footer__partners {
+      display: flex;
+      align-items: center;
+      gap: 2.8rem;
+    }
+    .footer__partner img {
+      height: 2rem;
+      width: auto;
+      object-fit: contain;
+      opacity: .75;
+      display: block;
+    }
+
+    /* =====================================================
+       SECTION SPACER (so sticky sections show effect)
+    ===================================================== */
+    .sticky-spacer {
+      height: 40vh;
+      background: var(--beige);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor" id="js-cursor"></div>
+
+  <!-- ===================================================
+       NAVBAR
+  =================================================== -->
+  <header class="nav" id="js-nav">
+    <a href="/" class="nav__logo" aria-label="REF Digital">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 157" fill="none" aria-hidden="true">
+        <g fill="currentColor">
+          <path d="M108.55 41.9C108.55 15.36 91.2 0 58.51 0H0v68.87h20.85V18.31H58.3c18.28 0 29.37 9.38 29.37 25.75 0 18.83-14.32 24.81-29.37 24.81H20.85v19.26h37.96c17.07 0 27.22 2.84 27.22 23.28V157h20.85v-42.65c0-22.32-8.78-32.91-23.83-36.79 15.05-5.17 25.5-18 25.5-35.66"/>
+          <path d="M20.85 88.13H0V157h20.85zM205.4 68.87h-58.35v19.26h58.35zm57.63-49.61H340V0h-97.83v68.87h20.86zm58.35 49.61h-58.35v19.26h58.35zM126.2 157h97.82v-19.26h-76.97V88.13h-20.86V157Zm136.83-68.87h-20.86V157h20.86zM126.2 68.87h20.85V19.26h76.97V0H126.2z"/>
+        </g>
+      </svg>
+    </a>
+
+    <nav>
+      <ul class="nav__links">
+        <li><a href="#">WORK</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CAREERS</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__right">
+      <a href="#" class="nav__contact">CONTACT</a>
+      <div class="nav__star">✳</div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================================================
+         HERO TEXT
+    =================================================== -->
+    <section class="hero-text">
+      <p class="hero-text__copy">Some say move fast, break things. REF is a digital agency that believes we've broken enough things already.</p>
+      <h1 class="hero-text__headline">Move fast,<br>build to last.</h1>
+    </section>
+
+    <!-- ===================================================
+         HERO CAROUSEL
+    =================================================== -->
+    <section class="hero-carousel" id="js-carousel" style="--project-color:#1a3fbe">
+      <div class="hero-carousel__inner">
+        <div class="hero-carousel__media" id="js-carousel-media">
+          <div class="hero-carousel__media-item">
+            <img id="js-img-a"
+              src="https://a.storyblok.com/f/285561750510308/1920x1080/f62a0a6393/ref_mission2035_04_thumb.jpg"
+              alt="Mission 2035">
+          </div>
+          <div class="hero-carousel__media-item">
+            <img id="js-img-b"
+              src="https://a.storyblok.com/f/285561750510308/2880x1620/7df61ee83c/ref_mission2035_01-3d-global.jpg"
+              alt="Mission 2035">
+          </div>
+        </div>
+
+        <div class="hero-carousel__bottom">
+          <span class="hero-carousel__project-name" id="js-project-name">Mission 2035</span>
+
+          <div class="hero-carousel__thumbs" id="js-thumbs">
+            <button class="hero-carousel__thumb" data-project="halo" aria-label="Halo Dental">
+              <img src="https://a.storyblok.com/f/285561750510308/2000x2000/88bf31eac6/halo_thumb.jpg" alt="Halo Dental">
+            </button>
+            <button class="hero-carousel__thumb" data-project="cellart" aria-label="CellArt">
+              <img src="https://a.storyblok.com/f/285561750510308/1920x1080/20d97ea675/cellart_09_elevated-process.jpg" alt="CellArt">
+            </button>
+            <button class="hero-carousel__thumb active" data-project="mission" aria-label="Mission 2035">
+              <img src="https://a.storyblok.com/f/285561750510308/1920x1080/f62a0a6393/ref_mission2035_04_thumb.jpg" alt="Mission 2035">
+            </button>
+          </div>
+
+          <span class="hero-carousel__ref" id="js-project-ref">REF · PHM · 0524</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         ABOUT
+    =================================================== -->
+    <section class="about">
+      <header class="about__header">
+        <h2 class="section-label">About</h2>
+        <div class="about__content">
+          <p class="about__copy">We help businesses navigate the digital-first economy with quick wins and long games.<br><br>Because it's by doing good that we do well<span class="blue">.</span></p>
+          <a href="#" class="btn-outline">See what REF is all about</a>
+        </div>
+      </header>
+
+      <div class="about__media">
+        <div class="about__media-box">
+          <img src="https://a.storyblok.com/f/285561750510308/1920x1080/20d97ea675/cellart_09_elevated-process.jpg"
+               alt="CellArt project">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         WORK CTA
+    =================================================== -->
+    <section class="work-cta">
+      <div class="section-label">Work</div>
+      <div class="work-cta__content">
+        <h2 class="work-cta__headline">Instead of adapting to change, we shape <em>it.</em></h2>
+        <a href="#" class="btn-outline">See our work</a>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SERVICES GRID
+    =================================================== -->
+    <section class="sg-section">
+      <div class="sg-outer">
+
+        <!-- Left labels: E-commerce (top) + Websites (bottom) -->
+        <div class="sg-side">
+          <div class="sg-label">
+            <span class="sg-label__title">E-commerce</span>
+            <span class="sg-label__desc">Drive and sustain growth with platforms that mean business.</span>
+          </div>
+          <div class="sg-label">
+            <span class="sg-label__title">Websites</span>
+            <span class="sg-label__desc">Deliver immediate impact. Keep scaling from there.</span>
+          </div>
+        </div>
+
+        <!-- Center: 2×2 image grid -->
+        <div class="sg-center">
+          <div class="sg-images">
+            <div class="sg-cell" data-cursor="View E-commerce">
+              <img src="https://a.storyblok.com/f/285561750510308/2000x2000/48f73d339e/ref_mint_thumbnail-tuile.jpg"
+                   alt="E-commerce project">
+            </div>
+            <div class="sg-cell" data-cursor="View Mobile Apps">
+              <img src="https://a.storyblok.com/f/285561750510308/2000x2000/4c12bcd989/hiloapp_thumb.jpg"
+                   alt="Mobile Apps project">
+            </div>
+            <div class="sg-cell" data-cursor="View Websites">
+              <img src="https://ref.digital/cdn-cgi/image/g=0.50x0.41,w=800,h=800,f=webp,q=95,fit=crop/https://a.storyblok.com/f/285561750510308/1680x1680/f7c2f22b9b/halo_preview_grid.jpg"
+                   alt="Websites project">
+            </div>
+            <div class="sg-cell" data-cursor="View Experiential">
+              <img src="https://a.storyblok.com/f/285561750510308/2000x2000/4c93a6e157/ref_fromeo_thumbnail-tuile.jpg"
+                   alt="Experiential project">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right labels: Mobile Apps (top) + Experiential (bottom) -->
+        <div class="sg-side sg-side--right">
+          <div class="sg-label" style="align-items:flex-end">
+            <span class="sg-label__title">Mobile Apps</span>
+            <span class="sg-label__desc" style="text-align:right">Build purpose-driven apps that stick.</span>
+          </div>
+          <div class="sg-label" style="align-items:flex-end">
+            <span class="sg-label__title">Experiential</span>
+            <span class="sg-label__desc" style="text-align:right">Create memorable journeys, online and off.</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SERVICES DIAGRAM
+    =================================================== -->
+    <section class="sd-section" id="js-sd-section">
+      <div class="sd-header">
+        <h2 class="section-label">Services</h2>
+        <div class="sd-content">
+          <p class="sd-copy">At the intersection of strategy and business, tech and design, we'll create your best work yet.</p>
+          <a href="#" class="btn-outline">See our capabilities</a>
+        </div>
+      </div>
+
+      <div class="sd-canvas" id="js-sd-canvas">
+        <svg class="sd-svg" id="js-sd-svg" viewBox="0 0 1000 580" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- ── LINES (6 per arm, bundle effect) ─────────────────── -->
+          <!-- Center: 460, 310 -->
+          <!-- DESIGN node: 130, 90 -->
+          <!-- STRATEGY & BUSINESS node: 820, 80 -->
+          <!-- TECHNOLOGY node: 140, 510 -->
+
+          <!-- Arm → DESIGN (top-left) -->
+          <line class="diag-line" x1="460" y1="310" x2="130" y2="90"  stroke-width=".9" opacity=".55"/>
+          <line class="diag-line" x1="462" y1="313" x2="132" y2="93"  stroke-width=".7" opacity=".30"/>
+          <line class="diag-line" x1="458" y1="307" x2="128" y2="87"  stroke-width=".7" opacity=".30"/>
+          <line class="diag-line" x1="465" y1="312" x2="135" y2="92"  stroke-width=".5" opacity=".20"/>
+          <line class="diag-line" x1="455" y1="308" x2="125" y2="88"  stroke-width=".5" opacity=".20"/>
+          <line class="diag-line" x1="468" y1="314" x2="138" y2="94"  stroke-width=".4" opacity=".12"/>
+
+          <!-- Arm → STRATEGY & BUSINESS (top-right) -->
+          <line class="diag-line" x1="460" y1="310" x2="820" y2="80"  stroke-width=".9" opacity=".55"/>
+          <line class="diag-line" x1="462" y1="313" x2="822" y2="83"  stroke-width=".7" opacity=".30"/>
+          <line class="diag-line" x1="458" y1="307" x2="818" y2="77"  stroke-width=".7" opacity=".30"/>
+          <line class="diag-line" x1="465" y1="312" x2="825" y2="82"  stroke-width=".5" opacity=".20"/>
+          <line class="diag-line" x1="455" y1="308" x2="815" y2="78"  stroke-width=".5" opacity=".20"/>
+          <line class="diag-line" x1="452" y1="307" x2="812" y2="77"  stroke-width=".4" opacity=".12"/>
+
+          <!-- Arm → TECHNOLOGY (bottom-left) -->
+          <line class="diag-line" x1="460" y1="310" x2="140" y2="510" stroke-width=".9" opacity=".55"/>
+          <line class="diag-line" x1="462" y1="313" x2="142" y2="513" stroke-width=".7" opacity=".30"/>
+          <line class="diag-line" x1="458" y1="307" x2="138" y2="507" stroke-width=".7" opacity=".30"/>
+          <line class="diag-line" x1="465" y1="312" x2="145" y2="512" stroke-width=".5" opacity=".20"/>
+          <line class="diag-line" x1="455" y1="308" x2="135" y2="508" stroke-width=".5" opacity=".20"/>
+          <line class="diag-line" x1="452" y1="307" x2="132" y2="507" stroke-width=".4" opacity=".12"/>
+
+          <!-- ── NODE: DESIGN (top-left) ───────────────────────────── -->
+          <g transform="translate(30,18)">
+            <!-- pixel art tree -->
+            <rect x="20" y="0"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="24" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="24" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="28" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="12" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="12" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="24" y="12" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="16" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="18" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="22" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <!-- label -->
+            <text class="node-text" x="0" y="46">■ DESIGN</text>
+          </g>
+
+          <!-- ── NODE: STRATEGY & BUSINESS (top-right) ────────────── -->
+          <g transform="translate(720,12)">
+            <!-- pixel art figure (upright Y shape) -->
+            <rect x="8"  y="0"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="0"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="10" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="14" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="12" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="0"  y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="4"  y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="16" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="10" y="24" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="24" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="14" y="24" width="4" height="4" fill="#333" opacity=".85"/>
+            <!-- label -->
+            <text class="node-text" x="0" y="50">■ STRATEGY &amp; BUSINESS</text>
+          </g>
+
+          <!-- ── NODE: TECHNOLOGY (bottom-left) ───────────────────── -->
+          <g transform="translate(30,440)">
+            <!-- pixel art small tree -->
+            <rect x="12" y="0"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="8"  y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="4"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="4"  y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="8"  y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="16" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="20" y="8"  width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="12" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="16" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="10" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="12" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <rect x="14" y="20" width="4" height="4" fill="#333" opacity=".85"/>
+            <!-- label -->
+            <text class="node-text" x="0" y="44">■ TECHNOLOGY</text>
+          </g>
+
+        </svg>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+  =================================================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__grid">
+        <div class="footer__col-empty"></div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="#">
+                <span class="crochet">[</span>&nbsp;Work&nbsp;<span class="crochet">]</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="crochet">[</span>&nbsp;About&nbsp;<span class="crochet">]</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="crochet">[</span>&nbsp;Services&nbsp;<span class="crochet">]</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="crochet">[</span>&nbsp;Contact&nbsp;<span class="crochet">]</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social -->
+        <ul class="footer__social">
+          <li>
+            <a href="#">
+              <span class="crochet">[</span>&nbsp;Instagram&nbsp;<span class="crochet">]</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="crochet">[</span>&nbsp;LinkedIn&nbsp;<span class="crochet">]</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="crochet">[</span>&nbsp;Bluesky&nbsp;<span class="crochet">]</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="crochet">[</span>&nbsp;Awwwards&nbsp;<span class="crochet">]</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Contact -->
+        <address class="footer__contact" style="font-style:normal">
+          <div class="footer__contact-row">
+            <span class="footer__contact-key">A</span>
+            <span class="footer__contact-val">4051 Molson Street,<br>Suite 100,<br>Montreal, QC, H1Y 3L1</span>
+          </div>
+          <div class="footer__contact-row">
+            <span class="footer__contact-key">P</span>
+            <span class="footer__contact-val">
+              <a href="tel:+15142818901">+1 514 281-8901</a>
+            </span>
+          </div>
+          <div class="footer__contact-row">
+            <span class="footer__contact-key">E</span>
+            <span class="footer__contact-val">
+              <a href="mailto:info@ref.digital">INFO@REF.DIGITAL</a>
+            </span>
+          </div>
+        </address>
+      </div>
+
+      <!-- REF logo large -->
+      <div class="footer__logo-wrap">
+        <svg class="footer__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 157" fill="none" aria-hidden="true">
+          <g fill="currentColor">
+            <path d="M108.55 41.9C108.55 15.36 91.2 0 58.51 0H0v68.87h20.85V18.31H58.3c18.28 0 29.37 9.38 29.37 25.75 0 18.83-14.32 24.81-29.37 24.81H20.85v19.26h37.96c17.07 0 27.22 2.84 27.22 23.28V157h20.85v-42.65c0-22.32-8.78-32.91-23.83-36.79 15.05-5.17 25.5-18 25.5-35.66"/>
+            <path d="M20.85 88.13H0V157h20.85zM205.4 68.87h-58.35v19.26h58.35zm57.63-49.61H340V0h-97.83v68.87h20.86zm58.35 49.61h-58.35v19.26h58.35zM126.2 157h97.82v-19.26h-76.97V88.13h-20.86V157Zm136.83-68.87h-20.86V157h20.86zM126.2 68.87h20.85V19.26h76.97V0H126.2z"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer__bottom">
+        <span class="footer__lang">Français</span>
+        <div class="footer__partners">
+          <div class="footer__partner">
+            <img src="https://a.storyblok.com/f/285561750510308/211x150/98064a8dda/logo-lg2.svg" alt="lg2">
+          </div>
+          <div class="footer__partner">
+            <img src="https://a.storyblok.com/f/285561750510308/89x150/d979d515da/logo-bcorp.svg" alt="B Corp Certified">
+          </div>
+          <div class="footer__partner">
+            <img src="https://a.storyblok.com/f/285561750510308/118x150/7d0845af1e/logo-soda.svg" alt="SoDa">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       SCRIPTS
+  =================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script>
+
+    /* ─── LENIS SMOOTH SCROLL ─────────────────────────────────── */
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
+    (function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    })();
+
+    /* ─── CUSTOM CURSOR ───────────────────────────────────────── */
+    const cursor = document.getElementById('js-cursor');
+    let cursorX = -100, cursorY = -100;
+
+    document.addEventListener('mousemove', e => {
+      cursorX = e.clientX;
+      cursorY = e.clientY;
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top  = cursorY + 'px';
+    });
+
+    document.querySelectorAll('[data-cursor]').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.textContent = '| ' + el.dataset.cursor.toUpperCase() + ' |';
+        cursor.classList.add('visible');
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('visible');
+      });
+    });
+
+    /* ─── NAVBAR: add .scrolled on scroll ────────────────────── */
+    const nav = document.getElementById('js-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* ─── HERO CAROUSEL ───────────────────────────────────────── */
+    const PROJECTS = {
+      halo: {
+        color:   '#231F1D',
+        name:    'Halo Dental',
+        ref:     'REF · PCA · 0524',
+        imgA:    'https://a.storyblok.com/f/285561750510308/2000x2000/88bf31eac6/halo_thumb.jpg',
+        imgB:    'https://a.storyblok.com/f/285561750510308/1680x1680/f7c2f22b9b/halo_preview_grid.jpg',
+      },
+      cellart: {
+        color:   '#0d0c0b',
+        name:    'CellArt',
+        ref:     'REF · STR · 0423',
+        imgA:    'https://a.storyblok.com/f/285561750510308/1920x1080/20d97ea675/cellart_09_elevated-process.jpg',
+        imgB:    'https://a.storyblok.com/f/285561750510308/3840x2160/1176805b4c/ref_cellart_02-museum-inspired-brand.jpg',
+      },
+      mission: {
+        color:   '#1a3fbe',
+        name:    'Mission 2035',
+        ref:     'REF · PHM · 0524',
+        imgA:    'https://a.storyblok.com/f/285561750510308/1920x1080/f62a0a6393/ref_mission2035_04_thumb.jpg',
+        imgB:    'https://a.storyblok.com/f/285561750510308/2880x1620/7df61ee83c/ref_mission2035_01-3d-global.jpg',
+      },
+    };
+
+    const carouselEl     = document.getElementById('js-carousel');
+    const imgA           = document.getElementById('js-img-a');
+    const imgB           = document.getElementById('js-img-b');
+    const projectNameEl  = document.getElementById('js-project-name');
+    const projectRefEl   = document.getElementById('js-project-ref');
+    const thumbEls       = document.querySelectorAll('.hero-carousel__thumb');
+
+    function activateProject(id) {
+      const p = PROJECTS[id];
+      if (!p) return;
+      carouselEl.style.setProperty('--project-color', p.color);
+      imgA.style.opacity = '0';
+      imgB.style.opacity = '0';
+      setTimeout(() => {
+        imgA.src = p.imgA;
+        imgB.src = p.imgB;
+        imgA.onload = () => { imgA.style.opacity = '1'; };
+        imgB.onload = () => { imgB.style.opacity = '1'; };
+        imgA.style.opacity = '1';
+        imgB.style.opacity = '1';
+      }, 250);
+      projectNameEl.textContent = p.name;
+      projectRefEl.textContent  = p.ref;
+      thumbEls.forEach(t => t.classList.toggle('active', t.dataset.project === id));
+    }
+
+    thumbEls.forEach(thumb => {
+      thumb.addEventListener('click', () => activateProject(thumb.dataset.project));
+    });
+
+    /* Auto-advance carousel every 5s */
+    const projectOrder = ['halo', 'cellart', 'mission'];
+    let currentIdx = 2; // start on mission
+    setInterval(() => {
+      currentIdx = (currentIdx + 1) % projectOrder.length;
+      activateProject(projectOrder[currentIdx]);
+    }, 5000);
+
+    /* ─── SERVICES DIAGRAM: draw-on animation ─────────────────── */
+    const diagLines = document.querySelectorAll('.diag-line');
+
+    /* Pre-compute lengths */
+    diagLines.forEach(line => {
+      const dx = parseFloat(line.getAttribute('x2')) - parseFloat(line.getAttribute('x1'));
+      const dy = parseFloat(line.getAttribute('y2')) - parseFloat(line.getAttribute('y1'));
+      const len = Math.sqrt(dx * dx + dy * dy);
+      line.style.strokeDasharray  = len;
+      line.style.strokeDashoffset = len;
+    });
+
+    const diagObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        /* Animate arm by arm (6 lines per arm) */
+        diagLines.forEach((line, i) => {
+          const arm    = Math.floor(i / 6);   // 0=design, 1=strategy, 2=tech
+          const idx    = i % 6;               // position within bundle
+          const delay  = arm * 220 + idx * 55;
+          setTimeout(() => {
+            line.style.transition = 'stroke-dashoffset 1.6s cubic-bezier(.32,.94,.6,1)';
+            line.style.strokeDashoffset = '0';
+          }, delay);
+        });
+        diagObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    const sdSection = document.getElementById('js-sd-section');
+    if (sdSection) diagObserver.observe(sdSection);
+
+  </script>
+</body>
+</html>

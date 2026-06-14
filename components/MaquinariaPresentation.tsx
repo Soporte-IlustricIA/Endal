@@ -1,0 +1,75 @@
+'use client'
+import { useEffect, useRef, useState } from 'react'
+
+type Slide = { src: string; alt: string; name: string }
+
+const SLIDES: Slide[] = [
+  {
+    src: '/fabrica-endal.webp',
+    alt: 'Instalaciones de producción ENDAL',
+    name: 'Instalaciones ENDAL',
+  },
+  {
+    src: 'https://a.storyblok.com/f/285561750510308/1920x1080/20d97ea675/cellart_09_elevated-process.jpg',
+    alt: 'Línea de producción automatizada',
+    name: 'Línea de producción',
+  },
+  {
+    src: '/equipo-endal-1.webp',
+    alt: 'Equipo técnico de ENDAL',
+    name: 'Equipo técnico',
+  },
+]
+
+export default function MaquinariaPresentation() {
+  const [current, setCurrent] = useState(0)
+  const [transitioning, setTransitioning] = useState(false)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  function goTo(index: number) {
+    if (transitioning) return
+    setTransitioning(true)
+    setTimeout(() => { setCurrent(index); setTransitioning(false) }, 250)
+  }
+
+  function prev() { goTo((current - 1 + SLIDES.length) % SLIDES.length) }
+  function next() { goTo((current + 1) % SLIDES.length) }
+
+  useEffect(() => {
+    timerRef.current = setInterval(next, 5000)
+    return () => { if (timerRef.current) clearInterval(timerRef.current) }
+  })
+
+  return (
+    <section className="al-pres">
+      <div className="al-pres__left">
+        <div className="al-pres__left-top">
+          <span className="section-label al-pres__label">Tecnología ENDAL</span>
+          <h2 className="al-pres__title">
+            Tecnología para la<br /><em>producción perfecta</em>
+          </h2>
+        </div>
+        <a href="/contacto" className="al-pres__cta">Solicitar info →</a>
+      </div>
+
+      <div className="al-pres__right">
+        {SLIDES.map((slide, i) => (
+          <div
+            key={slide.src}
+            className={`al-pres__slide${i === current && !transitioning ? ' al-pres__slide--active' : ''}`}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={slide.src} alt={slide.alt} />
+          </div>
+        ))}
+        <div className="al-pres__caption">
+          <span className="al-pres__caption-name">{SLIDES[current].name}</span>
+          <div className="al-pres__arrows">
+            <button className="al-pres__arrow" onClick={prev} aria-label="Anterior">←</button>
+            <button className="al-pres__arrow" onClick={next} aria-label="Siguiente">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

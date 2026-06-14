@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "PowerShell(Set-Location \"c:\\\\Users\\\\Javier\\\\Desktop\\\\ENDAL\\\\Ref Clone\"; Write-Host \"=== app/ ===\"; Get-ChildItem app | Select-Object Name; Write-Host \"=== components/ ===\"; Get-ChildItem components | Select-Object Name; Write-Host \"=== public/fonts/ ===\"; Get-ChildItem public\\\\fonts | Select-Object Name; Write-Host \"=== root configs ===\"; Get-ChildItem -File | Where-Object { $_.Extension -in '.json','.ts','.js','.mjs' } | Select-Object Name)",
+      "WebSearch",
+      "WebFetch(domain:julienhebert.com)",
+      "Bash(npx tsc *)",
+      "Bash(ffmpeg -version)",
+      "Bash(cwebp -version)",
+      "Bash(magick -version)",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(node -e \"require\\('sharp'\\); console.log\\('sharp OK'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node scripts/convert-images.mjs)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/@studio-freight/lenis/package.json'\\).version\\)\")",
+      "Bash(del \"c:\\\\Users\\\\Javier\\\\Desktop\\\\ENDAL\\\\Ref Clone\\\\components\\\\QualityTimeline.tsx\")"
+    ]
+  }
+}

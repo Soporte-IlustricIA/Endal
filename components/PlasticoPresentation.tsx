@@ -1,0 +1,75 @@
+'use client'
+import { useEffect, useRef, useState } from 'react'
+
+type Slide = { src: string; alt: string; name: string }
+
+const SLIDES: Slide[] = [
+  {
+    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/48f73d339e/ref_mint_thumbnail-tuile.jpg',
+    alt: 'Envasado al vacío con film plástico',
+    name: 'Envasado al vacío',
+  },
+  {
+    src: '/papel-vegetal-1.webp',
+    alt: 'Film para hostelería y restauración',
+    name: 'Film para hostelería',
+  },
+  {
+    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/4c93a6e157/ref_fromeo_thumbnail-tuile.jpg',
+    alt: 'Conservación flexible con bolsas',
+    name: 'Conservación flexible',
+  },
+]
+
+export default function PlasticoPresentation() {
+  const [current, setCurrent] = useState(0)
+  const [transitioning, setTransitioning] = useState(false)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  function goTo(index: number) {
+    if (transitioning) return
+    setTransitioning(true)
+    setTimeout(() => { setCurrent(index); setTransitioning(false) }, 250)
+  }
+
+  function prev() { goTo((current - 1 + SLIDES.length) % SLIDES.length) }
+  function next() { goTo((current + 1) % SLIDES.length) }
+
+  useEffect(() => {
+    timerRef.current = setInterval(next, 5000)
+    return () => { if (timerRef.current) clearInterval(timerRef.current) }
+  })
+
+  return (
+    <section className="al-pres">
+      <div className="al-pres__left">
+        <div className="al-pres__left-top">
+          <span className="section-label al-pres__label">Arte del envasado</span>
+          <h2 className="al-pres__title">
+            Del plástico<br />al <em>producto perfecto</em>
+          </h2>
+        </div>
+        <a href="/productos" className="al-pres__cta">Ver más →</a>
+      </div>
+
+      <div className="al-pres__right">
+        {SLIDES.map((slide, i) => (
+          <div
+            key={slide.src}
+            className={`al-pres__slide${i === current && !transitioning ? ' al-pres__slide--active' : ''}`}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={slide.src} alt={slide.alt} />
+          </div>
+        ))}
+        <div className="al-pres__caption">
+          <span className="al-pres__caption-name">{SLIDES[current].name}</span>
+          <div className="al-pres__arrows">
+            <button className="al-pres__arrow" onClick={prev} aria-label="Anterior">←</button>
+            <button className="al-pres__arrow" onClick={next} aria-label="Siguiente">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
