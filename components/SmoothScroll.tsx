@@ -14,7 +14,7 @@ export default function SmoothScroll() {
 
       const lenisAny = lenis as unknown as Record<string, unknown>
 
-      const slowSections = document.querySelectorAll('.about, .al-props, .nos-history')
+      const slowSections = document.querySelectorAll('.about, .al-props')
       if (slowSections.length) {
         let slowCount = 0
         observer = new IntersectionObserver(

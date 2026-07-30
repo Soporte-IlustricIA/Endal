@@ -1,0 +1,1592 @@
+[
+  {
+    "id": 1,
+    "nombre": "ENVASE REDONDO PARA TAPA",
+    "referencia": "2800",
+    "imgFilename": "largece4a6883d96a9cc7724f5ed7e24540da.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largece4a6883d96a9cc7724f5ed7e24540da.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 2,
+    "nombre": "ENVASE REDONDO PARA TAPA",
+    "referencia": "2935",
+    "imgFilename": "largebaa80d24e6d9e62274b5198ed2c6eaea.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largebaa80d24e6d9e62274b5198ed2c6eaea.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 3,
+    "nombre": "ENVASE REDONDO PARA TAPA",
+    "referencia": "21400",
+    "imgFilename": "largeb9b188e085fd851e16dd9d664ff010dc.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeb9b188e085fd851e16dd9d664ff010dc.jpg",
+    "localFile": "21400.jpg",
+    "localPath": "/images/catalogo/21400.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 4,
+    "nombre": "ENVASE REDONDO PARA TAPA",
+    "referencia": "21425",
+    "imgFilename": "large5047f2c62ce8a0387f0f8f1ad54adc5e.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large5047f2c62ce8a0387f0f8f1ad54adc5e.jpg",
+    "localFile": "21425.jpg",
+    "localPath": "/images/catalogo/21425.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 5,
+    "nombre": "ENVASE REDONDO PARA TAPA",
+    "referencia": "21900",
+    "imgFilename": "large4d5e1be47ca7b133848fa66e0cb7d565.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large4d5e1be47ca7b133848fa66e0cb7d565.jpg",
+    "localFile": "21900.jpg",
+    "localPath": "/images/catalogo/21900.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 6,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4280",
+    "imgFilename": "large21f7f37cd19bc85f11eb4553de9a5234.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large21f7f37cd19bc85f11eb4553de9a5234.jpg",
+    "localFile": "rectstapa4280.jpg",
+    "localPath": "/images/catalogo/rectstapa4280.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 7,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4360",
+    "imgFilename": "large1ff886f04d8d4f85d511b6d81f198c11.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large1ff886f04d8d4f85d511b6d81f198c11.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 8,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "44965",
+    "imgFilename": "large0f779a06e25506bd939e377ab871dd4b.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large0f779a06e25506bd939e377ab871dd4b.jpg",
+    "localFile": "44965.jpg",
+    "localPath": "/images/catalogo/44965.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 9,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4425",
+    "imgFilename": "largea76c986bee0226d65cff244b745e57d0.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largea76c986bee0226d65cff244b745e57d0.jpg",
+    "localFile": "4425.jpg",
+    "localPath": "/images/catalogo/4425.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 10,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4465",
+    "imgFilename": "large1564021981740a33955b4ca0638bbd24.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large1564021981740a33955b4ca0638bbd24.jpg",
+    "localFile": "4465.jpg",
+    "localPath": "/images/catalogo/4465.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 11,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4470",
+    "imgFilename": "largebaf40d5269d3255f99ffe49130be21d1.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largebaf40d5269d3255f99ffe49130be21d1.jpg",
+    "localFile": "4470.jpg",
+    "localPath": "/images/catalogo/4470.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 12,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4590",
+    "imgFilename": "larged75a481697b394a07fa1aea6bca690fe.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged75a481697b394a07fa1aea6bca690fe.jpg",
+    "localFile": "4590.jpg",
+    "localPath": "/images/catalogo/4590.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 13,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4750",
+    "imgFilename": "largee3b557ea0c870bc9b60c7d779fe4b09b.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee3b557ea0c870bc9b60c7d779fe4b09b.jpg",
+    "localFile": "4750.jpg",
+    "localPath": "/images/catalogo/4750.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 14,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4797",
+    "imgFilename": "largefc5ea835a85038aa61e1a1cb12dcd34a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largefc5ea835a85038aa61e1a1cb12dcd34a.jpg",
+    "localFile": "4797.jpg",
+    "localPath": "/images/catalogo/4797.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 15,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4835",
+    "imgFilename": "large7168b58294b6cdbccb4db22bafdee765.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large7168b58294b6cdbccb4db22bafdee765.jpg",
+    "localFile": "4835.jpg",
+    "localPath": "/images/catalogo/4835.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 16,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "4860",
+    "imgFilename": "largec0e0ec9a93656fe1d08d378c270378c4.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largec0e0ec9a93656fe1d08d378c270378c4.jpg",
+    "localFile": "4860.jpg",
+    "localPath": "/images/catalogo/4860.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 17,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "41500",
+    "imgFilename": "large1f134e475200403483fcae8453e1bad2.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large1f134e475200403483fcae8453e1bad2.jpg",
+    "localFile": "41500.jpg",
+    "localPath": "/images/catalogo/41500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 18,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "42200",
+    "imgFilename": "large9e2b79bc9bca29ff6c9c5434fbfaaeba.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large9e2b79bc9bca29ff6c9c5434fbfaaeba.jpg",
+    "localFile": "42200.jpg",
+    "localPath": "/images/catalogo/42200.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 19,
+    "nombre": "ENVASE RECTANGULAR SIN TAPA",
+    "referencia": "42400",
+    "imgFilename": "large803380467864754588138ab43bc4d178.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large803380467864754588138ab43bc4d178.jpg",
+    "localFile": "42400.jpg",
+    "localPath": "/images/catalogo/42400.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 20,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5250",
+    "imgFilename": "largebf70e5c1a6bf1f77c399196f23aec8a2.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largebf70e5c1a6bf1f77c399196f23aec8a2.jpg",
+    "localFile": "5250.jpg",
+    "localPath": "/images/catalogo/5250.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 21,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5360",
+    "imgFilename": "large0ed5c018ed2378f0be69c69beb9dff05.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large0ed5c018ed2378f0be69c69beb9dff05.jpg",
+    "localFile": "5360.jpg",
+    "localPath": "/images/catalogo/5360.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 22,
+    "nombre": "PORTA ROLLO",
+    "referencia": "Porta Rollo Film",
+    "imgFilename": "largec53b1d91790911fc2dd38a086f0b68e4.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largec53b1d91790911fc2dd38a086f0b68e4.jpg",
+    "localFile": "portarollos sin tapa.jpg",
+    "localPath": "/images/catalogo/portarollos sin tapa.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 23,
+    "nombre": "PORTA ROLLO",
+    "referencia": "Porta Rollo Aluminio",
+    "imgFilename": "large514e448400e50cb0b285cd98fa082c2a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large514e448400e50cb0b285cd98fa082c2a.jpg",
+    "localFile": "portarollos con tapa.jpg",
+    "localPath": "/images/catalogo/portarollos con tapa.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 24,
+    "nombre": "MÁQUINA",
+    "referencia": "M21400",
+    "imgFilename": "large6fd9c2235288415bcc7cc24adabeacb4.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large6fd9c2235288415bcc7cc24adabeacb4.jpg",
+    "localFile": "m21400.jpg",
+    "localPath": "/images/catalogo/m21400.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 25,
+    "nombre": "MAQUINA",
+    "referencia": "M42600",
+    "imgFilename": "large8b158c9a73952cdf91881839e7a22d6a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large8b158c9a73952cdf91881839e7a22d6a.jpg",
+    "localFile": "M42600.jpg",
+    "localPath": "/images/catalogo/M42600.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 26,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5475",
+    "imgFilename": "largef0bbb4ea3e5de98f81c4610c41201e17.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largef0bbb4ea3e5de98f81c4610c41201e17.jpg",
+    "localFile": "5475.jpg",
+    "localPath": "/images/catalogo/5475.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 27,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5580",
+    "imgFilename": "largefa8551df56acd4f401f4ec4490015b52.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largefa8551df56acd4f401f4ec4490015b52.jpg",
+    "localFile": "5580.jpg",
+    "localPath": "/images/catalogo/5580.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 28,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5590",
+    "imgFilename": "large5ddab8f7a9b821c0eec300716dc6dbbf.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large5ddab8f7a9b821c0eec300716dc6dbbf.jpg",
+    "localFile": "5590.jpg",
+    "localPath": "/images/catalogo/5590.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 29,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5860",
+    "imgFilename": "largee3edccf144c94c4cae5c1997dc668550.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee3edccf144c94c4cae5c1997dc668550.jpg",
+    "localFile": "5860.jpg",
+    "localPath": "/images/catalogo/5860.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 30,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "5890",
+    "imgFilename": "large357ddd5a469359697394ff3d75f80d01.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large357ddd5a469359697394ff3d75f80d01.jpg",
+    "localFile": "5890.jpg",
+    "localPath": "/images/catalogo/5890.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 31,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "51180",
+    "imgFilename": "largef08c9d04cdee8dbeb4c4b75f876faa5f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largef08c9d04cdee8dbeb4c4b75f876faa5f.jpg",
+    "localFile": "51180.jpg",
+    "localPath": "/images/catalogo/51180.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 32,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "51500",
+    "imgFilename": "large0d5f572e23d6c8f4a2e3ee267ce24351.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large0d5f572e23d6c8f4a2e3ee267ce24351.jpg",
+    "localFile": "51500.jpg",
+    "localPath": "/images/catalogo/51500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 33,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "52200",
+    "imgFilename": "largee3d60e7f5ecf8e9b8e7fd2a6c31b4a92.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee3d60e7f5ecf8e9b8e7fd2a6c31b4a92.jpg",
+    "localFile": "52200.jpg",
+    "localPath": "/images/catalogo/52200.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 34,
+    "nombre": "ENVASE RECTANGULAR PARA TAPA",
+    "referencia": "52400",
+    "imgFilename": "large99e98b3491e348ecd58acca39a369305.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large99e98b3491e348ecd58acca39a369305.jpg",
+    "localFile": "52400.jpg",
+    "localPath": "/images/catalogo/52400.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 35,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1205",
+    "imgFilename": "large919f2f3a66b95fe6bafce33f0a76df69.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large919f2f3a66b95fe6bafce33f0a76df69.jpg",
+    "localFile": "1205.jpg",
+    "localPath": "/images/catalogo/1205.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 36,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1230",
+    "imgFilename": "large5226e278220b7cdf19729d4cd994fda3.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large5226e278220b7cdf19729d4cd994fda3.jpg",
+    "localFile": "1230.jpg",
+    "localPath": "/images/catalogo/1230.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 37,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1240",
+    "imgFilename": "large099875ac2f5361807e96204f36c7fd8d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large099875ac2f5361807e96204f36c7fd8d.jpg",
+    "localFile": "1240.jpg",
+    "localPath": "/images/catalogo/1240.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 38,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1250",
+    "imgFilename": "large8c78d8f3724ee28f8c826c8a96ea568b.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large8c78d8f3724ee28f8c826c8a96ea568b.jpg",
+    "localFile": "1250.jpg",
+    "localPath": "/images/catalogo/1250.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 39,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1280",
+    "imgFilename": "largeb68c7303d61e82b22397238a81de1037.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeb68c7303d61e82b22397238a81de1037.jpg",
+    "localFile": "1280.jpg",
+    "localPath": "/images/catalogo/1280.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 40,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1375",
+    "imgFilename": "larged3b9e046b0f1e476b3e55ecf8e7b0c6d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged3b9e046b0f1e476b3e55ecf8e7b0c6d.jpg",
+    "localFile": "1375.jpg",
+    "localPath": "/images/catalogo/1375.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 41,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1790",
+    "imgFilename": "larged198c5c0b4fc169e88c1bd3493b0a1bc.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged198c5c0b4fc169e88c1bd3493b0a1bc.jpg",
+    "localFile": "1790.jpg",
+    "localPath": "/images/catalogo/1790.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 42,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1900",
+    "imgFilename": "largeab95ba2f595053356ecb9cbca062672b.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeab95ba2f595053356ecb9cbca062672b.jpg",
+    "localFile": "1900.jpg",
+    "localPath": "/images/catalogo/1900.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 43,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1935",
+    "imgFilename": "large565a576270391c8cc6308f1eca0b0cf6.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large565a576270391c8cc6308f1eca0b0cf6.jpg",
+    "localFile": "1935.jpg",
+    "localPath": "/images/catalogo/1935.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 44,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1975",
+    "imgFilename": "largee1ad99e02e6169ecc82cb49cb6cb73ee.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee1ad99e02e6169ecc82cb49cb6cb73ee.jpg",
+    "localFile": "1975.jpg",
+    "localPath": "/images/catalogo/1975.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 45,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "11100",
+    "imgFilename": "large32a21b3dbb04a1301d0bea8d8c1f8aa7.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large32a21b3dbb04a1301d0bea8d8c1f8aa7.jpg",
+    "localFile": "11100.jpg",
+    "localPath": "/images/catalogo/11100.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 46,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "11103",
+    "imgFilename": "largec6da128f1c5f4296459aa99d9bf6431f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largec6da128f1c5f4296459aa99d9bf6431f.jpg",
+    "localFile": "11103.jpg",
+    "localPath": "/images/catalogo/11103.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 47,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "11150",
+    "imgFilename": "large4f907ef2c43bce49c42c265630fd75bf.png",
+    "imgUrl": "https://www.endal.es/gallary/large4f907ef2c43bce49c42c265630fd75bf.png",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 48,
+    "nombre": "ENVASE REDONDO SIN TAPA",
+    "referencia": "1470",
+    "imgFilename": "largeee46ac13a1f529ab2695bae9047712f5.png",
+    "imgUrl": "https://www.endal.es/gallary/largeee46ac13a1f529ab2695bae9047712f5.png",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 49,
+    "nombre": "OVALADAS",
+    "referencia": "41230V",
+    "imgFilename": "large0184dc2ec4cdc67645931440bd12453c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large0184dc2ec4cdc67645931440bd12453c.jpg",
+    "localFile": "41230V.jpg",
+    "localPath": "/images/catalogo/41230V.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 50,
+    "nombre": "OVALADAS",
+    "referencia": "750870",
+    "imgFilename": "largec01cb412ed8247d52fe95b06623d7ecb.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largec01cb412ed8247d52fe95b06623d7ecb.jpg",
+    "localFile": "750870.jpg",
+    "localPath": "/images/catalogo/750870.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 51,
+    "nombre": "OVALADAS",
+    "referencia": "751650",
+    "imgFilename": "largea3f4705db3657beb44ba7fc379db5103.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largea3f4705db3657beb44ba7fc379db5103.jpg",
+    "localFile": "751650.jpg",
+    "localPath": "/images/catalogo/751650.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 52,
+    "nombre": "OVALADAS",
+    "referencia": "752151",
+    "imgFilename": "large2de4fac837559de9ae60b33ffa827d1b.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large2de4fac837559de9ae60b33ffa827d1b.jpg",
+    "localFile": "752151.jpg",
+    "localPath": "/images/catalogo/752151.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 53,
+    "nombre": "OVALADAS",
+    "referencia": "CONCHA",
+    "imgFilename": "largee4ec8ea7db717dde134ae08b27756502.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee4ec8ea7db717dde134ae08b27756502.jpg",
+    "localFile": "CONCHA.jpg",
+    "localPath": "/images/catalogo/CONCHA.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 54,
+    "nombre": "ENVASES OVALADOS PARA TAPA",
+    "referencia": "41900",
+    "imgFilename": "large6dbfe867340afee55ccb8d137e7e6d64.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large6dbfe867340afee55ccb8d137e7e6d64.jpg",
+    "localFile": "41900.jpg",
+    "localPath": "/images/catalogo/41900.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 55,
+    "nombre": "ENVASES OVALADOS PARA TAPA",
+    "referencia": "42600",
+    "imgFilename": "large3c494dab6f900057095d4c2123a44079.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3c494dab6f900057095d4c2123a44079.jpg",
+    "localFile": "42600.jpg",
+    "localPath": "/images/catalogo/42600.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 56,
+    "nombre": "BAÑERAS",
+    "referencia": "53114",
+    "imgFilename": "largeb6c0b21c14c7f9d2a7d5a44ce5c3f6a8.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeb6c0b21c14c7f9d2a7d5a44ce5c3f6a8.jpg",
+    "localFile": "53114.jpg",
+    "localPath": "/images/catalogo/53114.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 57,
+    "nombre": "BAÑERAS",
+    "referencia": "53535",
+    "imgFilename": "largeaf3ee8f8fbb27a3cdf6f880577178f0a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeaf3ee8f8fbb27a3cdf6f880577178f0a.jpg",
+    "localFile": "53535.jpg",
+    "localPath": "/images/catalogo/53535.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 58,
+    "nombre": "BAÑERAS",
+    "referencia": "53680",
+    "imgFilename": "large83cdbf3c7360f6580c1d823006ece75c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large83cdbf3c7360f6580c1d823006ece75c.jpg",
+    "localFile": "53680.jpg",
+    "localPath": "/images/catalogo/53680.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 59,
+    "nombre": "BAÑERAS",
+    "referencia": "53885",
+    "imgFilename": "larged5055bf22de3198bdd6d2ac2794300d5.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged5055bf22de3198bdd6d2ac2794300d5.jpg",
+    "localFile": "53885.jpg",
+    "localPath": "/images/catalogo/53885.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 60,
+    "nombre": "BOMBONERÍA",
+    "referencia": "1/87",
+    "imgFilename": "largeaafb255ee60e1a5cbc3949463a5aa2f0.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeaafb255ee60e1a5cbc3949463a5aa2f0.jpg",
+    "localFile": "1-87 bomboneria.jpg",
+    "localPath": "/images/catalogo/1-87 bomboneria.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 61,
+    "nombre": "BOMBONERÍA",
+    "referencia": "2/86",
+    "imgFilename": "large6b69711453f1e2ec8d8981e733fbf849.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large6b69711453f1e2ec8d8981e733fbf849.jpg",
+    "localFile": "bomboneria aluminio 2-86.jpg",
+    "localPath": "/images/catalogo/bomboneria aluminio 2-86.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 62,
+    "nombre": "BOMBONERÍA",
+    "referencia": "3/87",
+    "imgFilename": "large9b2e1e8f9793d690054f71d2179e1d07.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large9b2e1e8f9793d690054f71d2179e1d07.jpg",
+    "localFile": "bomboneria aluminio 3-87.jpg",
+    "localPath": "/images/catalogo/bomboneria aluminio 3-87.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 63,
+    "nombre": "BOMBONERÍA",
+    "referencia": "3102",
+    "imgFilename": "large970a22b2116916dcf9dd3a487af4d2a4.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large970a22b2116916dcf9dd3a487af4d2a4.jpg",
+    "localFile": "bomboneria aluminio 3102.jpg",
+    "localPath": "/images/catalogo/bomboneria aluminio 3102.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 64,
+    "nombre": "BOMBONERÍA",
+    "referencia": "4/86",
+    "imgFilename": "largea215a96e028fa48ee50ad25208a0bb79.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largea215a96e028fa48ee50ad25208a0bb79.jpg",
+    "localFile": "bomboneria aluminio 4-86.jpg",
+    "localPath": "/images/catalogo/bomboneria aluminio 4-86.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 65,
+    "nombre": "BOMBONERÍA",
+    "referencia": "7/87",
+    "imgFilename": "largef7fe7ed0e11af754e8b2af68e7b13a44.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largef7fe7ed0e11af754e8b2af68e7b13a44.jpg",
+    "localFile": "bomboneria aluminio 7-87.jpg",
+    "localPath": "/images/catalogo/bomboneria aluminio 7-87.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 66,
+    "nombre": "BOMBONERÍA",
+    "referencia": "8/96",
+    "imgFilename": "large9e6f8f32760714f76602f005226b7f92.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large9e6f8f32760714f76602f005226b7f92.jpg",
+    "localFile": "8-96.jpg",
+    "localPath": "/images/catalogo/8-96.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 67,
+    "nombre": "BOMBONERÍA",
+    "referencia": "9/89",
+    "imgFilename": "large7e9de849a16fb92c286f79e59bc8cb8f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large7e9de849a16fb92c286f79e59bc8cb8f.jpg",
+    "localFile": "9-89.jpg",
+    "localPath": "/images/catalogo/9-89.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 68,
+    "nombre": "BOMBONERÍA",
+    "referencia": "ORO2",
+    "imgFilename": "large5b7d803302af28cc8a8bfc9abe95d572.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large5b7d803302af28cc8a8bfc9abe95d572.jpg",
+    "localFile": "oro2.jpg",
+    "localPath": "/images/catalogo/oro2.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 69,
+    "nombre": "BOMBONERÍA",
+    "referencia": "1/87A",
+    "imgFilename": "large7097aec53c3808ff53aba9aa28a0258f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large7097aec53c3808ff53aba9aa28a0258f.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 70,
+    "nombre": "BOMBONERÍA",
+    "referencia": "2/86A",
+    "imgFilename": "large570659d668d422b2832eaa654f5e11c1.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large570659d668d422b2832eaa654f5e11c1.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 71,
+    "nombre": "BOMBONERÍA",
+    "referencia": "3/87A",
+    "imgFilename": "large3f6ec1c8eba6d95d5fa72a0774eaa5ef.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3f6ec1c8eba6d95d5fa72a0774eaa5ef.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 72,
+    "nombre": "BOMBONERÍA",
+    "referencia": "C2/86",
+    "imgFilename": "large4f2c22633c99174f0c42b13ebd4badc6.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large4f2c22633c99174f0c42b13ebd4badc6.jpg",
+    "localFile": "c2-86.jpg",
+    "localPath": "/images/catalogo/c2-86.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 73,
+    "nombre": "BOMBONERÍA",
+    "referencia": "C3/89",
+    "imgFilename": "largeaa6f41dabdcf09c6912f109f943d5859.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeaa6f41dabdcf09c6912f109f943d5859.jpg",
+    "localFile": "c3-89.jpg",
+    "localPath": "/images/catalogo/c3-89.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 74,
+    "nombre": "BOMBONERÍA",
+    "referencia": "C4/89",
+    "imgFilename": "largebd4a6ae138eab399d53164e221a1bfec.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largebd4a6ae138eab399d53164e221a1bfec.jpg",
+    "localFile": "c4-89.jpg",
+    "localPath": "/images/catalogo/c4-89.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 75,
+    "nombre": "BOMBONERÍA",
+    "referencia": "C5/95",
+    "imgFilename": "largef5e481e139661f63b62f378dbc23b2b6.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largef5e481e139661f63b62f378dbc23b2b6.jpg",
+    "localFile": "c5-95.jpg",
+    "localPath": "/images/catalogo/c5-95.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 76,
+    "nombre": "BOMBONERÍA",
+    "referencia": "CORNE",
+    "imgFilename": "large0c2a2a959536c820a5ac7c9f02019fa6.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large0c2a2a959536c820a5ac7c9f02019fa6.jpg",
+    "localFile": "corne.jpg",
+    "localPath": "/images/catalogo/corne.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 77,
+    "nombre": "BOMBONERÍA",
+    "referencia": "C10/95",
+    "imgFilename": "large758bc89e707af1dfd07de3d582189d4e.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large758bc89e707af1dfd07de3d582189d4e.jpg",
+    "localFile": "c10-95.jpg",
+    "localPath": "/images/catalogo/c10-95.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 78,
+    "nombre": "BOMBONERÍA",
+    "referencia": "CA1/95",
+    "imgFilename": "large3b18485b72a98ec76c58d589ba7779a6.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3b18485b72a98ec76c58d589ba7779a6.jpg",
+    "localFile": "ca1-95.jpg",
+    "localPath": "/images/catalogo/ca1-95.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 79,
+    "nombre": "PASTELERÍA",
+    "referencia": "1025",
+    "imgFilename": "largea45c185448a4f455f1d07d1980659a81.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largea45c185448a4f455f1d07d1980659a81.jpg",
+    "localFile": "1025.jpg",
+    "localPath": "/images/catalogo/1025.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 80,
+    "nombre": "PASTELERÍA",
+    "referencia": "1030",
+    "imgFilename": "largece9a4b27f53bdaf2523d9930106d81a1.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largece9a4b27f53bdaf2523d9930106d81a1.jpg",
+    "localFile": "1030.jpg",
+    "localPath": "/images/catalogo/1030.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 81,
+    "nombre": "PASTELERÍA",
+    "referencia": "1052",
+    "imgFilename": "largeb9669c3c5b6683aabb5978c339c0322c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeb9669c3c5b6683aabb5978c339c0322c.jpg",
+    "localFile": "1052.jpg",
+    "localPath": "/images/catalogo/1052.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 82,
+    "nombre": "PASTELERÍA",
+    "referencia": "1060",
+    "imgFilename": "large26e3753a54a5aaaf38cfed84f0e5e2a9.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large26e3753a54a5aaaf38cfed84f0e5e2a9.jpg",
+    "localFile": "1060.jpg",
+    "localPath": "/images/catalogo/1060.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 83,
+    "nombre": "PASTELERÍA",
+    "referencia": "1070",
+    "imgFilename": "large376485ebe4ee06b661427784b327ee81.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large376485ebe4ee06b661427784b327ee81.jpg",
+    "localFile": "1070.jpg",
+    "localPath": "/images/catalogo/1070.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 84,
+    "nombre": "PASTELERÍA",
+    "referencia": "1080",
+    "imgFilename": "large62b3827b387dfd79d42045d0af1c2b38.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large62b3827b387dfd79d42045d0af1c2b38.jpg",
+    "localFile": "1080.jpg",
+    "localPath": "/images/catalogo/1080.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 85,
+    "nombre": "PASTELERÍA",
+    "referencia": "1090",
+    "imgFilename": "large7c9bb503a9d0f47d67bb59c3d4e08db9.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large7c9bb503a9d0f47d67bb59c3d4e08db9.jpg",
+    "localFile": "1090.jpg",
+    "localPath": "/images/catalogo/1090.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 86,
+    "nombre": "PASTELERÍA",
+    "referencia": "1101",
+    "imgFilename": "large948eadcefc96f8dbb7ea088ab1232353.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large948eadcefc96f8dbb7ea088ab1232353.jpg",
+    "localFile": "1101.jpg",
+    "localPath": "/images/catalogo/1101.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 87,
+    "nombre": "PASTELERÍA",
+    "referencia": "1103",
+    "imgFilename": "larged97a42d913d5e50deebeb7cff3fd6b6c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged97a42d913d5e50deebeb7cff3fd6b6c.jpg",
+    "localFile": "1103.jpg",
+    "localPath": "/images/catalogo/1103.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 88,
+    "nombre": "PASTELERÍA",
+    "referencia": "1127",
+    "imgFilename": "large081ee8bf327207c385454dc83cd10091.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large081ee8bf327207c385454dc83cd10091.jpg",
+    "localFile": "1127.jpg",
+    "localPath": "/images/catalogo/1127.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 89,
+    "nombre": "PASTELERÍA",
+    "referencia": "4037",
+    "imgFilename": "large161f5f509dad17967274649ae00a7580.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large161f5f509dad17967274649ae00a7580.jpg",
+    "localFile": "4037.jpg",
+    "localPath": "/images/catalogo/4037.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 90,
+    "nombre": "PASTELERÍA",
+    "referencia": "5/86",
+    "imgFilename": "large9c94ba13ef759141a0fa77901a266f20.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large9c94ba13ef759141a0fa77901a266f20.jpg",
+    "localFile": "5-86.jpg",
+    "localPath": "/images/catalogo/5-86.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 91,
+    "nombre": "PASTELERÍA",
+    "referencia": "T1127",
+    "imgFilename": "largea228825afa307b52026026d15e55012b.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largea228825afa307b52026026d15e55012b.jpg",
+    "localFile": "t1127.jpg",
+    "localPath": "/images/catalogo/t1127.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 92,
+    "nombre": "PASTELERÍA",
+    "referencia": "4037A",
+    "imgFilename": "larged3660bca87fe0651f883701538d278d5.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged3660bca87fe0651f883701538d278d5.jpg",
+    "localFile": "4037a.jpg",
+    "localPath": "/images/catalogo/4037a.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 93,
+    "nombre": "PASTELERÍA",
+    "referencia": "T1103",
+    "imgFilename": "largeac22b4230841591c0f99ca0e86961e60.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeac22b4230841591c0f99ca0e86961e60.jpg",
+    "localFile": "t1103.jpg",
+    "localPath": "/images/catalogo/t1103.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 94,
+    "nombre": "PARED LISA",
+    "referencia": "1135-pl",
+    "imgFilename": "largeb99bbd1fc22e8e0f94ccc819af1cf007.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeb99bbd1fc22e8e0f94ccc819af1cf007.jpg",
+    "localFile": "1135pl.jpg",
+    "localPath": "/images/catalogo/1135pl.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 95,
+    "nombre": "PARED LISA",
+    "referencia": "1140-pl",
+    "imgFilename": "largec8ccdacb1669753a68fea6a50a561e45.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largec8ccdacb1669753a68fea6a50a561e45.jpg",
+    "localFile": "1140pl.jpg",
+    "localPath": "/images/catalogo/1140pl.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 96,
+    "nombre": "PARED LISA",
+    "referencia": "4117-pl",
+    "imgFilename": "large1cb3706ef64bebeace2dd830f280c30d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large1cb3706ef64bebeace2dd830f280c30d.jpg",
+    "localFile": "4117pl.jpg",
+    "localPath": "/images/catalogo/4117pl.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 97,
+    "nombre": "PARED LISA",
+    "referencia": "4330-pl",
+    "imgFilename": "largede9e143db8a9eadf52cfdcbec70b633e.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largede9e143db8a9eadf52cfdcbec70b633e.jpg",
+    "localFile": "4330pl.jpg",
+    "localPath": "/images/catalogo/4330pl.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 98,
+    "nombre": "PARED LISA",
+    "referencia": "1040-pla",
+    "imgFilename": "large1ce38b64c98fc03001c48e0900687907.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large1ce38b64c98fc03001c48e0900687907.jpg",
+    "localFile": "1040pla.jpg",
+    "localPath": "/images/catalogo/1040pla.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 99,
+    "nombre": "PARED LISA",
+    "referencia": "T4330-pla",
+    "imgFilename": "large35fe0824757d21b3c88212dc7d1842bb.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large35fe0824757d21b3c88212dc7d1842bb.jpg",
+    "localFile": "4330pla.jpg",
+    "localPath": "/images/catalogo/4330pla.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 101,
+    "nombre": "ALUMINIO INDUSTRIAL",
+    "referencia": "Alum. Industrial",
+    "imgFilename": "largec1e7c336bce2d597a031b7dadfb00f42.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largec1e7c336bce2d597a031b7dadfb00f42.jpg",
+    "localFile": "aluminio industrial.jpg",
+    "localPath": "/images/catalogo/aluminio industrial.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 102,
+    "nombre": "ALUMINIO INDUSTRIAL",
+    "referencia": "Aluminio Industrial 40 cm",
+    "imgFilename": "large5868c5aab8155ff5ba9a1856ddcdc4d9.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large5868c5aab8155ff5ba9a1856ddcdc4d9.jpg",
+    "localFile": "aluminio industrial.jpg",
+    "localPath": "/images/catalogo/aluminio industrial.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 103,
+    "nombre": "BOBINA FILM INDUSTRIAL",
+    "referencia": "Film Industrial 40",
+    "imgFilename": "large53ee7d1432ae70b930336d929dd56505.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large53ee7d1432ae70b930336d929dd56505.jpg",
+    "localFile": "film industrial.jpg",
+    "localPath": "/images/catalogo/film industrial.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 104,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "End-500",
+    "imgFilename": "large64dea7fe7318e4f2234f7c7406e30de0.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large64dea7fe7318e4f2234f7c7406e30de0.jpg",
+    "localFile": "end 250.jpg",
+    "localPath": "/images/catalogo/end 250.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 105,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "End 750",
+    "imgFilename": "large502c28e50892c15b7d749e3e92a1895c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large502c28e50892c15b7d749e3e92a1895c.jpg",
+    "localFile": "end375.jpg",
+    "localPath": "/images/catalogo/end375.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 106,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "END 600",
+    "imgFilename": "large7b3d4f4d4a2e7bd6f7e8c9a1b2d3e4f5.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large7b3d4f4d4a2e7bd6f7e8c9a1b2d3e4f5.jpg",
+    "localFile": "envase ops ovalado.jpg",
+    "localPath": "/images/catalogo/envase ops ovalado.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 108,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "END 1000",
+    "imgFilename": "large10ae2028c885b3eedabbeeda22af1e95.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large10ae2028c885b3eedabbeeda22af1e95.jpg",
+    "localFile": "end 1000.jpg",
+    "localPath": "/images/catalogo/end 1000.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 109,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "END 1500",
+    "imgFilename": "large2887c8a00f285fa91f10b301c7e24580.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large2887c8a00f285fa91f10b301c7e24580.jpg",
+    "localFile": "end1 500.jpg",
+    "localPath": "/images/catalogo/end1 500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 110,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "END 2000",
+    "imgFilename": "large22090f78c6f2d075ac9f84e23a36f779.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large22090f78c6f2d075ac9f84e23a36f779.jpg",
+    "localFile": "end 2500.jpg",
+    "localPath": "/images/catalogo/end 2500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 111,
+    "nombre": "ENVASE OPS OVALADO",
+    "referencia": "ENS 600 Ensaladera",
+    "imgFilename": "largeeac19bc7b55e4fd63595a7c0aa05a49d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeeac19bc7b55e4fd63595a7c0aa05a49d.jpg",
+    "localFile": "ensaladera ops.jpg",
+    "localPath": "/images/catalogo/ensaladera ops.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 112,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 250",
+    "imgFilename": "large744c5df171d7285bd5f455bfc0bd57ef.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large744c5df171d7285bd5f455bfc0bd57ef.jpg",
+    "localFile": "end1 250.jpg",
+    "localPath": "/images/catalogo/end1 250.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 113,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 375",
+    "imgFilename": "largeff3596d3c4607285584d25e60e625975.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeff3596d3c4607285584d25e60e625975.jpg",
+    "localFile": "end1 375.jpg",
+    "localPath": "/images/catalogo/end1 375.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 114,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 500",
+    "imgFilename": "large117767a20cf25d2ab1225cdf2ed16c8c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large117767a20cf25d2ab1225cdf2ed16c8c.jpg",
+    "localFile": "end1 500.jpg",
+    "localPath": "/images/catalogo/end1 500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 115,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 670",
+    "imgFilename": "large38fd51f84f80e9e387e26126aff47aed.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large38fd51f84f80e9e387e26126aff47aed.jpg",
+    "localFile": "end1 670.jpg",
+    "localPath": "/images/catalogo/end1 670.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 116,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 750",
+    "imgFilename": "largecf476781b2a7f4042a6339c043ed09d9.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largecf476781b2a7f4042a6339c043ed09d9.jpg",
+    "localFile": "end1 750.jpg",
+    "localPath": "/images/catalogo/end1 750.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 117,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 1000",
+    "imgFilename": "large4f1d38f07cdaa4458666d6c60f54b1cb.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large4f1d38f07cdaa4458666d6c60f54b1cb.jpg",
+    "localFile": "end1 1000.jpg",
+    "localPath": "/images/catalogo/end1 1000.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 118,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 2000",
+    "imgFilename": "large2cf1e54b29b1f26b0e56628527b97fbf.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large2cf1e54b29b1f26b0e56628527b97fbf.jpg",
+    "localFile": "end1 2000.jpg",
+    "localPath": "/images/catalogo/end1 2000.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 119,
+    "nombre": "ENVASE OPS CUADRADO",
+    "referencia": "END1 1500",
+    "imgFilename": "largeaf4add60056f43f5ee04b9d57c238095.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeaf4add60056f43f5ee04b9d57c238095.jpg",
+    "localFile": "end1 1500.jpg",
+    "localPath": "/images/catalogo/end1 1500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 120,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "1103T",
+    "imgFilename": "large3783dbc7c79215beeae081d762c6a645.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3783dbc7c79215beeae081d762c6a645.jpg",
+    "localFile": "t1103.jpg",
+    "localPath": "/images/catalogo/t1103.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 123,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T1140",
+    "imgFilename": "largef11bbd86f83b26fafc6dc31e4f695cf2.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largef11bbd86f83b26fafc6dc31e4f695cf2.jpg",
+    "localFile": "t1140.jpg",
+    "localPath": "/images/catalogo/t1140.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 124,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T1250",
+    "imgFilename": "large38a577f7f86ef6bb9eb04f961bf11c6a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large38a577f7f86ef6bb9eb04f961bf11c6a.jpg",
+    "localFile": "t1250.jpg",
+    "localPath": "/images/catalogo/t1250.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 125,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T1280",
+    "imgFilename": "large24f53fe8c623119c6e15e384e480b9f9.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large24f53fe8c623119c6e15e384e480b9f9.jpg",
+    "localFile": "t1280.jpg",
+    "localPath": "/images/catalogo/t1280.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 126,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T2800",
+    "imgFilename": "largefcd29a5e7424e9fd11805421bbf2d7ee.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largefcd29a5e7424e9fd11805421bbf2d7ee.jpg",
+    "localFile": "t2800.jpg",
+    "localPath": "/images/catalogo/t2800.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 127,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T2935",
+    "imgFilename": "large09470f3891bd4cf84a84b23f0a0edcae.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large09470f3891bd4cf84a84b23f0a0edcae.jpg",
+    "localFile": "t2935.jpg",
+    "localPath": "/images/catalogo/t2935.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 128,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T5250",
+    "imgFilename": "largeae21f646806b079552b52f00d3d6ad24.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeae21f646806b079552b52f00d3d6ad24.jpg",
+    "localFile": "t5250.jpg",
+    "localPath": "/images/catalogo/t5250.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 129,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T5360",
+    "imgFilename": "large2ac29aced82359241140290822a222a5.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large2ac29aced82359241140290822a222a5.jpg",
+    "localFile": "t5360.jpg",
+    "localPath": "/images/catalogo/t5360.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 130,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-5475",
+    "imgFilename": "larged108ae6224f6f586db4e9da56dce1712.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged108ae6224f6f586db4e9da56dce1712.jpg",
+    "localFile": "t5475.jpg",
+    "localPath": "/images/catalogo/t5475.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 131,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-5580",
+    "imgFilename": "large291db75205ec41c94d16f7cf674d17a9.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large291db75205ec41c94d16f7cf674d17a9.jpg",
+    "localFile": "t5580.jpg",
+    "localPath": "/images/catalogo/t5580.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 132,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-5590",
+    "imgFilename": "large4ec1cda43737bdf62dd072a955073b8a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large4ec1cda43737bdf62dd072a955073b8a.jpg",
+    "localFile": "t5590.jpg",
+    "localPath": "/images/catalogo/t5590.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 133,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-5860",
+    "imgFilename": "largefca3b06944a3243f820886de66464947.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largefca3b06944a3243f820886de66464947.jpg",
+    "localFile": "t5860.jpg",
+    "localPath": "/images/catalogo/t5860.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 138,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-21900",
+    "imgFilename": "large3321992416feb66050268e38b026d06f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3321992416feb66050268e38b026d06f.jpg",
+    "localFile": "t21900.jpg",
+    "localPath": "/images/catalogo/t21900.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 139,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-51180",
+    "imgFilename": "largeab09236c70de9b100f5ed07725bd3023.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeab09236c70de9b100f5ed07725bd3023.jpg",
+    "localFile": "t5180.jpg",
+    "localPath": "/images/catalogo/t5180.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 140,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-51500",
+    "imgFilename": "large764ad2c37ef3bd153cbd9733592a9c15.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large764ad2c37ef3bd153cbd9733592a9c15.jpg",
+    "localFile": "t51500.jpg",
+    "localPath": "/images/catalogo/t51500.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 141,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-52200",
+    "imgFilename": "large6b5c2be451a0ac6cf71db1d08860cd79.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large6b5c2be451a0ac6cf71db1d08860cd79.jpg",
+    "localFile": "t52200.jpg",
+    "localPath": "/images/catalogo/t52200.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 142,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-52400",
+    "imgFilename": "largeca46e05ce0ff83b94534658106c91307.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeca46e05ce0ff83b94534658106c91307.jpg",
+    "localFile": "t52400.jpg",
+    "localPath": "/images/catalogo/t52400.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 143,
+    "nombre": "TAPAS ENVASES REDONDOS Y RECTANGULARES",
+    "referencia": "T-1135",
+    "imgFilename": "large23ff0941276e1055c6bdfa9aab3364f2.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large23ff0941276e1055c6bdfa9aab3364f2.jpg",
+    "localFile": "t1135.jpg",
+    "localPath": "/images/catalogo/t1135.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 145,
+    "nombre": "BOBINA DE PAPEL VEGETAL",
+    "referencia": "Rollo Vegetal 15",
+    "imgFilename": "large373717b1facd7daff45b0861bf248788.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large373717b1facd7daff45b0861bf248788.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 146,
+    "nombre": "BOBINA PAPEL VEGETAL",
+    "referencia": "Rollo Vegetal 8",
+    "imgFilename": "large08a9f7a79c1cf8e49ee77fc193e3f21c.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large08a9f7a79c1cf8e49ee77fc193e3f21c.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 147,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "11103-P",
+    "imgFilename": "largef52a54e061cb99dbda321ca442a53c8d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largef52a54e061cb99dbda321ca442a53c8d.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 148,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "Plumcake",
+    "imgFilename": "large785f2e75f6b0b54c1d64f1078e49bbb0.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large785f2e75f6b0b54c1d64f1078e49bbb0.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 149,
+    "nombre": "BOBINA FILM DOMÉSTICO",
+    "referencia": "Rollo PF",
+    "imgFilename": "largee8b232865fe16707401c1cb1831e0ad0.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee8b232865fe16707401c1cb1831e0ad0.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 150,
+    "nombre": "BOBINA FILM DOMÉSTICO",
+    "referencia": "Rollo Film",
+    "imgFilename": "largeb2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largeb2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 152,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "mini",
+    "imgFilename": "large83946d6cc58c55b81fd28f231a00f292.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large83946d6cc58c55b81fd28f231a00f292.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 153,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "1375-PH",
+    "imgFilename": "large144a54a68f05edf1af29240a518a7180.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large144a54a68f05edf1af29240a518a7180.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 154,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "cuadrado",
+    "imgFilename": "large9589a6c04555167540ede56ea74b978f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large9589a6c04555167540ede56ea74b978f.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 155,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "mini plumcake",
+    "imgFilename": "large82b9a490a054e0cffdd5ab33a99bf2e0.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large82b9a490a054e0cffdd5ab33a99bf2e0.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 156,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "Tarta",
+    "imgFilename": "larged7c3b39cde3f41cd470d336e5e51c231.jpg",
+    "imgUrl": "https://www.endal.es/gallary/larged7c3b39cde3f41cd470d336e5e51c231.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 157,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "11150-PH",
+    "imgFilename": "largefcaf4e359ebfc0b13d3da9bd42521c4d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largefcaf4e359ebfc0b13d3da9bd42521c4d.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 158,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "plum bandeja",
+    "imgFilename": "large858d09a44f93eff6c1539b74151e7640.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large858d09a44f93eff6c1539b74151e7640.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 159,
+    "nombre": "BOBINA ALUMINIO DOMÉSTICO",
+    "referencia": "8 metros",
+    "imgFilename": "large3a8221be5b5698aa5896a027c4a7c12a.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3a8221be5b5698aa5896a027c4a7c12a.jpg",
+    "localFile": "aluminio domestico.jpg",
+    "localPath": "/images/catalogo/aluminio domestico.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 160,
+    "nombre": "BOBINA ALUMINIO DOMÉSTICO",
+    "referencia": "16 metros",
+    "imgFilename": "large062cbc9baecba5fda1b0dce090d93501.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large062cbc9baecba5fda1b0dce090d93501.jpg",
+    "localFile": "aluminio domestico.jpg",
+    "localPath": "/images/catalogo/aluminio domestico.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 161,
+    "nombre": "BOBINA ALUMINIO DOMÉSTICO",
+    "referencia": "50 metros",
+    "imgFilename": "large5f1ac8b7aa26c75512c67474c575a27d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large5f1ac8b7aa26c75512c67474c575a27d.jpg",
+    "localFile": "aluminio domestico.jpg",
+    "localPath": "/images/catalogo/aluminio domestico.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 162,
+    "nombre": "BOBINA ALUMINIO DOMÉSTICO",
+    "referencia": "30 metros",
+    "imgFilename": "largee7fde61775d6472354ac83ae77c3a2fe.jpg",
+    "imgUrl": "https://www.endal.es/gallary/largee7fde61775d6472354ac83ae77c3a2fe.jpg",
+    "localFile": "aluminio domestico.jpg",
+    "localPath": "/images/catalogo/aluminio domestico.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 163,
+    "nombre": "BOBINA FILM INDUSTRIAL",
+    "referencia": "Film industrial 30",
+    "imgFilename": "large81c0c2318a9781914d08e3d68721c83d.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large81c0c2318a9781914d08e3d68721c83d.jpg",
+    "localFile": "film industrial.jpg",
+    "localPath": "/images/catalogo/film industrial.jpg",
+    "hasImage": true
+  },
+  {
+    "id": 167,
+    "nombre": "ENVASE POLIPROPILENO PP",
+    "referencia": "END PP 500",
+    "imgFilename": "large8c1da228d407e0c769a4674d9162be7c.png",
+    "imgUrl": "https://www.endal.es/gallary/large8c1da228d407e0c769a4674d9162be7c.png",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 168,
+    "nombre": "ENVASE POLIPROPILENO PP",
+    "referencia": "END PP 750",
+    "imgFilename": "largef7be32d7269e0b54076cdac2fe7b98e2.png",
+    "imgUrl": "https://www.endal.es/gallary/largef7be32d7269e0b54076cdac2fe7b98e2.png",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 169,
+    "nombre": "ENVASE POLIPROPILENO PP",
+    "referencia": "END PP 1000",
+    "imgFilename": "largea203f8306e25bbdbef8335e4df8408c2.png",
+    "imgUrl": "https://www.endal.es/gallary/largea203f8306e25bbdbef8335e4df8408c2.png",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 170,
+    "nombre": "ENVASE POLIPROPILENO PP",
+    "referencia": "END PP 1500",
+    "imgFilename": "large5124934581158e668da9d4193e5191f2.png",
+    "imgUrl": "https://www.endal.es/gallary/large5124934581158e668da9d4193e5191f2.png",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 172,
+    "nombre": "ENVASE DE PAPEL PARA HORNEAR",
+    "referencia": "11103-PH",
+    "imgFilename": "largea2fc36bd66e6d354e05c2d6267d2dcb9.JPG",
+    "imgUrl": "https://www.endal.es/gallary/largea2fc36bd66e6d354e05c2d6267d2dcb9.JPG",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  },
+  {
+    "id": 174,
+    "nombre": "ENVASE 4590 PH",
+    "referencia": "4590-ph",
+    "imgFilename": "large3f95dfdf51f17fe1053436cd8c5e018f.jpg",
+    "imgUrl": "https://www.endal.es/gallary/large3f95dfdf51f17fe1053436cd8c5e018f.jpg",
+    "localFile": null,
+    "localPath": null,
+    "hasImage": false
+  }
+]

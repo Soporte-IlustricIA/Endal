@@ -2,10 +2,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
-type NavKey = 'INICIO' | 'PRODUCTOS' | 'NOSOTROS' | 'CATÁLOGO' | 'DISTRIBUCIÓN'
+type NavKey = 'INICIO' | 'PRODUCTOS' | 'NOSOTROS' | 'CATÁLOGO'
 
 type Category   = { name: string; count: number; href: string }
-type FeaturedRow = { name: string; desc: string; ref: string; href: string }
+type FeaturedRow = { name: string; desc: string; ref: string; href: string; img: string }
 type PanelData  = {
   categories: Category[]
   featured:   FeaturedRow[]
@@ -17,19 +17,19 @@ type PanelData  = {
 const PANELS: Partial<Record<NavKey, PanelData>> = {
   PRODUCTOS: {
     categories: [
-      { name: 'Recipientes de aluminio',  count: 12, href: '/aluminio' },
-      { name: 'Film y bolsas de plástico', count: 8,  href: '/plastico' },
-      { name: 'Papel de aluminio',          count: 6,  href: '/papel' },
-      { name: 'Maquinaria',                count: 2,  href: '/maquinaria' },
+      { name: 'Envases de aluminio',      count: 108, href: '/productos' },
+      { name: 'Pastelería y bombonería',  count: 34,  href: '/productos' },
+      { name: 'Bobinas y film',           count: 8,   href: '/productos' },
+      { name: 'Maquinaria',               count: 2,   href: '/productos' },
     ],
     featured: [
-      { name: 'BANDEJAS DE ALUMINIO',  desc: 'PARA HORNO Y CONGELADOR',  ref: 'AL-BND-001', href: '#' },
-      { name: 'FILM ESTIRABLE',        desc: 'ALIMENTARIO Y DOMÉSTICO',   ref: 'PL-FLM-002', href: '#' },
-      { name: 'PAPEL DE HORNO',        desc: 'ANTIADHERENTE Y VEGANO',    ref: 'PP-HRN-003', href: '#' },
-      { name: 'CÁPSULAS DE ALUMINIO',  desc: 'PARA ESPRESSO Y BEBIDAS',   ref: 'AL-CAP-004', href: '#' },
+      { name: 'ENVASE REDONDO',        desc: 'PARA TAPA · HORNO Y CONGELADOR', ref: '21400', img: '/images/catalogo/21400.webp',         href: `/productos/${encodeURIComponent('21400')}` },
+      { name: 'BANDEJA RECTANGULAR',   desc: 'SIN TAPA · USO ALIMENTARIO',      ref: '4360',  img: '/images/catalogo/4360.webp',           href: `/productos/${encodeURIComponent('4360')}` },
+      { name: 'MOLDE DE PASTELERÍA',   desc: 'ALUMINIO · USO PROFESIONAL',      ref: '1025',  img: '/images/catalogo/1025.webp',           href: `/productos/${encodeURIComponent('1025')}` },
+      { name: 'ENVASE CON TAPA',       desc: 'RECTANGULAR · CATERING',          ref: '5475',  img: '/images/catalogo/5475.webp',           href: `/productos/${encodeURIComponent('5475')}` },
     ],
     ctaLabel: 'VER TODOS LOS PRODUCTOS',
-    ctaCount: 22,
+    ctaCount: 159,
     ctaHref: '/productos',
   },
 }
@@ -39,7 +39,6 @@ const NAV_ITEMS: { key: NavKey; label: string; href: string }[] = [
   { key: 'PRODUCTOS',    label: 'PRODUCTOS',    href: '/productos' },
   { key: 'NOSOTROS',     label: 'NOSOTROS',     href: '/nosotros'  },
   { key: 'CATÁLOGO',     label: 'CATÁLOGO',     href: '#'          },
-  { key: 'DISTRIBUCIÓN', label: 'DISTRIBUCIÓN', href: '#'          },
 ]
 
 export default function Navbar() {
@@ -117,6 +116,13 @@ export default function Navbar() {
   const panelData = renderKey ? PANELS[renderKey] : null
 
   return (
+    <>
+    {/* Fuera del header: así el velo queda por debajo de la barra y no la apaga */}
+    <div
+      className={`mega-backdrop${panelOpen ? ' open' : ''}`}
+      onMouseEnter={scheduleClose}
+      aria-hidden="true"
+    />
     <header
       className={`nav${(scrolled || !isHome) ? ' scrolled' : ''}`}
       onMouseLeave={scheduleClose}
@@ -189,49 +195,69 @@ export default function Navbar() {
         </a>
       </div>
 
-      {/* Mega panel — absolute child of fixed header, overflows below */}
+      {/* Mega panel — el marco recorta y el contenido baja desde arriba */}
       <div
         className={`mega-panel${panelOpen ? ' open' : ''}`}
         style={{ left: panelLeft }}
         onMouseEnter={cancelClose}
       >
-        {panelData && (
-          <div className={`mega-panel__content${contentVisible ? '' : ' fading'}`}>
-            <div className="mega-categories">
-              {panelData.categories.map(cat => (
-                <a key={cat.name} href={cat.href} className="mega-cat">
-                  <span>{cat.name}</span>
-                  {cat.count > 0 && <sup>{cat.count}</sup>}
-                </a>
-              ))}
-            </div>
+        <div className="mega-panel__sheet">
+          {panelData && (
+            <div className={`mega-panel__content${contentVisible ? '' : ' fading'}`}>
+              <div className="mega-categories">
+                {panelData.categories.map(cat => (
+                  <a key={cat.name} href={cat.href} className="mega-cat">
+                    <span className="mega-cat__label">
+                      <span className="mega-cat__bracket">[</span>
+                      {cat.name}
+                      <span className="mega-cat__bracket">]</span>
+                    </span>
+                    {cat.count > 0 && <sup>{cat.count}</sup>}
+                  </a>
+                ))}
+              </div>
 
-            {panelData.featured.length > 0 && (
-              <>
-                <div className="mega-sep">
-                  <span className="mega-sep__icon">□</span>
-                  <span className="mega-sep__label">PRODUCTOS DESTACADOS</span>
-                </div>
-                <div className="mega-rows">
-                  {panelData.featured.map(item => (
-                    <a key={item.name} href={item.href} className="mega-row">
-                      <div className="mega-row__thumb" />
-                      <span className="mega-row__name">{item.name}</span>
-                      <span className="mega-row__desc">{item.desc}</span>
-                      <span className="mega-row__ref">{item.ref}</span>
+              {panelData.featured.length > 0 && (
+                <>
+                  <div className="mega-sep">
+                    <svg className="mega-sep__icon" viewBox="0 0 16 14" fill="none" stroke="currentColor" strokeWidth="1.1" aria-hidden="true">
+                      <path d="M.6 3.1h5.2L7.2 4.8h8.2v8.1a.5.5 0 0 1-.5.5H1.1a.5.5 0 0 1-.5-.5V3.1Z" />
+                      <path d="M.6 3.1V1.6a.5.5 0 0 1 .5-.5h4.1l1.4 2" />
+                    </svg>
+                    <span className="mega-sep__label">PRODUCTOS DESTACADOS</span>
+                  </div>
+
+                  <div className="mega-sheet">
+                    <div className="mega-rows">
+                      {panelData.featured.map(item => (
+                        <a key={item.name} href={item.href} className="mega-row">
+                          <div className="mega-row__thumb">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={item.img} alt={item.name} />
+                          </div>
+                          <span className="mega-row__name">
+                            <span className="mega-cat__bracket">[</span>
+                            {item.name}
+                            <span className="mega-cat__bracket">]</span>
+                          </span>
+                          <span className="mega-row__desc">{item.desc}</span>
+                          <span className="mega-row__ref">REF. {item.ref}</span>
+                        </a>
+                      ))}
+                    </div>
+
+                    <a href={panelData.ctaHref} className="mega-cta">
+                      {panelData.ctaLabel}
+                      {panelData.ctaCount ? ` [${panelData.ctaCount}]` : ''}
                     </a>
-                  ))}
-                </div>
-              </>
-            )}
-
-            <a href={panelData.ctaHref} className="mega-cta">
-              {panelData.ctaLabel}
-              {panelData.ctaCount ? ` [${panelData.ctaCount}]` : ''}
-            </a>
-          </div>
-        )}
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </header>
+    </>
   )
 }

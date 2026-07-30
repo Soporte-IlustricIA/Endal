@@ -31,7 +31,8 @@ const CARDS = [
     title: 'Calidad',
     category: 'Seguridad Alimentaria & Certificaciones',
     year: '2024',
-    image: 'https://images.pexels.com/photos/7691249/pexels-photo-7691249.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Operaria revisando una bobina de aluminio en planta',
+    image: '/images/nosotros/calidad.webp',
     magnets: [
       { x: 5,  y: 30, s: 16 }, { x: 10, y: 42, s: 10 }, { x: 3, y: 52, s: 7 },
       { x: 80, y: 70, s: 14 }, { x: 85, y: 82, s: 9  }, { x: 78, y: 60, s: 6 },
@@ -42,7 +43,8 @@ const CARDS = [
     title: 'Innovación',
     category: 'Desarrollo de Producto & I+D',
     year: '2023',
-    image: 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Ingeniero controlando una línea de fabricación con tableta',
+    image: '/images/nosotros/innovacion.webp',
     magnets: [
       { x: 82, y: 55, s: 16 }, { x: 88, y: 68, s: 10 }, { x: 78, y: 72, s: 7 },
       { x: 85, y: 42, s: 6  }, { x: 90, y: 80, s: 8  },
@@ -53,7 +55,8 @@ const CARDS = [
     title: 'Proximidad',
     category: 'Fabricación & Distribución Directa',
     year: '2022',
-    image: 'https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Entrega directa de un envase de plástico con tapa',
+    image: '/images/nosotros/proximidad.webp',
     magnets: [
       { x: 4,  y: 24, s: 16 }, { x: 10, y: 36, s: 10 }, { x: 2, y: 44, s: 7 },
       { x: 78, y: 78, s: 14 }, { x: 84, y: 88, s: 8  },
@@ -64,7 +67,8 @@ const CARDS = [
     title: 'Sostenibilidad',
     category: 'Medio Ambiente & Reciclabilidad',
     year: '2021',
-    image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=800',
+    alt: 'Lámina de aluminio, material 100% reciclable',
+    image: '/images/nosotros/sostenibilidad.webp',
     magnets: [
       { x: 82, y: 26, s: 14 }, { x: 88, y: 38, s: 10 }, { x: 78, y: 44, s: 7 },
       { x: 84, y: 54, s: 5  }, { x: 90, y: 60, s: 8  },
@@ -225,7 +229,9 @@ function CaseCard({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={card.image}
-          alt={card.title}
+          alt={card.alt}
+          loading="lazy"
+          decoding="async"
           className="absolute h-full w-full object-cover"
         />
 

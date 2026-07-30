@@ -3,102 +3,249 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 
 interface Project {
   color: string
+  text: string
   name: string
   ref: string
   imgA: string
   imgB: string
+  /* La tira pinta las miniaturas a 93×48; servir la imagen completa ahí
+     costaba ~150 KB por miniatura. */
+  thumb: string
 }
 
+/* La tira alterna dos registros: producto envasado (qué fabricamos) y
+   planta, almacén y equipo (quiénes lo fabricamos). Ninguna de estas
+   fotos se repite en las secciones de abajo.
+   El color de fondo es un tono oscuro de la misma familia que la foto. */
 const PROJECTS: Record<string, Project> = {
-  halo: {
-    color: '#231F1D',
-    name: 'Halo Dental',
-    ref: 'REF · PCA · 0524',
-    imgA: 'https://a.storyblok.com/f/285561750510308/2000x2000/88bf31eac6/halo_thumb.jpg',
-    imgB: 'https://a.storyblok.com/f/285561750510308/1680x1680/f7c2f22b9b/halo_preview_grid.jpg',
+  aluminio: {
+    color: '#26201b',
+    text: '#ffffff',
+    name: 'Envases de aluminio',
+    ref: 'ENDAL · AL · 1991',
+    imgA: '/images/home/aluminio-moldes.webp',
+    imgB: '/images/home/aluminio-bandeja.webp',
+    thumb: '/images/home/aluminio-moldes-thumb.webp',
   },
-  cellart: {
-    color: '#0d0c0b',
-    name: 'CellArt',
-    ref: 'REF · STR · 0423',
-    imgA: 'https://a.storyblok.com/f/285561750510308/1920x1080/20d97ea675/cellart_09_elevated-process.jpg',
-    imgB: 'https://a.storyblok.com/f/285561750510308/3840x2160/1176805b4c/ref_cellart_02-museum-inspired-brand.jpg',
+  papel: {
+    color: '#2b2419',
+    text: '#ffffff',
+    name: 'Papel y film',
+    ref: 'ENDAL · PF · 1991',
+    imgA: '/images/home/papel-horno.webp',
+    imgB: '/images/home/papel-galletas.webp',
+    thumb: '/images/home/papel-horno-thumb.webp',
   },
-  mission: {
-    color: '#1a3fbe',
-    name: 'Mission 2035',
-    ref: 'REF · PHM · 0524',
-    imgA: 'https://a.storyblok.com/f/285561750510308/1920x1080/f62a0a6393/ref_mission2035_04_thumb.jpg',
-    imgB: 'https://a.storyblok.com/f/285561750510308/2880x1620/7df61ee83c/ref_mission2035_01-3d-global.jpg',
+  plastico: {
+    color: '#25201c',
+    text: '#ffffff',
+    name: 'Envases de plástico',
+    ref: 'ENDAL · PL · 1991',
+    imgA: '/images/home/plastico-tarrinas.webp',
+    imgB: '/images/home/plastico-bandejas.webp',
+    thumb: '/images/home/plastico-tarrinas-thumb.webp',
+  },
+  catering: {
+    color: '#2a201a',
+    text: '#ffffff',
+    name: 'Listo para servir',
+    ref: 'ENDAL · CT · 1991',
+    imgA: '/images/home/catering-bandeja.webp',
+    imgB: '/images/home/catering-asado.webp',
+    thumb: '/images/home/catering-bandeja-thumb.webp',
+  },
+  planta: {
+    color: '#1f2226',
+    text: '#ffffff',
+    name: 'Fabricación propia',
+    ref: 'ENDAL · FB · 1991',
+    imgA: '/images/home/planta-linea.webp',
+    imgB: '/images/home/planta-nave.webp',
+    thumb: '/images/home/planta-linea-thumb.webp',
+  },
+  almacen: {
+    color: '#23201c',
+    text: '#ffffff',
+    name: 'Almacén y logística',
+    ref: 'ENDAL · LG · 1991',
+    imgA: '/images/home/almacen-cajas.webp',
+    imgB: '/images/home/almacen-pasillo.webp',
+    thumb: '/images/home/almacen-cajas-thumb.webp',
   },
 }
 
-const PROJECT_ORDER = ['halo', 'cellart', 'mission']
+/* Producto y empresa alternados, para que la tira no encadene dos
+   diapositivas del mismo registro. */
+const ORDER = ['aluminio', 'catering', 'papel', 'planta', 'plastico', 'almacen']
+const N = ORDER.length
 
-const FADE_MS = 350
+/* La referencia encadena dos fases: primero corren las miniaturas,
+   y sólo cuando terminan cambian media, fondo y textos. */
+const SLIDE_MS = 600   // recorrido de la tira de miniaturas
+const SWAP_MS  = 550   // entrada/salida de media y textos
+const AUTO_MS  = 5000
+
+const WINDOW = 3 // miniaturas visibles a cada lado del marcador
+const idAt = (i: number) => ORDER[((i % N) + N) % N]
 
 export default function HeroCarousel() {
-  const [activeId, setActiveId] = useState('mission')
-  const [fading,   setFading]   = useState(false)
-  const fadingRef  = useRef(false)
+  // Índice monotónico: nunca reinicia, así la tira corre siempre en la
+  // dirección pedida y no da saltos al dar la vuelta.
+  const [pos, setPos] = useState(0)
+  const [shown, setShown] = useState(0)
+  const [prev, setPrev] = useState<number | null>(null)
+  const busy = useRef(false)
+  const timers = useRef<ReturnType<typeof setTimeout>[]>([])
 
-  const activate = useCallback((id: string) => {
-    if (fadingRef.current) return
-    fadingRef.current = true
-    setFading(true)
-    setTimeout(() => {
-      setActiveId(id)
-      setFading(false)
-      fadingRef.current = false
-    }, FADE_MS)
+  // `go` se crea una sola vez, así que lee los valores vigentes por ref.
+  const shownRef = useRef(shown)
+  const posRef = useRef(pos)
+  useEffect(() => { shownRef.current = shown }, [shown])
+  useEffect(() => { posRef.current = pos }, [pos])
+
+  const go = useCallback((target: number) => {
+    if (busy.current || target === posRef.current) return
+    busy.current = true
+    setPos(target)
+    timers.current.push(
+      setTimeout(() => {
+        setPrev(shownRef.current)
+        setShown(target)
+        timers.current.push(
+          setTimeout(() => {
+            setPrev(null)
+            busy.current = false
+          }, SWAP_MS)
+        )
+      }, SLIDE_MS)
+    )
   }, [])
 
   useEffect(() => {
-    let idx = PROJECT_ORDER.indexOf('mission')
-    const timer = setInterval(() => {
-      idx = (idx + 1) % PROJECT_ORDER.length
-      activate(PROJECT_ORDER[idx])
-    }, 5000)
-    return () => clearInterval(timer)
-  }, [activate])
+    const t = setInterval(() => { if (!busy.current) go(posRef.current + 1) }, AUTO_MS)
+    return () => clearInterval(t)
+  }, [go])
 
-  const p = PROJECTS[activeId]
+  useEffect(() => () => { timers.current.forEach(clearTimeout) }, [])
+
+  const p = PROJECTS[idAt(shown)]
+  const pOut = prev !== null ? PROJECTS[idAt(prev)] : null
+
+  const thumbs: number[] = []
+  for (let i = pos - WINDOW; i <= pos + WINDOW; i++) thumbs.push(i)
 
   return (
     <section
       className="hero-carousel"
-      style={{ '--project-color': p.color, backgroundColor: p.color } as React.CSSProperties}
+      style={{
+        '--project-color': p.color,
+        '--project-text': p.text,
+        backgroundColor: p.color,
+        color: p.text,
+      } as React.CSSProperties}
     >
       <div className="hero-carousel__inner">
-        <div className="hero-carousel__media" style={{ opacity: fading ? 0 : 1 }}>
-          <div className="hero-carousel__media-item">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={p.imgA} alt={p.name} />
+
+        {/* ── Media: la nueva entra por encima de la saliente ── */}
+        <div className="hero-carousel__media">
+          <div className="hero-carousel__stage">
+          {pOut && (
+            <div className="hero-carousel__slide" key={`out-${prev}`}>
+              <div className="hero-carousel__media-item">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={pOut.imgA} alt="" />
+              </div>
+              <div className="hero-carousel__media-item">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={pOut.imgB} alt="" />
+              </div>
+            </div>
+          )}
+          <div className="hero-carousel__slide hero-carousel__slide--in" key={`in-${shown}`}>
+            <div className="hero-carousel__media-item">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={p.imgA} alt={p.name} width={1000} height={1200} decoding="async" />
+            </div>
+            <div className="hero-carousel__media-item">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={p.imgB} alt={p.name} width={1000} height={1200} decoding="async" />
+            </div>
           </div>
-          <div className="hero-carousel__media-item">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={p.imgB} alt={p.name} />
           </div>
         </div>
 
+        {/* ── Barra inferior ── */}
         <div className="hero-carousel__bottom">
-          <span className="hero-carousel__project-name" style={{ opacity: fading ? 0 : 1 }}>{p.name}</span>
+          <p className="hero-carousel__project-name">
+            <span className="hc-swap">
+              {pOut && <span className="hc-swap__out" key={`n-out-${prev}`}>{pOut.name}</span>}
+              <span className="hc-swap__in" key={`n-in-${shown}`}>{p.name}</span>
+            </span>
+          </p>
 
           <div className="hero-carousel__thumbs">
-            {PROJECT_ORDER.map(id => (
-              <button
-                key={id}
-                className={`hero-carousel__thumb${activeId === id ? ' active' : ''}`}
-                onClick={() => activate(id)}
-                aria-label={PROJECTS[id].name}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={PROJECTS[id].imgA} alt={PROJECTS[id].name} />
-              </button>
-            ))}
+            <button
+              type="button"
+              className="hero-carousel__arrow hero-carousel__arrow--prev"
+              onClick={() => go(pos - 1)}
+              aria-label="Proyecto anterior"
+            >
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+                <path d="M10 3 5 8l5 5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            <div className="hero-carousel__strip">
+              <ul className="hero-carousel__track">
+                {thumbs.map(i => (
+                  <li
+                    key={i}
+                    className="hero-carousel__thumb"
+                    style={{ transform: `translate3d(calc(${i - pos} * var(--thumb-step)), 0, 0)` }}
+                  >
+                    <button
+                      type="button"
+                      onClick={() => go(i)}
+                      tabIndex={i === pos ? 0 : -1}
+                      aria-label={PROJECTS[idAt(i)].name}
+                      aria-current={i === pos}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={PROJECTS[idAt(i)].thumb}
+                        alt=""
+                        width={220}
+                        height={132}
+                        decoding="async"
+                      />
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              <div className="hero-carousel__strip-fade" aria-hidden="true" />
+              <div className="hero-carousel__marker" aria-hidden="true">
+                <span /><span /><span /><span />
+              </div>
+            </div>
+
+            <button
+              type="button"
+              className="hero-carousel__arrow hero-carousel__arrow--next"
+              onClick={() => go(pos + 1)}
+              aria-label="Proyecto siguiente"
+            >
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true">
+                <path d="m6 3 5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
           </div>
 
-          <span className="hero-carousel__ref" style={{ opacity: fading ? 0 : 1 }}>{p.ref}</span>
+          <p className="hero-carousel__ref">
+            <span className="hc-swap">
+              {pOut && <span className="hc-swap__out" key={`r-out-${prev}`}>{pOut.ref}</span>}
+              <span className="hc-swap__in" key={`r-in-${shown}`}>{p.ref}</span>
+            </span>
+          </p>
         </div>
       </div>
     </section>

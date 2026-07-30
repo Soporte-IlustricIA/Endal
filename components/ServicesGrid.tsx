@@ -21,29 +21,45 @@ export default function ServicesGrid() {
             <a href="/aluminio" className="sg-cell" data-cursor="Ver Aluminio">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://a.storyblok.com/f/285561750510308/2000x2000/48f73d339e/ref_mint_thumbnail-tuile.jpg"
-                alt="Envases de aluminio"
+                src="/bandeja-lasana.webp"
+                alt="Bandeja de aluminio con lasaña recién horneada"
+                loading="lazy"
+                decoding="async"
+                width={700}
+                height={700}
               />
             </a>
             <a href="/plastico" className="sg-cell" data-cursor="Ver Plástico">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://a.storyblok.com/f/285561750510308/2000x2000/4c12bcd989/hiloapp_thumb.jpg"
-                alt="Envases de plástico"
+                src="/images/home/plastico-envase.webp"
+                alt="Envase de plástico transparente con ensalada preparada"
+                loading="lazy"
+                decoding="async"
+                width={700}
+                height={700}
               />
             </a>
             <a href="/papel" className="sg-cell" data-cursor="Ver Papel">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://ref.digital/cdn-cgi/image/g=0.50x0.41,w=800,h=800,f=webp,q=95,fit=crop/https://a.storyblok.com/f/285561750510308/1680x1680/f7c2f22b9b/halo_preview_grid.jpg"
-                alt="Envases de papel"
+                src="/papel-vegetal-1.webp"
+                alt="Bobinas de papel vegetal en la línea de producción"
+                loading="lazy"
+                decoding="async"
+                width={700}
+                height={700}
               />
             </a>
             <a href="/maquinaria" className="sg-cell" data-cursor="Ver Maquinaria">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://a.storyblok.com/f/285561750510308/2000x2000/4c93a6e157/ref_fromeo_thumbnail-tuile.jpg"
-                alt="Maquinaria ENDAL"
+                src="/papel-vegetal-2.webp"
+                alt="Máquina envasadora de bobinas en planta"
+                loading="lazy"
+                decoding="async"
+                width={700}
+                height={700}
               />
             </a>
           </div>

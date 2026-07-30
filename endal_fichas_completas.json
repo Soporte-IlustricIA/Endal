@@ -1,0 +1,2387 @@
+[
+  {
+    "id": 1,
+    "ref": "2800",
+    "categoria": "Envase Redondo para Tapa",
+    "atributos": {
+      "unidades/caja": "1200",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "187",
+      "interior(mm)": "168",
+      "base(mm)": "142",
+      "altura(mm)": "43",
+      "capacidad(ml)": "800"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 2800 para tapa. Capacidad de 800 ml, diámetro exterior 187 mm y altura 43 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 2,
+    "ref": "2935",
+    "categoria": "Envase Redondo para Tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.082",
+      "exterior(mm)": "203",
+      "interior(mm)": "190",
+      "base(mm)": "173",
+      "altura(mm)": "38",
+      "capacidad(ml)": "935"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 2935 para tapa. Capacidad de 935 ml, diámetro exterior 203 mm y altura 38 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 3,
+    "ref": "21400",
+    "categoria": "Envase Redondo para Tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.082",
+      "exterior(mm)": "203",
+      "interior(mm)": "190",
+      "base(mm)": "170",
+      "altura(mm)": "57",
+      "capacidad(ml)": "1400"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 21400 para tapa. Capacidad de 1400 ml, diámetro exterior 203 mm y altura 57 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 4,
+    "ref": "21425",
+    "categoria": "Sin categoría",
+    "atributos": {
+      "unidades/caja": "700",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "233",
+      "interior(mm)": "215",
+      "base(mm)": "198",
+      "altura(mm)": "43",
+      "capacidad(ml)": "1425"
+    },
+    "descripcion": "Envase de aluminio ref. 21425. Capacidad 1425 ml. Medidas exteriores 233 mm mm. Altura 43 mm. Caja de 700 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 5,
+    "ref": "21900",
+    "categoria": "Envase Redondo para Tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "217",
+      "interior(mm)": "196",
+      "base(mm)": "170",
+      "altura(mm)": "70",
+      "capacidad(ml)": "1900"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 21900 para tapa. Capacidad de 1900 ml, diámetro exterior 217 mm y altura 70 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 6,
+    "ref": "4280",
+    "categoria": "Sin categoría",
+    "atributos": {
+      "unidades/caja": "2200",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "160x110",
+      "interior(mm)": "150x100",
+      "base(mm)": "138x88",
+      "altura(mm)": "25",
+      "capacidad(ml)": "280"
+    },
+    "descripcion": "Envase de aluminio ref. 4280. Capacidad 280 ml. Medidas exteriores 160x110 mm mm. Altura 25 mm. Caja de 2200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 7,
+    "ref": "4360",
+    "categoria": "Sin categoría",
+    "atributos": {
+      "unidades/caja": "2200",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "156x116",
+      "interior(mm)": "140x100",
+      "base(mm)": "122x80",
+      "altura(mm)": "35",
+      "capacidad(ml)": "360"
+    },
+    "descripcion": "Envase de aluminio ref. 4360. Capacidad 360 ml. Medidas exteriores 156x116 mm mm. Altura 35 mm. Caja de 2200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 8,
+    "ref": "44965",
+    "categoria": "Sin categoría",
+    "atributos": {
+      "unidades/caja": "120",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "405x330",
+      "interior(mm)": "372x294",
+      "base(mm)": "347x285",
+      "altura(mm)": "50",
+      "capacidad(ml)": "4965"
+    },
+    "descripcion": "Envase de aluminio ref. 44965. Capacidad 4965 ml. Medidas exteriores 405x330 mm mm. Altura 50 mm. Caja de 120 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 9,
+    "ref": "4425",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "228x128",
+      "interior(mm)": "212x115",
+      "base(mm)": "182x82",
+      "altura(mm)": "30",
+      "capacidad(ml)": "425"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 4425 sin tapa. Capacidad 425 ml, medidas exteriores 228x128 mm mm y altura 30 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 10,
+    "ref": "4465",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "130x130",
+      "interior(mm)": "118x118",
+      "base(mm)": "95x95",
+      "altura(mm)": "35",
+      "capacidad(ml)": "365"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 4465 sin tapa. Capacidad 365 ml, medidas exteriores 130x130 mm mm y altura 35 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 11,
+    "ref": "4470",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "185x120",
+      "interior(mm)": "170x102",
+      "base(mm)": "158x90",
+      "altura(mm)": "32",
+      "capacidad(ml)": "470"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 4470 sin tapa. Capacidad 470 ml, medidas exteriores 185x120 mm mm y altura 32 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 12,
+    "ref": "4590",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "187x137",
+      "interior(mm)": "175x125",
+      "base(mm)": "158x109",
+      "altura(mm)": "33",
+      "capacidad(ml)": "590"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 4590 sin tapa. Capacidad 590 ml, medidas exteriores 187x137 mm mm y altura 33 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 13,
+    "ref": "4750",
+    "categoria": "Sin categoría",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "205x92",
+      "interior(mm)": "190x80",
+      "base(mm)": "173x60",
+      "altura(mm)": "50",
+      "capacidad(ml)": "750"
+    },
+    "descripcion": "Envase de aluminio ref. 4750. Capacidad 750 ml. Medidas exteriores 205x92 mm mm. Altura 50 mm. Caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 14,
+    "ref": "4797",
+    "categoria": "Sin categoría",
+    "atributos": {
+      "unidades/caja": "800",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "250x130",
+      "interior(mm)": "235x116",
+      "base(mm)": "220x100",
+      "altura(mm)": "35",
+      "capacidad(ml)": "797"
+    },
+    "descripcion": "Envase de aluminio ref. 4797. Capacidad 797 ml. Medidas exteriores 250x130 mm mm. Altura 35 mm. Caja de 800 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 15,
+    "ref": "4835",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "226x175",
+      "interior(mm)": "207x158",
+      "base(mm)": "196x145",
+      "altura(mm)": "27",
+      "capacidad(ml)": "835"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 4835 sin tapa. Capacidad 835 ml, medidas exteriores 226x175 mm mm y altura 27 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 16,
+    "ref": "4860",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "226x175",
+      "interior(mm)": "207x157",
+      "base(mm)": "196x145",
+      "altura(mm)": "38",
+      "capacidad(ml)": "1000"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 4860 sin tapa. Capacidad 1000 ml, medidas exteriores 226x175 mm mm y altura 38 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 17,
+    "ref": "41500",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "283x186",
+      "interior(mm)": "265x165",
+      "base(mm)": "245x150",
+      "altura(mm)": "40",
+      "capacidad(ml)": "1500"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 41500 sin tapa. Capacidad 1500 ml, medidas exteriores 283x186 mm mm y altura 40 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 18,
+    "ref": "42200",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.215",
+      "exterior(mm)": "315x212",
+      "interior(mm)": "290x189",
+      "base(mm)": "280x175",
+      "altura(mm)": "44",
+      "capacidad(ml)": "2200"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 42200 sin tapa. Capacidad 2200 ml, medidas exteriores 315x212 mm mm y altura 44 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 19,
+    "ref": "42400",
+    "categoria": "Envases Rectangular sin tapa",
+    "atributos": {
+      "unidades/caja": "280",
+      "volumen(cc)": "0.215",
+      "exterior(mm)": "328x264",
+      "interior(mm)": "294x233",
+      "base(mm)": "280x215",
+      "altura(mm)": "38",
+      "capacidad(ml)": "2400"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 42400 sin tapa. Capacidad 2400 ml, medidas exteriores 328x264 mm mm y altura 38 mm. Perfecta para preparación y presentación de alimentos. Alta resistencia al calor y al frío. Caja de 280 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 20,
+    "ref": "5250",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "128x100",
+      "interior(mm)": "111x85",
+      "base(mm)": "94x68",
+      "altura(mm)": "32",
+      "capacidad(ml)": "250"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5250 para tapa. Capacidad 250 ml, medidas exteriores 128x100 mm mm y altura 32 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 21,
+    "ref": "5360",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "156x116",
+      "interior(mm)": "140x100",
+      "base(mm)": "120x80",
+      "altura(mm)": "35",
+      "capacidad(ml)": "360"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5360 para tapa. Capacidad 360 ml, medidas exteriores 156x116 mm mm y altura 35 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 22,
+    "ref": "Porta Rollo Film",
+    "categoria": "Portarrollo",
+    "atributos": {
+      "unidades/caja": "1",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de aluminio ref. Porta Rollo Film. Capacidad 0 ml. Altura 0 mm. Caja de 1 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 23,
+    "ref": "Porta Rollo Aluminio",
+    "categoria": "Portarrollo",
+    "atributos": {
+      "unidades/caja": "1",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de aluminio ref. Porta Rollo Aluminio. Capacidad 0 ml. Altura 0 mm. Caja de 1 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 24,
+    "ref": "M21400",
+    "categoria": "Máquinas",
+    "atributos": {
+      "unidades/caja": "1",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Máquina envasadora de aluminio ref. M21400. Diseñada para el sellado y envasado industrial de bandejas de aluminio. Alta productividad y fiabilidad. Fabricación 100% española."
+  },
+  {
+    "id": 25,
+    "ref": "M42600",
+    "categoria": "Máquinas",
+    "atributos": {
+      "unidades/caja": "1",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Máquina envasadora de aluminio ref. M42600. Diseñada para el sellado y envasado industrial de bandejas de aluminio. Alta productividad y fiabilidad. Fabricación 100% española."
+  },
+  {
+    "id": 26,
+    "ref": "5475",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "1200",
+      "volumen(cc)": "0.7",
+      "exterior(mm)": "146x121",
+      "interior(mm)": "130x102",
+      "base(mm)": "107x80",
+      "altura(mm)": "40",
+      "capacidad(ml)": "475"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5475 para tapa. Capacidad 475 ml, medidas exteriores 146x121 mm mm y altura 40 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 1200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 27,
+    "ref": "5580",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "185x135",
+      "interior(mm)": "170x120",
+      "base(mm)": "151x101",
+      "altura(mm)": "30",
+      "capacidad(ml)": "580"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5580 para tapa. Capacidad 580 ml, medidas exteriores 185x135 mm mm y altura 30 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 28,
+    "ref": "5590",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.099",
+      "exterior(mm)": "191x141",
+      "interior(mm)": "175x125",
+      "base(mm)": "157x107",
+      "altura(mm)": "33",
+      "capacidad(ml)": "650"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5590 para tapa. Capacidad 650 ml, medidas exteriores 191x141 mm mm y altura 33 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 29,
+    "ref": "5860",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "230x175",
+      "interior(mm)": "213x157",
+      "base(mm)": "196x141",
+      "altura(mm)": "34",
+      "capacidad(ml)": "1000"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5860 para tapa. Capacidad 1000 ml, medidas exteriores 230x175 mm mm y altura 34 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 30,
+    "ref": "5890",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "800",
+      "volumen(cc)": "0.099",
+      "exterior(mm)": "225x155",
+      "interior(mm)": "200x135",
+      "base(mm)": "175x115",
+      "altura(mm)": "36",
+      "capacidad(ml)": "890"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 5890 para tapa. Capacidad 890 ml, medidas exteriores 225x155 mm mm y altura 36 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 800 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 31,
+    "ref": "51180",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "240x188",
+      "interior(mm)": "220x168",
+      "base(mm)": "200x148",
+      "altura(mm)": "35",
+      "capacidad(ml)": "1180"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 51180 para tapa. Capacidad 1180 ml, medidas exteriores 240x188 mm mm y altura 35 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 32,
+    "ref": "51500",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "280x180",
+      "interior(mm)": "258x158",
+      "base(mm)": "240x147",
+      "altura(mm)": "37",
+      "capacidad(ml)": "1500"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 51500 para tapa. Capacidad 1500 ml, medidas exteriores 280x180 mm mm y altura 37 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 33,
+    "ref": "52200",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.21",
+      "exterior(mm)": "315x210",
+      "interior(mm)": "290x189",
+      "base(mm)": "280x175",
+      "altura(mm)": "46",
+      "capacidad(ml)": "2200"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 52200 para tapa. Capacidad 2200 ml, medidas exteriores 315x210 mm mm y altura 46 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 34,
+    "ref": "52400",
+    "categoria": "Envase Rectangular para Tapa",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.21",
+      "exterior(mm)": "325x250",
+      "interior(mm)": "298x238",
+      "base(mm)": "280x223",
+      "altura(mm)": "38",
+      "capacidad(ml)": "2400"
+    },
+    "descripcion": "Bandeja rectangular de aluminio ref. 52400 para tapa. Capacidad 2400 ml, medidas exteriores 325x250 mm mm y altura 38 mm. Diseñada para sellado con tapa de cartón o PVC. Ideal para comidas preparadas y catering. Caja de 400 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 35,
+    "ref": "1205",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "2500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "140",
+      "interior(mm)": "125",
+      "base(mm)": "117",
+      "altura(mm)": "14",
+      "capacidad(ml)": "205"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1205 para tapa. Capacidad de 205 ml, diámetro exterior 140 mm y altura 14 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 2500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 36,
+    "ref": "1230",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "2600",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "150",
+      "interior(mm)": "140",
+      "base(mm)": "133",
+      "altura(mm)": "15",
+      "capacidad(ml)": "230"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1230 para tapa. Capacidad de 230 ml, diámetro exterior 150 mm y altura 15 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 2600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 37,
+    "ref": "1240",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "200",
+      "interior(mm)": "190",
+      "base(mm)": "175",
+      "altura(mm)": "15",
+      "capacidad(ml)": "240"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1240 para tapa. Capacidad de 240 ml, diámetro exterior 200 mm y altura 15 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 38,
+    "ref": "1250",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "114",
+      "interior(mm)": "99",
+      "base(mm)": "58",
+      "altura(mm)": "50",
+      "capacidad(ml)": "250"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1250 para tapa. Capacidad de 250 ml, diámetro exterior 114 mm y altura 50 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 39,
+    "ref": "1280",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "130",
+      "interior(mm)": "118",
+      "base(mm)": "100",
+      "altura(mm)": "32",
+      "capacidad(ml)": "280"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1280 para tapa. Capacidad de 280 ml, diámetro exterior 130 mm y altura 32 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 40,
+    "ref": "1375",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "1400",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "205",
+      "interior(mm)": "184",
+      "base(mm)": "145",
+      "altura(mm)": "23",
+      "capacidad(ml)": "375"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1375 para tapa. Capacidad de 375 ml, diámetro exterior 205 mm y altura 23 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1400 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 41,
+    "ref": "1790",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "250",
+      "interior(mm)": "240",
+      "base(mm)": "220",
+      "altura(mm)": "15",
+      "capacidad(ml)": "790"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1790 para tapa. Capacidad de 790 ml, diámetro exterior 250 mm y altura 15 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 42,
+    "ref": "1900",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "240",
+      "interior(mm)": "224",
+      "base(mm)": "210",
+      "altura(mm)": "25",
+      "capacidad(ml)": "900"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1900 para tapa. Capacidad de 900 ml, diámetro exterior 240 mm y altura 25 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 43,
+    "ref": "1935",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "800",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "203",
+      "interior(mm)": "190",
+      "base(mm)": "173",
+      "altura(mm)": "38",
+      "capacidad(ml)": "935"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1935 para tapa. Capacidad de 935 ml, diámetro exterior 203 mm y altura 38 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 800 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 44,
+    "ref": "1975",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.215",
+      "exterior(mm)": "275",
+      "interior(mm)": "260",
+      "base(mm)": "250",
+      "altura(mm)": "15",
+      "capacidad(ml)": "975"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1975 para tapa. Capacidad de 975 ml, diámetro exterior 275 mm y altura 15 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 45,
+    "ref": "11100",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "800",
+      "volumen(cc)": "0.215",
+      "exterior(mm)": "295",
+      "interior(mm)": "280",
+      "base(mm)": "270",
+      "altura(mm)": "17",
+      "capacidad(ml)": "1100"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 11100 para tapa. Capacidad de 1100 ml, diámetro exterior 295 mm y altura 17 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 800 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 46,
+    "ref": "11103",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.215",
+      "exterior(mm)": "330",
+      "interior(mm)": "314",
+      "base(mm)": "307",
+      "altura(mm)": "15",
+      "capacidad(ml)": "1103"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 11103 para tapa. Capacidad de 1103 ml, diámetro exterior 330 mm y altura 15 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 400 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 47,
+    "ref": "11150",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "275",
+      "interior(mm)": "263",
+      "base(mm)": "250",
+      "altura(mm)": "25",
+      "capacidad(ml)": "1150"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 11150 para tapa. Capacidad de 1150 ml, diámetro exterior 275 mm y altura 25 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 48,
+    "ref": "1470",
+    "categoria": "Envase Redondo sin Tapa",
+    "atributos": {
+      "unidades/caja": "800",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "220",
+      "interior(mm)": "208",
+      "base(mm)": "203",
+      "altura(mm)": "15",
+      "capacidad(ml)": "470"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1470 para tapa. Capacidad de 470 ml, diámetro exterior 220 mm y altura 15 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 800 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 49,
+    "ref": "41230V",
+    "categoria": "Ovaladas",
+    "atributos": {
+      "unidades/caja": "350",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "330x210",
+      "interior(mm)": "325x203",
+      "base(mm)": "308x195",
+      "altura(mm)": "33",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. 41230V. Capacidad 0 ml, medidas exteriores 330x210 mm mm. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 350 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 50,
+    "ref": "750870",
+    "categoria": "Ovaladas",
+    "atributos": {
+      "unidades/caja": "100",
+      "volumen(cc)": "0.098",
+      "exterior(mm)": "357x243",
+      "interior(mm)": "327x225",
+      "base(mm)": "257x156",
+      "altura(mm)": "21",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. 750870. Capacidad 0 ml, medidas exteriores 357x243 mm mm. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 100 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 51,
+    "ref": "751650",
+    "categoria": "Ovaladas",
+    "atributos": {
+      "unidades/caja": "100",
+      "volumen(cc)": "0.98",
+      "exterior(mm)": "430x286",
+      "interior(mm)": "401x261",
+      "base(mm)": "325x185",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. 751650. Capacidad 0 ml, medidas exteriores 430x286 mm mm. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 100 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 52,
+    "ref": "752151",
+    "categoria": "Ovaladas",
+    "atributos": {
+      "unidades/caja": "100",
+      "volumen(cc)": "0.098",
+      "exterior(mm)": "548x359",
+      "interior(mm)": "520x336",
+      "base(mm)": "426x242",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. 752151. Capacidad 0 ml, medidas exteriores 548x359 mm mm. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 100 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 53,
+    "ref": "CONCHA",
+    "categoria": "Ovaladas",
+    "atributos": {
+      "unidades/caja": "2500",
+      "volumen(cc)": "0.01",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. CONCHA. Capacidad 0 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 2500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 54,
+    "ref": "41900",
+    "categoria": "Envases Ovalados para tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "250x200",
+      "interior(mm)": "230x178",
+      "base(mm)": "190x130",
+      "altura(mm)": "57",
+      "capacidad(ml)": "1900"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. 41900 para tapa. Capacidad 1900 ml, medidas exteriores 250x200 mm mm. Especialmente indicado para pollo asado, cochinillo y otras piezas de carne. Compatible con tapas termosellables. Caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 55,
+    "ref": "42600",
+    "categoria": "Envases Ovalados para tapa",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "250x200",
+      "interior(mm)": "230x178",
+      "base(mm)": "190x130",
+      "altura(mm)": "100",
+      "capacidad(ml)": "2600"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. 42600 para tapa. Capacidad 2600 ml, medidas exteriores 250x200 mm mm. Especialmente indicado para pollo asado, cochinillo y otras piezas de carne. Compatible con tapas termosellables. Caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 56,
+    "ref": "53114",
+    "categoria": "Bañeras",
+    "atributos": {
+      "unidades/caja": "50",
+      "volumen(cc)": "0.997",
+      "exterior(mm)": "525x325",
+      "interior(mm)": "495x256",
+      "base(mm)": "455x256",
+      "altura(mm)": "67",
+      "capacidad(ml)": "8850"
+    },
+    "descripcion": "Bañera de aluminio ref. 53114. Capacidad 8850 ml, medidas exteriores 525x325 mm mm y altura 67 mm. Formato amplio para grandes producciones en hostelería y colectividades. Alta resistencia estructural. Caja de 50 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 57,
+    "ref": "53535",
+    "categoria": "Bañeras",
+    "atributos": {
+      "unidades/caja": "50",
+      "volumen(cc)": "0.997",
+      "exterior(mm)": "525x325",
+      "interior(mm)": "495x295",
+      "base(mm)": "473x273",
+      "altura(mm)": "39",
+      "capacidad(ml)": "5350"
+    },
+    "descripcion": "Bañera de aluminio ref. 53535. Capacidad 5350 ml, medidas exteriores 525x325 mm mm y altura 39 mm. Formato amplio para grandes producciones en hostelería y colectividades. Alta resistencia estructural. Caja de 50 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 58,
+    "ref": "53680",
+    "categoria": "Bañeras",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.997",
+      "exterior(mm)": "525x325",
+      "interior(mm)": "495x295",
+      "base(mm)": "465x265",
+      "altura(mm)": "52",
+      "capacidad(ml)": "6800"
+    },
+    "descripcion": "Bañera de aluminio ref. 53680. Capacidad 6800 ml, medidas exteriores 525x325 mm mm y altura 52 mm. Formato amplio para grandes producciones en hostelería y colectividades. Alta resistencia estructural. Caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 59,
+    "ref": "53885",
+    "categoria": "Bañeras",
+    "atributos": {
+      "unidades/caja": "50",
+      "volumen(cc)": "0.997",
+      "exterior(mm)": "525x325",
+      "interior(mm)": "495x295",
+      "base(mm)": "446x246",
+      "altura(mm)": "80",
+      "capacidad(ml)": "11450"
+    },
+    "descripcion": "Bañera de aluminio ref. 53885. Capacidad 11450 ml, medidas exteriores 525x325 mm mm y altura 80 mm. Formato amplio para grandes producciones en hostelería y colectividades. Alta resistencia estructural. Caja de 50 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 60,
+    "ref": "1/87",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "5000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "30",
+      "interior(mm)": "",
+      "base(mm)": "24",
+      "altura(mm)": "19",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 1/87. Medidas 30 mm mm, altura 19 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 5000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 61,
+    "ref": "2/86",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "5000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "38",
+      "interior(mm)": "",
+      "base(mm)": "28",
+      "altura(mm)": "17",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 2/86. Medidas 38 mm mm, altura 17 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 5000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 62,
+    "ref": "3/87",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "46",
+      "interior(mm)": "",
+      "base(mm)": "33",
+      "altura(mm)": "17",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 3/87. Medidas 46 mm mm, altura 17 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 63,
+    "ref": "3102",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "2200",
+      "volumen(cc)": "0.35",
+      "exterior(mm)": "68",
+      "interior(mm)": "",
+      "base(mm)": "60",
+      "altura(mm)": "30",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 3102. Medidas 68 mm mm, altura 30 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 2200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 64,
+    "ref": "4/86",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "4500",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "55",
+      "interior(mm)": "",
+      "base(mm)": "44",
+      "altura(mm)": "27",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 4/86. Medidas 55 mm mm, altura 27 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 4500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 65,
+    "ref": "7/87",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "47",
+      "interior(mm)": "",
+      "base(mm)": "40",
+      "altura(mm)": "12",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 7/87. Medidas 47 mm mm, altura 12 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 66,
+    "ref": "8/96",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "5000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "80",
+      "interior(mm)": "",
+      "base(mm)": "70",
+      "altura(mm)": "20",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 8/96. Medidas 80 mm mm, altura 20 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 5000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 67,
+    "ref": "9/89",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "3000",
+      "volumen(cc)": "0.35",
+      "exterior(mm)": "90",
+      "interior(mm)": "",
+      "base(mm)": "70",
+      "altura(mm)": "20",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 9/89. Medidas 90 mm mm, altura 20 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 3000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 68,
+    "ref": "ORO2",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "31",
+      "interior(mm)": "",
+      "base(mm)": "26",
+      "altura(mm)": "16",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. ORO2. Medidas 31 mm mm, altura 16 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 69,
+    "ref": "1/87A",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.016",
+      "exterior(mm)": "30",
+      "interior(mm)": "",
+      "base(mm)": "24",
+      "altura(mm)": "19",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 1/87A. Medidas 30 mm mm, altura 19 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 70,
+    "ref": "2/86A",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.016",
+      "exterior(mm)": "38",
+      "interior(mm)": "",
+      "base(mm)": "28",
+      "altura(mm)": "17",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 2/86A. Medidas 38 mm mm, altura 17 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 71,
+    "ref": "3/87A",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.016",
+      "exterior(mm)": "46",
+      "interior(mm)": "",
+      "base(mm)": "33",
+      "altura(mm)": "17",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. 3/87A. Medidas 46 mm mm, altura 17 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 72,
+    "ref": "C2/86",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "5000",
+      "volumen(cc)": "0",
+      "exterior(mm)": "36x36",
+      "interior(mm)": "",
+      "base(mm)": "28x28",
+      "altura(mm)": "17",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. C2/86. Medidas 36x36 mm mm, altura 17 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 5000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 73,
+    "ref": "C3/89",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "2600",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "50x30",
+      "interior(mm)": "",
+      "base(mm)": "45x25",
+      "altura(mm)": "16",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. C3/89. Medidas 50x30 mm mm, altura 16 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 2600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 74,
+    "ref": "C4/89",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "40x40",
+      "interior(mm)": "",
+      "base(mm)": "35x35",
+      "altura(mm)": "16",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. C4/89. Medidas 40x40 mm mm, altura 16 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 75,
+    "ref": "C5/95",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "3000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "52x42",
+      "interior(mm)": "",
+      "base(mm)": "45x35",
+      "altura(mm)": "15",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. C5/95. Medidas 52x42 mm mm, altura 15 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 3000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 76,
+    "ref": "CORNE",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.016",
+      "exterior(mm)": "BOCA 22",
+      "interior(mm)": "",
+      "base(mm)": "LARGO 60",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. CORNE. Medidas BOCA 22 mm mm, altura 0 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 77,
+    "ref": "C10/95",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "1200",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "100x55",
+      "interior(mm)": "",
+      "base(mm)": "90x45",
+      "altura(mm)": "20",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. C10/95. Medidas 100x55 mm mm, altura 20 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 1200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 78,
+    "ref": "CA1/95",
+    "categoria": "Bombonería",
+    "atributos": {
+      "unidades/caja": "3000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "67xlargo",
+      "interior(mm)": "",
+      "base(mm)": "60xlargo",
+      "altura(mm)": "20",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de aluminio para bombonería ref. CA1/95. Medidas 67xlargo mm mm, altura 20 mm. Acabado brillante, ideal para bombones y piezas de chocolate de alta confitería. Caja de 3000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 79,
+    "ref": "1025",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "5000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "55",
+      "interior(mm)": "50",
+      "base(mm)": "30",
+      "altura(mm)": "22",
+      "capacidad(ml)": "25"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1025. Capacidad 25 ml, diámetro exterior 55 mm mm y altura 22 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 5000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 80,
+    "ref": "1030",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "3000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "73",
+      "interior(mm)": "64",
+      "base(mm)": "33",
+      "altura(mm)": "20",
+      "capacidad(ml)": "30"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1030. Capacidad 30 ml, diámetro exterior 73 mm mm y altura 20 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 3000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 81,
+    "ref": "1052",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "3000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "82",
+      "interior(mm)": "72",
+      "base(mm)": "38",
+      "altura(mm)": "23",
+      "capacidad(ml)": "52"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1052. Capacidad 52 ml, diámetro exterior 82 mm mm y altura 23 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 3000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 82,
+    "ref": "1060",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "73",
+      "interior(mm)": "65",
+      "base(mm)": "50",
+      "altura(mm)": "25",
+      "capacidad(ml)": "60"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1060. Capacidad 60 ml, diámetro exterior 73 mm mm y altura 25 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 83,
+    "ref": "1070",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "5000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "93",
+      "interior(mm)": "82",
+      "base(mm)": "72",
+      "altura(mm)": "15",
+      "capacidad(ml)": "70"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1070. Capacidad 70 ml, diámetro exterior 93 mm mm y altura 15 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 5000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 84,
+    "ref": "1080",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "3300",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "100",
+      "interior(mm)": "90",
+      "base(mm)": "80",
+      "altura(mm)": "20",
+      "capacidad(ml)": "80"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1080. Capacidad 80 ml, diámetro exterior 100 mm mm y altura 20 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 3300 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 85,
+    "ref": "1090",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "112",
+      "interior(mm)": "100",
+      "base(mm)": "86",
+      "altura(mm)": "15",
+      "capacidad(ml)": "90"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1090. Capacidad 90 ml, diámetro exterior 112 mm mm y altura 15 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 86,
+    "ref": "1101",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "80",
+      "interior(mm)": "70",
+      "base(mm)": "54",
+      "altura(mm)": "35",
+      "capacidad(ml)": "101"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1101. Capacidad 101 ml, diámetro exterior 80 mm mm y altura 35 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 87,
+    "ref": "1103",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "73",
+      "interior(mm)": "60",
+      "base(mm)": "47",
+      "altura(mm)": "49",
+      "capacidad(ml)": "103"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1103. Capacidad 103 ml, diámetro exterior 73 mm mm y altura 49 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 88,
+    "ref": "1127",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4500",
+      "volumen(cc)": "0.1",
+      "exterior(mm)": "80",
+      "interior(mm)": "70",
+      "base(mm)": "53",
+      "altura(mm)": "49",
+      "capacidad(ml)": "127"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 1127. Capacidad 127 ml, diámetro exterior 80 mm mm y altura 49 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 89,
+    "ref": "4037",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "6000",
+      "volumen(cc)": "0.1",
+      "exterior(mm)": "74x74",
+      "interior(mm)": "64x64",
+      "base(mm)": "52x52",
+      "altura(mm)": "10",
+      "capacidad(ml)": "37"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 4037. Capacidad 37 ml, diámetro exterior 74x74 mm mm y altura 10 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 6000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 90,
+    "ref": "5/86",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "55",
+      "interior(mm)": "50",
+      "base(mm)": "44",
+      "altura(mm)": "15",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 5/86. Capacidad 0 ml, diámetro exterior 55 mm mm y altura 15 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 91,
+    "ref": "T1127",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4500",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "85",
+      "interior(mm)": "",
+      "base(mm)": "78",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. T1127. Capacidad 0 ml, diámetro exterior 85 mm mm y altura 0 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 92,
+    "ref": "4037A",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "3500",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "74x74",
+      "interior(mm)": "64x64",
+      "base(mm)": "52x52",
+      "altura(mm)": "10",
+      "capacidad(ml)": "37"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. 4037A. Capacidad 37 ml, diámetro exterior 74x74 mm mm y altura 10 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 3500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 93,
+    "ref": "T1103",
+    "categoria": "Pastelería",
+    "atributos": {
+      "unidades/caja": "4500",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "80",
+      "interior(mm)": "73",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Molde de pastelería en aluminio ref. T1103. Capacidad 0 ml, diámetro exterior 80 mm mm y altura 0 mm. Antiadherente natural, distribuye el calor de forma uniforme. Apto para horno profesional. Caja de 4500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 94,
+    "ref": "1135-pl",
+    "categoria": "Pared lisa",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.75",
+      "exterior(mm)": "86",
+      "interior(mm)": "75",
+      "base(mm)": "62",
+      "altura(mm)": "35",
+      "capacidad(ml)": "135"
+    },
+    "descripcion": "Envase de pared lisa en aluminio ref. 1135-pl. Capacidad 135 ml, medidas 86 mm mm y altura 35 mm. Acabado liso de alta calidad para presentaciones premium. Apto para horno y congelador. Caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 95,
+    "ref": "1140-pl",
+    "categoria": "Pared lisa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.016",
+      "exterior(mm)": "96",
+      "interior(mm)": "86",
+      "base(mm)": "80",
+      "altura(mm)": "30",
+      "capacidad(ml)": "140"
+    },
+    "descripcion": "Envase de pared lisa en aluminio ref. 1140-pl. Capacidad 140 ml, medidas 96 mm mm y altura 30 mm. Acabado liso de alta calidad para presentaciones premium. Apto para horno y congelador. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 96,
+    "ref": "4117-pl",
+    "categoria": "Pared lisa",
+    "atributos": {
+      "unidades/caja": "2000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "88x88",
+      "interior(mm)": "78x78",
+      "base(mm)": "70x70",
+      "altura(mm)": "34",
+      "capacidad(ml)": "117"
+    },
+    "descripcion": "Envase de pared lisa en aluminio ref. 4117-pl. Capacidad 117 ml, medidas 88x88 mm mm y altura 34 mm. Acabado liso de alta calidad para presentaciones premium. Apto para horno y congelador. Caja de 2000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 97,
+    "ref": "4330-pl",
+    "categoria": "Pared lisa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "158x100",
+      "interior(mm)": "148x90",
+      "base(mm)": "140x82",
+      "altura(mm)": "28",
+      "capacidad(ml)": "330"
+    },
+    "descripcion": "Envase de pared lisa en aluminio ref. 4330-pl. Capacidad 330 ml, medidas 158x100 mm mm y altura 28 mm. Acabado liso de alta calidad para presentaciones premium. Apto para horno y congelador. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 98,
+    "ref": "1040-pla",
+    "categoria": "Pared lisa",
+    "atributos": {
+      "unidades/caja": "2500",
+      "volumen(cc)": "0.46",
+      "exterior(mm)": "89",
+      "interior(mm)": "70",
+      "base(mm)": "60",
+      "altura(mm)": "10",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de pared lisa en aluminio ref. 1040-pla. Capacidad 0 ml, medidas 89 mm mm y altura 10 mm. Acabado liso de alta calidad para presentaciones premium. Apto para horno y congelador. Caja de 2500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 99,
+    "ref": "T4330-pla",
+    "categoria": "Pared lisa",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.046",
+      "exterior(mm)": "165x108",
+      "interior(mm)": "160x103",
+      "base(mm)": "150x92",
+      "altura(mm)": "12",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de pared lisa en aluminio ref. T4330-pla. Capacidad 0 ml, medidas 165x108 mm mm y altura 12 mm. Acabado liso de alta calidad para presentaciones premium. Apto para horno y congelador. Caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 101,
+    "ref": "Alum. Industrial",
+    "categoria": "Bobina Aluminio industrial",
+    "atributos": {
+      "unidades/caja": "6",
+      "volumen(cc)": "0.0262",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio industrial ref. Alum. Industrial. Para uso profesional en envasado y producción alimentaria. Alta pureza del aluminio, resistente a la corrosión. Fabricación 100% española."
+  },
+  {
+    "id": 102,
+    "ref": "Aluminio Industrial 40 cm",
+    "categoria": "Bobina Aluminio industrial",
+    "atributos": {
+      "unidades/caja": "6",
+      "volumen(cc)": "0.04",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio industrial ref. Aluminio Industrial 40 cm. Para uso profesional en envasado y producción alimentaria. Alta pureza del aluminio, resistente a la corrosión. Fabricación 100% española."
+  },
+  {
+    "id": 103,
+    "ref": "Film Industrial 40",
+    "categoria": "Bobina Film industrial",
+    "atributos": {
+      "unidades/caja": "4",
+      "volumen(cc)": "0.012",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio industrial ref. Film Industrial 40. Para uso profesional en envasado y producción alimentaria. Alta pureza del aluminio, resistente a la corrosión. Fabricación 100% española."
+  },
+  {
+    "id": 104,
+    "ref": "End-500",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "300",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "500"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. End-500. Capacidad 500 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 300 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 105,
+    "ref": "End 750",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "300",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "750"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. End 750. Capacidad 750 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 300 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 106,
+    "ref": "End 250",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "250"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. End 250. Capacidad 250 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 108,
+    "ref": "END 1000",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "200",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "1000"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. END 1000. Capacidad 1000 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 109,
+    "ref": "END 1500",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "1500"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. END 1500. Capacidad 1500 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 0 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 110,
+    "ref": "END 2000",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "200",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "2000"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. END 2000. Capacidad 2000 ml. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 200 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 111,
+    "ref": "ENS 600 Ensaladera",
+    "categoria": "Envase OPS Ovalado",
+    "atributos": {
+      "unidades/caja": "300",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "170",
+      "interior(mm)": "",
+      "base(mm)": "90",
+      "altura(mm)": "60",
+      "capacidad(ml)": "600"
+    },
+    "descripcion": "Envase ovalado de aluminio ref. ENS 600 Ensaladera. Capacidad 600 ml, medidas exteriores 170 mm mm. Ideal para presentación de carnes y asados. Excelente conductividad térmica. Caja de 300 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 112,
+    "ref": "END1 250",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "250"
+    },
+    "descripcion": "Envase OPS ref. END1 250. Capacidad 250 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 113,
+    "ref": "END1 375",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "375"
+    },
+    "descripcion": "Envase OPS ref. END1 375. Capacidad 375 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 114,
+    "ref": "END1 500",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "500"
+    },
+    "descripcion": "Envase OPS ref. END1 500. Capacidad 500 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 115,
+    "ref": "END1 670",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "670"
+    },
+    "descripcion": "Envase OPS ref. END1 670. Capacidad 670 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 116,
+    "ref": "END1 750",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "300",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "750"
+    },
+    "descripcion": "Envase OPS ref. END1 750. Capacidad 750 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 117,
+    "ref": "END1 1000",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "300",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "1000"
+    },
+    "descripcion": "Envase OPS ref. END1 1000. Capacidad 1000 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 118,
+    "ref": "END1 2000",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "200",
+      "volumen(cc)": "0.15",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "2000"
+    },
+    "descripcion": "Envase OPS ref. END1 2000. Capacidad 2000 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 119,
+    "ref": "END1 1500",
+    "categoria": "Envase OPS Cuadrado",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "1500"
+    },
+    "descripcion": "Envase OPS ref. END1 1500. Capacidad 1500 ml. Fabricado en poliestireno cristal de alta transparencia. Ideal para ensaladas, fruta y productos frescos. Permite visualizar el contenido sin abrir. Fabricación 100% española."
+  },
+  {
+    "id": 120,
+    "ref": "1103T",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "4500",
+      "volumen(cc)": "0.01",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. 1103T para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 4500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 123,
+    "ref": "T1140",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T1140 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 124,
+    "ref": "T1250",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "1500",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T1250 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 125,
+    "ref": "T1280",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.012",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T1280 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 126,
+    "ref": "T2800",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T2800 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 127,
+    "ref": "T2935",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T2935 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 128,
+    "ref": "T5250",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T5250 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 129,
+    "ref": "T5360",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T5360 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 130,
+    "ref": "T-5475",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-5475 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 131,
+    "ref": "T-5580",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-5580 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 132,
+    "ref": "T-5590",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-5590 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 133,
+    "ref": "T-5860",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-5860 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 138,
+    "ref": "T-21900",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-21900 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 139,
+    "ref": "T-51180",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-51180 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 600 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 140,
+    "ref": "T-51500",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-51500 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 141,
+    "ref": "T-52200",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-52200 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 500 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 142,
+    "ref": "T-52400",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.035",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-52400 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 400 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 143,
+    "ref": "T-1135",
+    "categoria": "Tapas Envases Redondo y Rectangulares",
+    "atributos": {
+      "unidades/caja": "1000",
+      "volumen(cc)": "0.01",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase redondo de aluminio ref. T-1135 para tapa. Capacidad de 0 ml y altura 0 mm. Fabricado en aluminio de alta resistencia, apto para horno y congelador. Presentación en caja de 1000 unidades. Fabricación 100% española."
+  },
+  {
+    "id": 145,
+    "ref": "Rollo Vegetal 15",
+    "categoria": "Bobina de Papel Vegetal",
+    "atributos": {
+      "unidades/caja": "20",
+      "volumen(cc)": "0.019",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de papel vegetal ref. Rollo Vegetal 15. Antiadherente natural, apto para hornear todo tipo de masas. Sin blanqueadores químicos. Fabricación 100% española."
+  },
+  {
+    "id": 146,
+    "ref": "Rollo Vegetal 8",
+    "categoria": "Bobina de Papel Vegetal",
+    "atributos": {
+      "unidades/caja": "20",
+      "volumen(cc)": "0.019",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de papel vegetal ref. Rollo Vegetal 8. Antiadherente natural, apto para hornear todo tipo de masas. Sin blanqueadores químicos. Fabricación 100% española."
+  },
+  {
+    "id": 147,
+    "ref": "11103-P",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "500",
+      "volumen(cc)": "0.012",
+      "exterior(mm)": "330",
+      "interior(mm)": "314",
+      "base(mm)": "307",
+      "altura(mm)": "15",
+      "capacidad(ml)": "1103"
+    },
+    "descripcion": "Envase de papel para hornear ref. 11103-P. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 148,
+    "ref": "Plumcake",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.12",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "750"
+    },
+    "descripcion": "Envase de papel para hornear ref. Plumcake. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 149,
+    "ref": "Rollo PF",
+    "categoria": "Bobina Film Doméstico",
+    "atributos": {
+      "unidades/caja": "40",
+      "volumen(cc)": "0.034",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de film industrial ref. Rollo PF. Film transparente de alta resistencia para envasado profesional. Excelente transparencia y adherencia. Fabricación 100% española."
+  },
+  {
+    "id": 150,
+    "ref": "Rollo PF 50",
+    "categoria": "Bobina Film Doméstico",
+    "atributos": {
+      "unidades/caja": "40",
+      "volumen(cc)": "0.034",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de film industrial ref. Rollo PF 50. Film transparente de alta resistencia para envasado profesional. Excelente transparencia y adherencia. Fabricación 100% española."
+  },
+  {
+    "id": 152,
+    "ref": "mini",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de papel para hornear ref. mini. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 153,
+    "ref": "1375-PH",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "1400",
+      "volumen(cc)": "0.11",
+      "exterior(mm)": "205",
+      "interior(mm)": "184",
+      "base(mm)": "145",
+      "altura(mm)": "23",
+      "capacidad(ml)": "375"
+    },
+    "descripcion": "Envase de papel para hornear ref. 1375-PH. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 154,
+    "ref": "cuadrado",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de papel para hornear ref. cuadrado. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 155,
+    "ref": "mini plumcake",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de papel para hornear ref. mini plumcake. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 156,
+    "ref": "Tarta",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de papel para hornear ref. Tarta. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 157,
+    "ref": "11150-PH",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.11",
+      "exterior(mm)": "275",
+      "interior(mm)": "263",
+      "base(mm)": "250",
+      "altura(mm)": "25",
+      "capacidad(ml)": "1150"
+    },
+    "descripcion": "Envase de papel para hornear ref. 11150-PH. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 158,
+    "ref": "plum bandeja",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "0",
+      "volumen(cc)": "0",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de papel para hornear ref. plum bandeja. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 159,
+    "ref": "8 metros",
+    "categoria": "Bobina Aluminio doméstico",
+    "atributos": {
+      "unidades/caja": "40",
+      "volumen(cc)": "0.04",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio doméstico ref. 8 metros. Para conservación, cocinado y presentación de alimentos en el hogar. Apto para horno, congelador y frigorífico. Fabricación 100% española."
+  },
+  {
+    "id": 160,
+    "ref": "16 metros",
+    "categoria": "Bobina Aluminio doméstico",
+    "atributos": {
+      "unidades/caja": "40",
+      "volumen(cc)": "0.04",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio doméstico ref. 16 metros. Para conservación, cocinado y presentación de alimentos en el hogar. Apto para horno, congelador y frigorífico. Fabricación 100% española."
+  },
+  {
+    "id": 161,
+    "ref": "50 metros",
+    "categoria": "Bobina Aluminio doméstico",
+    "atributos": {
+      "unidades/caja": "40",
+      "volumen(cc)": "0.04",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio doméstico ref. 50 metros. Para conservación, cocinado y presentación de alimentos en el hogar. Apto para horno, congelador y frigorífico. Fabricación 100% española."
+  },
+  {
+    "id": 162,
+    "ref": "30 metros",
+    "categoria": "Bobina Aluminio doméstico",
+    "atributos": {
+      "unidades/caja": "40",
+      "volumen(cc)": "0.04",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio doméstico ref. 30 metros. Para conservación, cocinado y presentación de alimentos en el hogar. Apto para horno, congelador y frigorífico. Fabricación 100% española."
+  },
+  {
+    "id": 163,
+    "ref": "Film industrial 30",
+    "categoria": "Bobina Film industrial",
+    "atributos": {
+      "unidades/caja": "4",
+      "volumen(cc)": "0.012",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Bobina de aluminio industrial ref. Film industrial 30. Para uso profesional en envasado y producción alimentaria. Alta pureza del aluminio, resistente a la corrosión. Fabricación 100% española."
+  },
+  {
+    "id": 167,
+    "ref": "END PP 500",
+    "categoria": "Envase Polipropileno (PP)",
+    "atributos": {
+      "unidades/caja": "600",
+      "volumen(cc)": "0.085",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "500"
+    },
+    "descripcion": "Envase de polipropileno PP ref. END PP 500. Capacidad 500 ml. Material rígido apto para microondas y lavavajillas. Alta resistencia química y térmica. Ideal para comidas preparadas y conservación. Fabricación 100% española."
+  },
+  {
+    "id": 168,
+    "ref": "END PP 750",
+    "categoria": "Envase Polipropileno (PP)",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.085",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "750"
+    },
+    "descripcion": "Envase de polipropileno PP ref. END PP 750. Capacidad 750 ml. Material rígido apto para microondas y lavavajillas. Alta resistencia química y térmica. Ideal para comidas preparadas y conservación. Fabricación 100% española."
+  },
+  {
+    "id": 169,
+    "ref": "END PP 1000",
+    "categoria": "Envase Polipropileno (PP)",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.085",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "1000"
+    },
+    "descripcion": "Envase de polipropileno PP ref. END PP 1000. Capacidad 1000 ml. Material rígido apto para microondas y lavavajillas. Alta resistencia química y térmica. Ideal para comidas preparadas y conservación. Fabricación 100% española."
+  },
+  {
+    "id": 170,
+    "ref": "END PP 1500",
+    "categoria": "Envase Polipropileno (PP)",
+    "atributos": {
+      "unidades/caja": "300",
+      "volumen(cc)": "0.085",
+      "exterior(mm)": "",
+      "interior(mm)": "",
+      "base(mm)": "",
+      "altura(mm)": "0",
+      "capacidad(ml)": "1500"
+    },
+    "descripcion": "Envase de polipropileno PP ref. END PP 1500. Capacidad 1500 ml. Material rígido apto para microondas y lavavajillas. Alta resistencia química y térmica. Ideal para comidas preparadas y conservación. Fabricación 100% española."
+  },
+  {
+    "id": 172,
+    "ref": "11103-PH",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "400",
+      "volumen(cc)": "0.11",
+      "exterior(mm)": "330",
+      "interior(mm)": "314",
+      "base(mm)": "307",
+      "altura(mm)": "15",
+      "capacidad(ml)": "0"
+    },
+    "descripcion": "Envase de papel para hornear ref. 11103-PH. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  },
+  {
+    "id": 174,
+    "ref": "4590-ph",
+    "categoria": "Envases de Papel para Hornear",
+    "atributos": {
+      "unidades/caja": "1",
+      "volumen(cc)": "0",
+      "exterior(mm)": "198 x 140",
+      "interior(mm)": "180 x 120",
+      "base(mm)": "168 x 110",
+      "altura(mm)": "33",
+      "capacidad(ml)": "590"
+    },
+    "descripcion": "Envase de papel para hornear ref. 4590-ph. Resistente al calor hasta 220 °C. Ideal para repostería y panadería industrial. No requiere engrasado previo. Fabricación 100% española."
+  }
+]

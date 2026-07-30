@@ -1,7 +1,8 @@
-'use client'
-import { useEffect, useRef } from 'react'
+import TrayectoriaSection, { type Milestone } from './TrayectoriaSection'
 
-const MILESTONES = [
+/* Los mismos hitos que en la home, en su versión larga. La sección reutiliza
+   el componente de trayectoria: idéntica lógica de pin, scrub y fases. */
+const MILESTONES: Milestone[] = [
   {
     year: '1991',
     title: 'Fundación',
@@ -20,7 +21,7 @@ const MILESTONES = [
   {
     year: '2018',
     title: 'Innovación de producto',
-    desc: 'Desarrollo de nuevas referencias en aluminio con tapa termosellable y cápsulas compatibles con sistemas de café de monodosis. Más de 22 referencias activas en catálogo.',
+    desc: 'Desarrollo de nuevas referencias en aluminio con tapa termosellable y cápsulas compatibles con sistemas de café de monodosis.',
   },
   {
     year: 'Hoy',
@@ -30,47 +31,15 @@ const MILESTONES = [
 ]
 
 export default function NosotrosHistory() {
-  const timelineRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const items = timelineRef.current?.querySelectorAll<HTMLDivElement>('.nos-history__item')
-    if (!items?.length) return
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
-            observer.unobserve(entry.target)
-          }
-        })
-      },
-      { threshold: 0.15 }
-    )
-
-    items.forEach(item => observer.observe(item))
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section className="nos-history">
-      <div className="nos-history__left">
-        <span className="section-label nos-history__label">Historia</span>
-        <h2 className="nos-history__intro-title">
-          Más de tres décadas<br />de especialización<br />en envases alimentarios.
-        </h2>
-      </div>
-      <div className="nos-history__right" ref={timelineRef}>
-        {MILESTONES.map((m) => (
-          <div key={m.year} className="nos-history__item">
-            <div className="nos-history__item-head">
-              <span className="nos-history__year">{m.year}</span>
-              <span className="nos-history__item-title">{m.title}</span>
-            </div>
-            <p className="nos-history__desc">{m.desc}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+    <TrayectoriaSection
+      variant="nos"
+      milestones={MILESTONES}
+      introCopy="Desde 1991 fabricamos envase alimentario en España. Tres décadas afinando el aluminio, el plástico y el papel para quien cocina, conserva y reparte cada día."
+      introTitle="Más de tres décadas de especialización en envases alimentarios."
+      claim="Fabricación ininterrumpida desde 1991."
+      ctaLabel="Ver catálogo"
+      ctaHref="/productos"
+    />
   )
 }
