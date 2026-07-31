@@ -39,8 +39,13 @@ export default function PlantVideo({ className }: { className?: string }) {
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setSrc(prev => prev ?? pick())
-          void el.play().catch(() => {})
+          setSrc(prev => {
+            // Ya tenía src (reentra tras salir de pantalla): retomar aquí.
+            // La primera vez el src todavía no está en el DOM, así que
+            // ese play() lo dispara el efecto de abajo cuando React lo comite.
+            if (prev) void el.play().catch(() => {})
+            return prev ?? pick()
+          })
         } else {
           el.pause()
         }
@@ -50,6 +55,12 @@ export default function PlantVideo({ className }: { className?: string }) {
     io.observe(el)
     return () => io.disconnect()
   }, [])
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el || !src) return
+    void el.play().catch(() => {})
+  }, [src])
 
   return (
     <video
