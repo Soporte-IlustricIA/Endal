@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Devoluciones — ENDAL',
+  title: 'Política de devoluciones',
+  description: 'Información legal de ENDAL S.L., fabricante de envases alimentarios en San Vicente del Raspeig (Alicante).',
+  alternates: { canonical: '/devoluciones' },
+  robots: { index: false, follow: true },
 }
 
 export default function DevolucionesPage() {

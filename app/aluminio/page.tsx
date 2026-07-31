@@ -1,25 +1,33 @@
+import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/src/lib/site'
 import AluminioHero         from '@/components/AluminioHero'
-import AluminioIntro        from '@/components/AluminioIntro'
+import MaterialIntro      from '@/components/MaterialIntro'
 import AluminioProperties   from '@/components/AluminioProperties'
-import AluminioCatalog      from '@/components/AluminioCatalog'
+import MaterialCatalog     from '@/components/MaterialCatalog'
 import AluminioPresentation from '@/components/AluminioPresentation'
-import AluminioNewsletter   from '@/components/AluminioNewsletter'
 import AluminioExpert       from '@/components/AluminioExpert'
 
-export const metadata = {
-  title: 'Aluminio — Recipientes de aluminio | ENDAL',
-  description: 'Descubre nuestra gama completa de recipientes de aluminio para horno, congelador y conservación alimentaria.',
+export const metadata: Metadata = {
+  title: 'Envases de aluminio para horno, congelador y catering',
+  description:
+    'Bandejas, envases redondos y rectangulares, moldes de pastelería, tapas y bobinas de aluminio. 119 referencias fabricadas en España, aptas para el contacto con alimentos.',
+  alternates: { canonical: '/aluminio' },
+  openGraph: { title: 'Envases de aluminio para horno, congelador y catering | ENDAL', description: 'Bandejas, envases redondos y rectangulares, moldes de pastelería, tapas y bobinas de aluminio. 119 referencias fabricadas en España, aptas para el contacto con alimentos.', url: '/aluminio', type: 'website' },
 }
 
 export default function Aluminio() {
   return (
     <main className="al-page">
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Inicio', url: '/' },
+        { name: 'Aluminio', url: '/aluminio' },
+      ])} />
       <AluminioHero />
-      <AluminioIntro />
+      <MaterialIntro material="aluminio" />
       <AluminioProperties />
-      <AluminioCatalog />
+      <MaterialCatalog material="aluminio" />
       <AluminioPresentation />
-      <AluminioNewsletter />
       <AluminioExpert />
     </main>
   )

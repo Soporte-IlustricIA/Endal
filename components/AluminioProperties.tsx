@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import MaterialShowcase from './MaterialShowcase'
 
 type AccordionItem = { id: string; title: string; body: string }
 
@@ -45,30 +46,7 @@ export default function AluminioProperties() {
     <section className="al-props">
       {/* Left: circular SVG icon */}
       <div className="al-props__icon-wrap">
-        <svg
-          className="al-props__svg"
-          viewBox="0 0 200 200"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          {/* Outer circle */}
-          <circle cx="100" cy="100" r="96" stroke="#111" strokeWidth="1.5" />
-          {/* Bandeja de aluminio outline */}
-          <rect x="44" y="78" width="112" height="60" rx="6" stroke="#111" strokeWidth="1.5" />
-          {/* Tapa / lid line */}
-          <line x1="44" y1="90" x2="156" y2="90" stroke="#111" strokeWidth="1" strokeDasharray="4 3" />
-          {/* Handle left */}
-          <path d="M44 100 Q32 100 32 108 Q32 116 44 116" stroke="#111" strokeWidth="1.5" fill="none" />
-          {/* Handle right */}
-          <path d="M156 100 Q168 100 168 108 Q168 116 156 116" stroke="#111" strokeWidth="1.5" fill="none" />
-          {/* Horizontal ribs */}
-          <line x1="56" y1="102" x2="144" y2="102" stroke="#111" strokeWidth=".8" opacity=".4" />
-          <line x1="56" y1="110" x2="144" y2="110" stroke="#111" strokeWidth=".8" opacity=".4" />
-          <line x1="56" y1="118" x2="144" y2="118" stroke="#111" strokeWidth=".8" opacity=".4" />
-          {/* Label text */}
-          <text x="100" y="58" textAnchor="middle" fontFamily="inherit" fontSize="9" fontWeight="400" letterSpacing="2" fill="#111" opacity=".5">ALUMINIO</text>
-        </svg>
+          <MaterialShowcase variant="aluminio" />
       </div>
 
       {/* Right: title + accordion */}

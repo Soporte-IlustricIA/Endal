@@ -6,18 +6,18 @@ type Slide = { src: string; alt: string; name: string }
 const SLIDES: Slide[] = [
   {
     src: '/bobinas-aluminio.webp',
-    alt: 'Bobinas de papel de aluminio industrial',
-    name: 'Bobinas industriales',
+    alt: 'Bobinas en la planta de ENDAL',
+    name: 'Bobinas en planta',
   },
   {
-    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/48f73d339e/ref_mint_thumbnail-tuile.jpg',
-    alt: 'Papel de aluminio para horno',
-    name: 'Papel de horno',
+    src: '/images/material/pres-papel.webp',
+    alt: 'Galletas recién horneadas sobre papel vegetal',
+    name: 'Horneado sobre papel',
   },
   {
     src: '/papel-vegetal-2.webp',
-    alt: 'Uso doméstico del papel de aluminio',
-    name: 'Uso doméstico',
+    alt: 'Envasadora de bobinas de papel vegetal',
+    name: 'Papel vegetal',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function PapelPresentation() {
             className={`al-pres__slide${i === current && !transitioning ? ' al-pres__slide--active' : ''}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={slide.src} alt={slide.alt} />
+            <img src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
           </div>
         ))}
         <div className="al-pres__caption">

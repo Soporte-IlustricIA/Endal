@@ -2,8 +2,6 @@
 import { useEffect, useState, useCallback, useRef } from 'react'
 
 interface Project {
-  color: string
-  text: string
   name: string
   ref: string
   imgA: string
@@ -16,11 +14,10 @@ interface Project {
 /* La tira alterna dos registros: producto envasado (qué fabricamos) y
    planta, almacén y equipo (quiénes lo fabricamos). Ninguna de estas
    fotos se repite en las secciones de abajo.
-   El color de fondo es un tono oscuro de la misma familia que la foto. */
+   Las fotos se apoyan sobre el fondo de la página: el hero ya no pinta
+   un recuadro de color a su alrededor. */
 const PROJECTS: Record<string, Project> = {
   aluminio: {
-    color: '#26201b',
-    text: '#ffffff',
     name: 'Envases de aluminio',
     ref: 'ENDAL · AL · 1991',
     imgA: '/images/home/aluminio-moldes.webp',
@@ -28,8 +25,6 @@ const PROJECTS: Record<string, Project> = {
     thumb: '/images/home/aluminio-moldes-thumb.webp',
   },
   papel: {
-    color: '#2b2419',
-    text: '#ffffff',
     name: 'Papel y film',
     ref: 'ENDAL · PF · 1991',
     imgA: '/images/home/papel-horno.webp',
@@ -37,8 +32,6 @@ const PROJECTS: Record<string, Project> = {
     thumb: '/images/home/papel-horno-thumb.webp',
   },
   plastico: {
-    color: '#25201c',
-    text: '#ffffff',
     name: 'Envases de plástico',
     ref: 'ENDAL · PL · 1991',
     imgA: '/images/home/plastico-tarrinas.webp',
@@ -46,8 +39,6 @@ const PROJECTS: Record<string, Project> = {
     thumb: '/images/home/plastico-tarrinas-thumb.webp',
   },
   catering: {
-    color: '#2a201a',
-    text: '#ffffff',
     name: 'Listo para servir',
     ref: 'ENDAL · CT · 1991',
     imgA: '/images/home/catering-bandeja.webp',
@@ -55,8 +46,6 @@ const PROJECTS: Record<string, Project> = {
     thumb: '/images/home/catering-bandeja-thumb.webp',
   },
   planta: {
-    color: '#1f2226',
-    text: '#ffffff',
     name: 'Fabricación propia',
     ref: 'ENDAL · FB · 1991',
     imgA: '/images/home/planta-linea.webp',
@@ -64,8 +53,6 @@ const PROJECTS: Record<string, Project> = {
     thumb: '/images/home/planta-linea-thumb.webp',
   },
   almacen: {
-    color: '#23201c',
-    text: '#ffffff',
     name: 'Almacén y logística',
     ref: 'ENDAL · LG · 1991',
     imgA: '/images/home/almacen-cajas.webp',
@@ -135,15 +122,7 @@ export default function HeroCarousel() {
   for (let i = pos - WINDOW; i <= pos + WINDOW; i++) thumbs.push(i)
 
   return (
-    <section
-      className="hero-carousel"
-      style={{
-        '--project-color': p.color,
-        '--project-text': p.text,
-        backgroundColor: p.color,
-        color: p.text,
-      } as React.CSSProperties}
-    >
+    <section className="hero-carousel">
       <div className="hero-carousel__inner">
 
         {/* ── Media: la nueva entra por encima de la saliente ── */}
@@ -153,22 +132,22 @@ export default function HeroCarousel() {
             <div className="hero-carousel__slide" key={`out-${prev}`}>
               <div className="hero-carousel__media-item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={pOut.imgA} alt="" />
+                <img src={pOut.imgA} alt="" width={1000} height={1200} decoding="async" />
               </div>
               <div className="hero-carousel__media-item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={pOut.imgB} alt="" />
+                <img src={pOut.imgB} alt="" width={1000} height={1200} decoding="async" />
               </div>
             </div>
           )}
           <div className="hero-carousel__slide hero-carousel__slide--in" key={`in-${shown}`}>
             <div className="hero-carousel__media-item">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.imgA} alt={p.name} width={1000} height={1200} decoding="async" />
+              <img src={p.imgA} alt={p.name} width={1000} height={1200} decoding="async" fetchPriority="high" />
             </div>
             <div className="hero-carousel__media-item">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.imgB} alt={p.name} width={1000} height={1200} decoding="async" />
+              <img src={p.imgB} alt={p.name} width={1000} height={1200} decoding="async" fetchPriority="high" />
             </div>
           </div>
           </div>

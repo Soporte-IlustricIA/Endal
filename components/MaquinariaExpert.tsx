@@ -6,8 +6,8 @@ export default function MaquinariaExpert() {
       </div>
       <div className="al-expert__body">
         <p className="al-expert__copy">
-          Nuestro <strong>equipo de ingeniería</strong> puede asesorarte en la integración
-          de maquinaria con tus líneas de producción actuales y en la selección del equipo más adecuado.
+          ¿Necesitas integrar un equipo en tu línea actual? Cuéntanos tu proceso
+          y te <strong>indicamos qué máquina</strong> encaja con tus formatos.
         </p>
         <a href="/contacto" className="btn-outline">
           Solicitar asesoramiento →

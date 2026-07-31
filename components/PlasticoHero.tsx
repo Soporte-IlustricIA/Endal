@@ -35,21 +35,22 @@ export default function PlasticoHero() {
     return () => observer.disconnect()
   }, [])
 
-  const count = useCounter(8, active)
+  const count = useCounter(23, active)
 
   return (
     <section className="al-hero" ref={ref}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="al-hero__img"
-        src="/papel-vegetal-2.webp"
-        alt="Film y bolsas de plástico ENDAL"
+        src="/images/material/hero-plastico.webp"
+        alt="Envases de plástico transparente con verdura fresca"
+        fetchPriority="high"
       />
       <div className="al-hero__badge">
         <span className="al-hero__badge-label">Número de referencias</span>
         <div className="al-hero__badge-row">
           <span className="al-hero__badge-count">{count}</span>
-          <a href="#pl-catalog" className="al-hero__badge-btn" aria-label="Ver referencias">
+          <a href="#al-catalog" className="al-hero__badge-btn" aria-label="Ver referencias">
             →
           </a>
         </div>

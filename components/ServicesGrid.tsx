@@ -21,8 +21,8 @@ export default function ServicesGrid() {
             <a href="/aluminio" className="sg-cell" data-cursor="Ver Aluminio">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/bandeja-lasana.webp"
-                alt="Bandeja de aluminio con lasaña recién horneada"
+                src="/images/home/gama-aluminio.webp"
+                alt="Pasta al horno servida en un envase de aluminio"
                 loading="lazy"
                 decoding="async"
                 width={700}
@@ -32,8 +32,8 @@ export default function ServicesGrid() {
             <a href="/plastico" className="sg-cell" data-cursor="Ver Plástico">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/home/plastico-envase.webp"
-                alt="Envase de plástico transparente con ensalada preparada"
+                src="/images/home/gama-plastico.webp"
+                alt="Ensalada preparada en un envase de plástico transparente"
                 loading="lazy"
                 decoding="async"
                 width={700}
@@ -43,8 +43,8 @@ export default function ServicesGrid() {
             <a href="/papel" className="sg-cell" data-cursor="Ver Papel">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/papel-vegetal-1.webp"
-                alt="Bobinas de papel vegetal en la línea de producción"
+                src="/images/home/gama-papel.webp"
+                alt="Bollería recién horneada sobre papel vegetal"
                 loading="lazy"
                 decoding="async"
                 width={700}
@@ -54,8 +54,8 @@ export default function ServicesGrid() {
             <a href="/maquinaria" className="sg-cell" data-cursor="Ver Maquinaria">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/papel-vegetal-2.webp"
-                alt="Máquina envasadora de bobinas en planta"
+                src="/images/home/gama-maquinaria.webp"
+                alt="Línea de llenado y sellado en planta"
                 loading="lazy"
                 decoding="async"
                 width={700}

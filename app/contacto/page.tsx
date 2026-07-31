@@ -1,11 +1,30 @@
 import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/src/lib/site'
 import ContactPage from '@/components/ContactPage'
 
 export const metadata: Metadata = {
-  title: 'Contacto — ENDAL',
-  description: 'Ponte en contacto con el equipo de ENDAL. Especialistas en envases de aluminio, papel y plástico para la conservación de alimentos.',
+  title: 'Contacto: pide presupuesto de envases alimentarios',
+  description:
+    'Habla con ENDAL S.L. — Polígono Industrial Canastell, San Vicente del Raspeig (Alicante). ' +
+    'Teléfono (+34) 965 66 14 72 e info@endal.es para presupuestos de envases de aluminio, plástico y papel.',
+  alternates: { canonical: '/contacto' },
+  openGraph: {
+    title: 'Contacto | ENDAL',
+    description: 'Polígono Industrial Canastell, San Vicente del Raspeig (Alicante). (+34) 965 66 14 72.',
+    url: '/contacto',
+    type: 'website',
+  },
 }
 
 export default function Contacto() {
-  return <ContactPage />
+  return (
+    <>
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Inicio', url: '/' },
+        { name: 'Contacto', url: '/contacto' },
+      ])} />
+      <ContactPage />
+    </>
+  )
 }

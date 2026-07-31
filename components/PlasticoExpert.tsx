@@ -6,8 +6,8 @@ export default function PlasticoExpert() {
       </div>
       <div className="al-expert__body">
         <p className="al-expert__copy">
-          Nuestro <strong>experto en film y bolsas de plástico</strong> está aquí para ayudarte
-          a encontrar la solución de envasado ideal para tu línea de producción.
+          ¿Dudas entre OPS, polipropileno o film? Cuéntanos cómo es tu línea
+          y te <strong>ayudamos a elegir</strong> el envase que mejor encaja.
         </p>
         <a href="/contacto" className="btn-outline">
           Haz tu consulta →

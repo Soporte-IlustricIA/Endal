@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Aviso Legal — ENDAL',
+  title: 'Aviso legal',
+  description: 'Información legal de ENDAL S.L., fabricante de envases alimentarios en San Vicente del Raspeig (Alicante).',
+  alternates: { canonical: '/aviso-legal' },
+  robots: { index: false, follow: true },
 }
 
 export default function AvisoLegalPage() {

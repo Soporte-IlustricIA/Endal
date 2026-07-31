@@ -6,10 +6,10 @@ export default function AluminioExpert() {
       </div>
       <div className="al-expert__body">
         <p className="al-expert__copy">
-          Nuestro <strong>experto en aluminio</strong> está aquí para ayudarte
-          a encontrar el envase ideal para cada ocasión.
+          ¿No encuentras el formato que necesitas? Cuéntanos qué vas a envasar
+          y te <strong>orientamos sobre la referencia</strong> más adecuada de la gama.
         </p>
-        <a href="#" className="btn-outline">
+        <a href="/contacto" className="btn-outline">
           Haz tu consulta →
         </a>
       </div>

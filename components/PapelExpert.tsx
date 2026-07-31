@@ -6,8 +6,8 @@ export default function PapelExpert() {
       </div>
       <div className="al-expert__body">
         <p className="al-expert__copy">
-          Nuestro <strong>experto en papel de aluminio</strong> está aquí para ayudarte
-          a elegir el calibre y el formato ideal para cada aplicación de conservación o envasado.
+          ¿No sabes qué calibre o formato te conviene? Cuéntanos la aplicación
+          y te <strong>proponemos la referencia</strong> que mejor responde.
         </p>
         <a href="/contacto" className="btn-outline">
           Haz tu consulta →

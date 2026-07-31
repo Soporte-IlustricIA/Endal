@@ -22,7 +22,10 @@ export default function ProductDetail({ producto, related }: Props) {
         <span>{producto.referencia}</span>
       </div>
 
-      <h1 className="pd-section-title">PRODUCTO</h1>
+      {/* Rótulo de sección, no encabezado: las 159 fichas compartían un
+          <h1> que ponía «PRODUCTO». El encabezado real es el nombre del
+          envase, en la columna de la derecha. */}
+      <p className="pd-section-title">PRODUCTO</p>
 
       <div className="pd-body">
 
@@ -40,7 +43,7 @@ export default function ProductDetail({ producto, related }: Props) {
 
         {/* Right — specs */}
         <div className="pd-specs">
-          <h2 className="pd-specs__name">{producto.nombre}</h2>
+          <h1 className="pd-specs__name">{producto.nombre}</h1>
           <p className="pd-specs__ref"><strong>Referencia:</strong>{producto.referencia}</p>
 
           {hasAttrs && (

@@ -5,9 +5,9 @@ type Slide = { src: string; alt: string; name: string }
 
 const SLIDES: Slide[] = [
   {
-    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/48f73d339e/ref_mint_thumbnail-tuile.jpg',
-    alt: 'Presentación en bandeja de aluminio',
-    name: 'Presentación en horno',
+    src: '/images/material/pres-aluminio-1.webp',
+    alt: 'Pasta gratinada en bandeja de aluminio',
+    name: 'Horneado en bandeja',
   },
   {
     src: '/bandeja-lasana.webp',
@@ -15,8 +15,8 @@ const SLIDES: Slide[] = [
     name: 'Lasaña con bandeja 5590',
   },
   {
-    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/4c93a6e157/ref_fromeo_thumbnail-tuile.jpg',
-    alt: 'Servicio profesional con aluminio',
+    src: '/images/material/pres-aluminio-2.webp',
+    alt: 'Menú completo servido en bandejas de aluminio',
     name: 'Catering profesional',
   },
 ]
@@ -62,7 +62,7 @@ export default function AluminioPresentation() {
             className={`al-pres__slide${i === current && !transitioning ? ' al-pres__slide--active' : ''}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={slide.src} alt={slide.alt} />
+            <img src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
           </div>
         ))}
 

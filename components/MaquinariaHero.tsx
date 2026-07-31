@@ -35,21 +35,22 @@ export default function MaquinariaHero() {
     return () => observer.disconnect()
   }, [])
 
-  const count = useCounter(2, active)
+  const count = useCounter(4, active)
 
   return (
     <section className="al-hero" ref={ref}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="al-hero__img"
-        src="/fabrica-endal.webp"
-        alt="Maquinaria de envasado ENDAL"
+        src="/images/material/hero-maquinaria.webp"
+        alt="Equipo de acero inoxidable en una planta de envasado alimentario"
+        fetchPriority="high"
       />
       <div className="al-hero__badge">
         <span className="al-hero__badge-label">Número de referencias</span>
         <div className="al-hero__badge-row">
           <span className="al-hero__badge-count">{count}</span>
-          <a href="#mq-catalog" className="al-hero__badge-btn" aria-label="Ver referencias">
+          <a href="#al-catalog" className="al-hero__badge-btn" aria-label="Ver referencias">
             →
           </a>
         </div>

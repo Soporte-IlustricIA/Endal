@@ -1,25 +1,33 @@
+import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/src/lib/site'
 import MaquinariaHero         from '@/components/MaquinariaHero'
-import MaquinariaIntro        from '@/components/MaquinariaIntro'
+import MaterialIntro      from '@/components/MaterialIntro'
 import MaquinariaProperties   from '@/components/MaquinariaProperties'
-import MaquinariaCatalog      from '@/components/MaquinariaCatalog'
+import MaterialCatalog     from '@/components/MaterialCatalog'
 import MaquinariaPresentation from '@/components/MaquinariaPresentation'
-import MaquinariaNewsletter   from '@/components/MaquinariaNewsletter'
 import MaquinariaExpert       from '@/components/MaquinariaExpert'
 
-export const metadata = {
-  title: 'Maquinaria de envasado | ENDAL',
-  description: 'Maquinaria de envasado compatible con toda la gama ENDAL. Envasadoras y termoformadoras para líneas de producción alimentaria.',
+export const metadata: Metadata = {
+  title: 'Maquinaria de envasado: termoselladoras y portarrollos',
+  description:
+    'Termoselladoras y portarrollos compatibles con los formatos de envase de ENDAL. Equipos compactos y de bajo mantenimiento para obrador, cocina y línea de producción.',
+  alternates: { canonical: '/maquinaria' },
+  openGraph: { title: 'Maquinaria de envasado: termoselladoras y portarrollos | ENDAL', description: 'Termoselladoras y portarrollos compatibles con los formatos de envase de ENDAL. Equipos compactos y de bajo mantenimiento para obrador, cocina y línea de producción.', url: '/maquinaria', type: 'website' },
 }
 
 export default function Maquinaria() {
   return (
     <main className="al-page">
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Inicio', url: '/' },
+        { name: 'Maquinaria', url: '/maquinaria' },
+      ])} />
       <MaquinariaHero />
-      <MaquinariaIntro />
+      <MaterialIntro material="maquinaria" />
       <MaquinariaProperties />
-      <MaquinariaCatalog />
+      <MaterialCatalog material="maquinaria" />
       <MaquinariaPresentation />
-      <MaquinariaNewsletter />
       <MaquinariaExpert />
     </main>
   )

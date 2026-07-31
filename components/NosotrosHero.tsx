@@ -5,9 +5,12 @@ export default function NosotrosHero() {
         <span className="section-label">Nosotros</span>
         <div className="nos-hero__center">
           <span className="nos-hero__year" aria-hidden="true">1991</span>
-          <p className="nos-hero__tagline">
+          {/* La página no tenía encabezado principal: este párrafo era su
+              titular a todos los efectos, así que pasa a serlo también en
+              el marcado. El aspecto no cambia, la clase es la misma. */}
+          <h1 className="nos-hero__tagline">
             Tres décadas fabricando<br />envases que protegen<br />lo que más importa.
-          </p>
+          </h1>
         </div>
         <div className="nos-hero__meta">
           <span className="nos-hero__meta-item">San Vicente del Raspeig · Alicante</span>

@@ -1,4 +1,5 @@
 import AboutCarousel from './AboutCarousel'
+import PlantVideo from './PlantVideo'
 
 export default function About() {
   return (
@@ -16,7 +17,9 @@ export default function About() {
           <AboutCarousel />
         </div>
         <div className="about__video-wrap">
-          <video src="/video.mp4" autoPlay loop muted playsInline />
+          {/* Mismo archivo que la sección de trayectoria: en escritorio ya
+              está en caché cuando se llega abajo. */}
+          <PlantVideo />
         </div>
       </header>
 

@@ -19,6 +19,11 @@
   --ease-out:    cubic-bezier(.32, .94, .6, 1);
   --ease-std:    cubic-bezier(.4, 0, .2, 1);
   --cta:         #5DA1B6;
+  /* Alto de la barra fija. Las secciones del apilado se pinan en top:0, así
+     que su primer rótulo tiene que arrancar por debajo de ella o la barra se
+     lo come a medias. --nav-safe es ese suelo, con un poco de aire. */
+  --nav-h:       7rem;
+  --nav-safe:    8.2rem;
 }
 
 /* =====================================================
@@ -76,7 +81,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
   justify-content: space-between;
   padding: 0 2.8rem;
-  height: 7rem;
+  height: var(--nav-h);
   overflow: visible;
   transition: background .35s var(--ease-out), backdrop-filter .35s;
 }
@@ -231,8 +236,9 @@ img { display: block; max-width: 100%; }
   --thumb-w: 9.3rem;
   --thumb-h: 4.8rem;
   --thumb-step: var(--thumb-w);
-  /* Fondo y color de texto viajan con el proyecto, como en la referencia */
-  transition: background-color .4s var(--ease-out), color .35s var(--ease-out);
+  /* Sin recuadro de color: las fotos se apoyan sobre el fondo de la página. */
+  background: var(--beige);
+  color: var(--black);
 }
 /* La referencia ocupa exactamente un viewport: el media se encaja
    dentro y la barra queda siempre anclada abajo. */
@@ -395,8 +401,8 @@ img { display: block; max-width: 100%; }
   top: 0;
   height: 100%;
   width: calc(50% - var(--thumb-w) / 2);
-  background: var(--project-color);
-  opacity: .6;
+  background: var(--beige);
+  opacity: .72;
 }
 .hero-carousel__strip-fade::before { left: 0; }
 .hero-carousel__strip-fade::after  { right: 0; }
@@ -453,10 +459,10 @@ img { display: block; max-width: 100%; }
    ABOUT
 ===================================================== */
 .about {
-  background: var(--beige);
+  background: var(--white);
   display: flex;
   flex-direction: column;
-  padding: 4.8rem 2.8rem 4rem;
+  padding: var(--nav-safe) 2.8rem 4rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -595,8 +601,8 @@ img { display: block; max-width: 100%; }
    WORK CTA
 ===================================================== */
 .work-cta {
-  background: var(--white);
-  padding: 7rem 2.8rem;
+  background: var(--beige);
+  padding: var(--nav-safe) 2.8rem 7rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -621,12 +627,54 @@ img { display: block; max-width: 100%; }
   font-style: normal;
   color: #5FA8C9;
 }
+.work-cta__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.4rem 2rem;
+}
+.work-cta__hint {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #5a5a5a;
+  max-width: 30ch;
+}
+.work-cta__hint-arrow {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--cta);
+  animation: wc-hint 2.4s var(--ease-out) infinite;
+}
+@keyframes wc-hint {
+  0%, 70%, 100% { transform: none; }
+  82%           { transform: translateY(.35rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .work-cta__hint-arrow { animation: none; }
+}
 
 /* =====================================================
    SERVICES GRID
 ===================================================== */
+/* La rejilla es la continuación visual de .work-cta: comparten fondo para
+   que Catálogo se lea como una sola sección y no como dos bandas.
+
+   Va pinada, así que si no llega al alto del viewport la sección negra
+   que viene detrás asoma por abajo mientras Catálogo sigue siendo lo que
+   se está leyendo: parecía una banda oscura pegada al bloque. Ocupando
+   la pantalla entera, la de abajo la tapa de un barrido limpio —igual
+   que hace .about, que sí medía un viewport. */
 .sg-section {
-  background: var(--white);
+  background: var(--beige);
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 6rem 2.8rem;
   position: sticky;
   top: 0;
@@ -949,18 +997,18 @@ img { display: block; max-width: 100%; }
   padding-top: 5.6rem;
 }
 
-/* Header: same rhythm as .about / .hero-text */
+/* Header: rótulo y título centrados en el eje de la página, no repartidos
+   en dos columnas — así el título no queda descolgado a la derecha. */
 .legal-header {
   background: var(--beige);
   padding: 7rem 2.8rem 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 2rem;
   min-height: 32vh;
-}
-.legal-header__label {
-  align-self: start;
 }
 .legal-header__title {
   font-size: clamp(3.8rem, 5vw, 6.4rem);
@@ -968,6 +1016,82 @@ img { display: block; max-width: 100%; }
   letter-spacing: -.03em;
   line-height: .98;
   color: var(--black);
+}
+
+/* =====================================================
+   PRÓXIMAMENTE  (/catalogo)
+===================================================== */
+.soon {
+  background: var(--beige);
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 2.8rem 8rem;
+}
+.soon__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 62rem;
+}
+.soon__label { margin-bottom: 2.4rem; }
+.soon__title {
+  font-size: clamp(4.4rem, 9vw, 11rem);
+  font-weight: 300;
+  letter-spacing: -.04em;
+  line-height: .92;
+  color: var(--black);
+}
+/* Filete que crece bajo el título: marca que la página está en curso. */
+.soon__title::after {
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 2.8rem auto 0;
+  background: var(--black);
+  width: 100%;
+  transform-origin: center;
+  animation: soon-rule 1.1s var(--ease-out) .2s both;
+}
+@keyframes soon-rule {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.soon__copy {
+  margin-top: 2.8rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #2a2a2a;
+  max-width: 46rem;
+}
+.soon__actions {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+}
+.soon__link {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #2a2a2a;
+  border-bottom: 1px solid rgba(0,0,0,.25);
+  padding-bottom: .3rem;
+  transition: color .25s var(--ease-out), border-color .25s;
+}
+.soon__link:hover { color: var(--black); border-color: var(--black); }
+
+@media (prefers-reduced-motion: reduce) {
+  .soon__title::after { animation: none; }
+}
+
+@media (max-width: 767px) {
+  .soon { padding: 10rem 1.6rem 6rem; }
+  .soon__copy { font-size: 1.4rem; }
 }
 
 /* Body */
@@ -1445,6 +1569,29 @@ img { display: block; max-width: 100%; }
 }
 .cat-clear-all:hover { opacity: .7; }
 
+/* Pista de uso: mismo lenguaje que .work-cta__hint en la home (flecha que
+   respira + texto corto), apoyada sobre la rejilla de gamas en vez de un
+   botón porque aquí no hay CTA que la sostenga. */
+.cat-nav__hint {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  padding: 1.6rem 2.8rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #5a5a5a;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.cat-nav__hint-arrow {
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--cta);
+  animation: wc-hint 2.4s var(--ease-out) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cat-nav__hint-arrow { animation: none; }
+}
+
 /* ── Level 1: Macro cards grid ── */
 .cat-macros {
   display: grid;
@@ -1838,38 +1985,86 @@ img { display: block; max-width: 100%; }
 }
 .al-hero__badge-btn:hover { background: #c96a2b; }
 
-/* --- Intro --- */
+/* --- Intro ---
+   Rejilla asimétrica: el nombre de la gama pesa a la izquierda, el texto
+   respira a la derecha y la ficha cierra la sección de lado a lado. */
 .al-intro {
   background: var(--beige);
-  padding: 8rem 2.8rem 5rem;
+  padding: var(--nav-safe) 2.8rem 4.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  column-gap: 6rem;
+  row-gap: 4.5rem;
   align-items: start;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-.al-intro__left {
+.al-intro__head {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.8rem;
 }
-.al-intro__right {
-  font-size: clamp(1.35rem, 1.6vw, 1.65rem);
+.al-intro__title {
+  font-size: clamp(4.2rem, 7vw, 9rem);
   font-weight: 300;
-  line-height: 1.72;
-  color: #333;
+  letter-spacing: -.045em;
+  line-height: .88;
+  color: var(--black);
+}
+.al-intro__lead {
+  font-size: clamp(1.9rem, 2.4vw, 2.7rem);
+  font-weight: 300;
+  letter-spacing: -.02em;
+  line-height: 1.28;
+  color: var(--black);
+  text-wrap: balance;
+}
+.al-intro__copy {
+  margin-top: 2.2rem;
+  font-size: clamp(1.35rem, 1.5vw, 1.55rem);
+  font-weight: 300;
+  line-height: 1.75;
+  color: #3a3a3a;
+  max-width: 56ch;
+}
+.al-intro__specs {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 4rem;
+}
+.al-intro__spec {
+  border-top: 1px solid rgba(0, 0, 0, .22);
+  padding-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+.al-intro__spec dt {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, .5);
+}
+.al-intro__spec dd {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--black);
 }
 
 /* --- Properties (accordion) --- */
 .al-props {
   background: var(--white);
-  padding: 8rem 2.8rem;
+  padding: var(--nav-safe) 2.8rem 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  /* La sección va pinada y ocupa un viewport, pero su contenido es corto:
+     centrado reparte el aire arriba y abajo en vez de dejar un hueco. */
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 11;
@@ -1885,6 +2080,64 @@ img { display: block; max-width: 100%; }
   width: clamp(18rem, 24vw, 30rem);
   height: clamp(18rem, 24vw, 30rem);
 }
+
+/* --- Producto real de la columna izquierda, con inclinación 3D --- */
+.ms {
+  --mx: 0;
+  --my: 0;
+  position: relative;
+  width: clamp(20rem, 26vw, 32rem);
+  height: clamp(20rem, 26vw, 32rem);
+  /* La perspectiva vive en el contenedor: sin ella los rotate no
+     producen profundidad, sólo una deformación plana. */
+  perspective: 900px;
+}
+.ms__ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0,0,0,.18);
+  border-radius: 50%;
+  transform: translate(calc(var(--mx) * -4px), calc(var(--my) * -4px));
+  transition: transform .5s var(--ease-out);
+}
+.ms__stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+}
+.ms__photo {
+  max-width: 76%;
+  max-height: 76%;
+  object-fit: contain;
+  transform:
+    rotateY(calc(var(--mx) * 13deg))
+    rotateX(calc(var(--my) * -11deg))
+    translate3d(calc(var(--mx) * 6px), calc(var(--my) * 6px), 0);
+  /* La sombra se desplaza al contrario que la pieza: es lo que la
+     despega del fondo y hace legible el giro. */
+  filter: drop-shadow(calc(var(--mx) * -12px) 16px 20px rgba(0,0,0,.22));
+  transition: transform .4s var(--ease-out), filter .4s var(--ease-out);
+}
+
+/* La gama de papel no tiene bodegón sobre blanco que recortar, así que su
+   foto —bobinas de la propia planta— se sirve como disco dentro del aro
+   en lugar de como silueta suelta. El giro y la sombra no cambian. */
+.ms--papel .ms__photo {
+  width: 78%;
+  height: 78%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ms__ring,
+  .ms__photo { transform: none; transition: none; }
+}
+
 .al-props__right {
   display: flex;
   flex-direction: column;
@@ -1966,6 +2219,29 @@ img { display: block; max-width: 100%; }
   font-size: clamp(2rem, 2.8vw, 3.2rem);
   font-weight: 300;
   letter-spacing: -.02em;
+}
+.al-catalog__all {
+  font-size: .95rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0,0,0,.25);
+  padding-bottom: .3rem;
+  white-space: nowrap;
+  transition: opacity .2s;
+}
+.al-catalog__all:hover { opacity: .5; }
+.al-catalog__groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .8rem;
+  padding: 2.4rem 0 .4rem;
+}
+.al-chip__count {
+  font-size: .75em;
+  margin-left: .5rem;
+  opacity: .55;
+  vertical-align: super;
 }
 .al-catalog__filter-btn {
   display: flex;
@@ -2071,7 +2347,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 8rem 2.8rem 4.8rem;
+  padding: var(--nav-safe) 2.8rem 4.8rem;
 }
 .al-pres__left-top {
   display: flex;
@@ -2158,110 +2434,6 @@ img { display: block; max-width: 100%; }
 }
 .al-pres__arrow:hover { background: rgba(255,255,255,.15); }
 
-/* --- Newsletter --- */
-.al-newsletter {
-  background: #f5f0e8;
-  padding: 8rem 2.8rem 6rem;
-  position: sticky;
-  top: 0;
-  z-index: 14;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: start;
-}
-.al-newsletter__left {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.al-newsletter__copy {
-  font-size: clamp(1.4rem, 1.8vw, 1.9rem);
-  font-weight: 300;
-  line-height: 1.55;
-  letter-spacing: -.01em;
-}
-.al-newsletter__copy em { font-style: italic; }
-.al-newsletter__right {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-.al-newsletter__options {
-  display: flex;
-  flex-direction: column;
-  gap: .8rem;
-}
-.al-newsletter__option {
-  display: flex;
-  align-items: center;
-  gap: .9rem;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-.al-newsletter__radio {
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 1px solid rgba(0,0,0,.3);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: border-color .2s;
-}
-.al-newsletter__radio--selected {
-  border-color: var(--black);
-}
-.al-newsletter__radio--selected::after {
-  content: '';
-  width: .7rem;
-  height: .7rem;
-  border-radius: 50%;
-  background: var(--black);
-}
-.al-newsletter__form {
-  display: flex;
-  gap: 0;
-}
-.al-newsletter__input {
-  flex: 1;
-  padding: .9rem 1.2rem;
-  border: 1px solid rgba(0,0,0,.25);
-  border-right: none;
-  background: transparent;
-  font-family: inherit;
-  font-size: 1.15rem;
-  font-weight: 300;
-  color: var(--black);
-  outline: none;
-}
-.al-newsletter__input::placeholder { opacity: .45; }
-.al-newsletter__input:focus { border-color: var(--black); }
-.al-newsletter__submit {
-  padding: .9rem 1.8rem;
-  background: var(--black);
-  color: var(--white);
-  border: 1px solid var(--black);
-  font-family: inherit;
-  font-size: .9rem;
-  font-weight: 500;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background .2s var(--ease-out);
-  white-space: nowrap;
-}
-.al-newsletter__submit:hover { background: #222; }
-.al-newsletter__disclaimer {
-  font-size: .95rem;
-  font-weight: 300;
-  line-height: 1.5;
-  opacity: .5;
-}
-.al-newsletter__disclaimer a { text-decoration: underline; }
-
 /* --- Expert CTA --- */
 .al-expert {
   background: #f5f0e8;
@@ -2269,7 +2441,7 @@ img { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 15;
-  padding: 8rem 2.8rem 6rem;
+  padding: var(--nav-safe) 2.8rem 6rem;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 3.2rem;
@@ -2290,6 +2462,8 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  /* Sin esto el botón se estira a todo el ancho de la columna. */
+  align-items: flex-start;
 }
 .al-expert__copy {
   font-size: clamp(1.6rem, 2.2vw, 2.6rem);
@@ -2307,20 +2481,49 @@ img { display: block; max-width: 100%; }
   .al-pres { grid-template-columns: 1fr; min-height: auto; }
   .al-pres__left { padding: 8rem 2.8rem 3.2rem; }
   .al-pres__right { min-height: 45vw; position: relative; }
-  .al-newsletter { gap: 2.4rem; }
   .al-expert { gap: 2rem; }
 }
 @media (max-width: 767px) {
   .al-hero { height: 56vh; }
   .al-hero__badge { right: 1.6rem; bottom: 1.6rem; min-width: 15rem; padding: 1rem 1.4rem; }
-  .al-intro { grid-template-columns: 1fr; padding: 7rem 1.6rem 3rem; gap: 1.6rem; }
-  .al-props { grid-template-columns: 1fr; padding: 7rem 1.6rem 3rem; gap: 2.4rem; }
-  .al-props__icon-wrap { padding: 0; justify-content: flex-start; }
+  .al-intro {
+    grid-template-columns: 1fr;
+    padding: var(--nav-safe) 1.6rem 3rem;
+    column-gap: 0;
+    row-gap: 3rem;
+  }
+  .al-intro__head { gap: 1.2rem; }
+  .al-intro__copy { margin-top: 1.6rem; }
+  /* Tres columnas de ficha no caben: se apilan con su propio filete. */
+  .al-intro__specs { grid-template-columns: 1fr; gap: 0; }
+  .al-intro__spec { padding: 1.2rem 0; gap: .5rem; }
+  .al-intro__spec:last-child { border-bottom: 1px solid rgba(0, 0, 0, .22); }
+  /* En vertical la foto va DEBAJO del titular, no encima. Disolviendo la
+     columna derecha, sus hijos pasan a ser celdas de la misma rejilla y se
+     pueden reordenar junto a la foto. */
+  .al-props {
+    grid-template-columns: 1fr;
+    padding: var(--nav-safe) 1.6rem 3rem;
+    gap: 1.6rem;
+    align-items: start;
+  }
+  .al-props__right { display: contents; }
+  .al-props__right > .section-label { order: 1; }
+  .al-props__title { order: 2; }
+  .al-props__icon-wrap { order: 3; padding: 0; justify-content: center; }
+  .al-props__right > .al-accordion { order: 4; margin-top: .8rem; }
+  .ms { width: min(24rem, 68vw); height: min(24rem, 68vw); }
   .al-catalog { padding: 7rem 1.6rem 4rem; }
-  .al-pres__left { padding: 7rem 1.6rem 2.8rem; }
+  /* El titular quedaba pegado al botón, y el botón se estiraba a todo
+     el ancho por el `align-items: stretch` implícito de la columna. */
+  .al-pres__left {
+    padding: var(--nav-safe) 1.6rem 2.8rem;
+    align-items: flex-start;
+    gap: 3.2rem;
+  }
+  .al-pres__cta { align-self: flex-start; }
   .al-pres__right { min-height: 52vw; }
-  .al-newsletter { grid-template-columns: 1fr; padding: 7rem 1.6rem 4rem; gap: 2.8rem; }
-  .al-expert { grid-template-columns: 1fr; padding: 7rem 1.6rem 4rem; gap: 1.8rem; }
+  .al-expert { grid-template-columns: 1fr; padding: var(--nav-safe) 1.6rem 4rem; gap: 1.8rem; }
   .al-expert__icon { width: 6rem; height: 6rem; font-size: 2.4rem; }
 }
 
@@ -2570,12 +2773,16 @@ img { display: block; max-width: 100%; }
 }
 
 /* --- Mission --- */
+/* Mismo caso que .sg-section: detrás viene la banda negra de trayectoria,
+   así que la sección tiene que llenar el viewport para que el relevo sea
+   un barrido y no un zócalo oscuro bajo el texto. */
 .nos-mission {
   position: sticky;
   top: 0;
   z-index: 11;
   background: var(--white);
-  min-height: 56vh;
+  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2626,6 +2833,14 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 13;
 }
+.nos-values__grid-wrap { height: calc(100vh - 11rem); }
+.nos-values__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: .5rem;
+  height: 100%;
+}
 
 /* --- Certs --- */
 .nos-certs {
@@ -2633,7 +2848,7 @@ img { display: block; max-width: 100%; }
   top: 0;
   z-index: 14;
   background: var(--beige);
-  padding: 8rem 2.8rem 7rem;
+  padding: var(--nav-safe) 2.8rem 7rem;
 }
 .nos-certs__header {
   display: grid;
@@ -2731,10 +2946,10 @@ img { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 15;
-  background: #f5f0e8;
+  background: var(--white);
   /* Con `align-items: end` y un min-height alto, todo el aire sobrante
      se acumulaba arriba. El bloque se dimensiona ya por su contenido. */
-  padding: 5.6rem 2.8rem 6.4rem;
+  padding: var(--nav-safe) 2.8rem 6.4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -2788,12 +3003,31 @@ img { display: block; max-width: 100%; }
 @media (max-width: 767px) {
   .nos-hero { grid-template-columns: 1fr; min-height: auto; }
   .nos-hero__right { height: 52vw; }
-  .nos-hero__left { padding: 7rem 1.6rem 3.6rem; }
+  .nos-hero__left {
+    padding: 7rem 1.6rem 3.6rem;
+    align-items: center;
+    text-align: center;
+    gap: 3.2rem;
+  }
+  .nos-hero__center { align-items: center; gap: 2rem; }
+  /* El rótulo "Nosotros" quedaba pegado al año. */
+  .nos-hero__left > .section-label { margin-bottom: 1.2rem; }
   .nos-hero__year { font-size: clamp(7rem, 22vw, 12rem); }
+  .nos-hero__tagline { max-width: none; }
+  /* Al apilarse en dos líneas el separador queda suelto al final. */
+  .nos-hero__meta { justify-content: center; }
+  .nos-hero__meta-sep { display: none; }
   .nos-mission { padding: 6rem 1.6rem; }
-  .nos-certs { padding: 6rem 1.6rem 5rem; }
+  .nos-values__grid-wrap { height: auto; }
+  .nos-values__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 30vh;
+    gap: .6rem;
+  }
+  .nos-certs { padding: var(--nav-safe) 1.6rem 5rem; }
   .nos-certs__spec { grid-template-columns: 1fr; gap: .3rem; padding: .9rem 0; }
-  .nos-cta { padding: 6rem 1.6rem 5rem; min-height: auto; }
+  .nos-cta { padding: var(--nav-safe) 1.6rem 5rem; min-height: auto; }
 }
 
 /* =====================================================
@@ -2845,7 +3079,7 @@ img { display: block; max-width: 100%; }
    nunca llega a verse mientras están pinadas.
 ===================================================== */
 @media (min-width: 1024px) and (max-height: 920px) {
-  .about      { padding: 3.6rem 2.8rem 3rem; }
+  .about      { padding: var(--nav-safe) 2.8rem 3rem; }
   .sd-section { padding: 3.6rem 2.8rem 3rem; }
   .sg-section { padding: 3.6rem 2.8rem 3rem; }
   /* El carrusel es el elemento elástico de la sección: encoge para que
@@ -2859,11 +3093,37 @@ img { display: block; max-width: 100%; }
 ===================================================== */
 @media (max-width: 767px) {
 
+  :root { --nav-h: 6rem; --nav-safe: 7.2rem; }
+
   /* --- Navbar --- */
-  .nav { padding: 0 1.6rem; height: 6rem; }
+  .nav { padding: 0 1.6rem; }
   .nav__links { display: none; }
-  .nav__right .nav__contact { display: none; }
-  .nav__star { display: none; }
+  .nav__logo img { width: 12.5rem; }
+  /* CONTACTO vive en la barra, no dentro del desplegable: se aprieta para
+     que quepa junto al logotipo, Instagram y el menú en 360 px. */
+  .nav__right .nav__contact {
+    font-size: 1rem;
+    letter-spacing: .08em;
+    padding: .7rem 1rem;
+    white-space: nowrap;
+  }
+  .nav__star { width: 3.2rem; height: 3.2rem; }
+  /* En lo alto de la portada manda el logotipo grande del hero: la barra no
+     compite con él y entra entera —logo, Instagram y menú— al hacer scroll.
+     Fuera de la portada `.scrolled` va puesto de salida, así que se ve
+     desde el primer momento. */
+  .nav__right {
+    gap: .8rem;
+    opacity: 0;
+    transform: translateY(-.4rem);
+    pointer-events: none;
+    transition: opacity .3s var(--ease-out), transform .3s var(--ease-out);
+  }
+  .nav.scrolled .nav__right {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
   .nav__hamburger {
     display: flex;
     align-items: center;
@@ -2874,50 +3134,55 @@ img { display: block; max-width: 100%; }
     padding: 0 .4rem;
   }
 
-  /* --- Mobile menu overlay --- */
-  .mobile-menu {
-    display: flex;
+  /* --- Menú móvil: pestaña colgada de la barra --- */
+  .mobile-menu__catch {
     position: fixed;
     inset: 0;
-    z-index: 199;
-    background: rgba(217, 217, 217, .97);
-    backdrop-filter: blur(12px);
-    flex-direction: column;
-    justify-content: center;
-    padding: 7rem 2.4rem 4rem;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .25s var(--ease-out);
+    z-index: 150;
+    background: transparent;
   }
-  .mobile-menu--open { opacity: 1; pointer-events: all; }
+  .mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 1.6rem;
+    width: min(26rem, calc(100vw - 3.2rem));
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 1.6rem 4rem rgba(0,0,0,.14);
+    padding: 1.2rem 0 .6rem;
+    /* Se despliega desde el borde superior; el recorte evita que el
+       contenido asome antes de tiempo. */
+    transform-origin: top right;
+    opacity: 0;
+    transform: translateY(-.8rem);
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity .22s var(--ease-out),
+                transform .28s var(--ease-out),
+                visibility .28s;
+  }
+  .mobile-menu--open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+    visibility: visible;
+  }
   .mobile-menu__nav ul {
     display: flex;
     flex-direction: column;
-    gap: .6rem;
   }
   .mobile-menu__nav a {
-    font-size: clamp(2.8rem, 8vw, 3.6rem);
-    font-weight: 300;
-    letter-spacing: -.03em;
-    line-height: 1.2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .06em;
     display: block;
-    padding: .6rem 0;
-    transition: opacity .2s;
+    padding: 1.1rem 1.8rem;
+    transition: background .18s var(--ease-out), padding-left .18s var(--ease-out);
   }
-  .mobile-menu__nav a:hover { opacity: .5; }
-  .mobile-menu__contact {
-    display: inline-flex;
-    align-self: flex-start;
-    margin-top: 3.6rem;
-    font-size: 1.05rem;
-    font-weight: 500;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    border: 1px solid var(--black);
-    padding: .9rem 2rem;
-    transition: background .25s var(--ease-out), color .25s;
-  }
-  .mobile-menu__contact:hover { background: var(--black); color: var(--white); }
+  .mobile-menu__nav a:active,
+  .mobile-menu__nav a:hover { background: rgba(0,0,0,.04); padding-left: 2.2rem; }
 
   /* --- Hero Text --- */
   .hero-text {
@@ -2929,24 +3194,63 @@ img { display: block; max-width: 100%; }
   .hero-text__logo { grid-column: 1; grid-row: 1; padding-top: 0; }
   .hero-text__logo img { max-width: 24rem; }
   .hero-text__copy { grid-column: 1; grid-row: 2; max-width: 100%; padding-top: 0; }
-  .hero-text__headline { grid-column: 1; grid-row: 3; }
+  .hero-text__headline {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    text-wrap: balance;
+  }
 
   /* --- Hero Carousel --- */
   .hero-carousel__media-item:last-child { display: none; }
   .hero-carousel__ref { display: none; }
-  .hero-carousel__project-name { font-size: 1.1rem; min-width: 0; flex: 1; }
-  .hero-carousel__bottom { padding: 1rem 1.6rem; gap: .8rem; }
-  .hero-carousel { --thumb-w: 5.4rem; --thumb-h: 3rem; }
+  /* En vertical la barra se apila: la tira manda y el rótulo va debajo,
+     los dos centrados. En horizontal el rótulo compite por el ancho y
+     acaba comprimiendo las miniaturas. */
+  .hero-carousel__bottom {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.2rem 1.6rem 1.8rem;
+    gap: 1.1rem;
+  }
+  .hero-carousel__thumbs { order: 1; gap: .8rem; }
+  .hero-carousel__project-name {
+    order: 2;
+    flex: 0 0 auto;
+    min-width: 0;
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    text-align: center;
+  }
+  .hero-carousel { --thumb-w: 7.6rem; --thumb-h: 4.2rem; }
   .hero-carousel__strip { width: calc(var(--thumb-step) * 3); }
-  .hero-carousel__thumbs { gap: .6rem; }
   /* En vertical sólo se ve una imagen: un encuadre apaisado dejaría
-     media pantalla vacía, así que el escenario pasa a retrato. */
-  .hero-carousel__media { padding: 2rem 1.6rem 1.2rem; }
-  .hero-carousel__stage { aspect-ratio: 3 / 4; max-width: calc(100cqh * 3 / 4); }
+     media pantalla vacía, así que el escenario pasa a retrato.
+     Y la sección deja de reservar el viewport entero: con alto fijo, el
+     escenario quedaba topado por el ancho y sobraban ~120 px muertos por
+     arriba y por abajo. Ahora manda la foto y el aire es el relleno,
+     idéntico a los dos lados. */
+  .hero-carousel { height: auto; }
+  .hero-carousel__media { padding: 2.4rem 1.6rem; container-type: normal; }
+  .hero-carousel__stage { aspect-ratio: 4 / 5; max-width: none; }
 
   /* --- About --- */
-  .about { padding: 4rem 1.6rem 3rem; }
+  .about { padding: var(--nav-safe) 1.6rem 2rem; }
   .about__header { grid-template-columns: 1fr; gap: 2rem; }
+  /* Sin alto de sección que repartir, `flex: 1 1 0` dejaba la cinta en su
+     mínimo. En vertical se le da alto propio y dos fotos por pantalla,
+     con el tope justo para que la sección siga cabiendo en un viewport
+     (va pinada: lo que se pase de 100vh no llega a verse nunca). */
+  .about { max-height: 100vh; }
+  .about__header { min-height: 0; }
+  .about-carousel { flex: 1 1 auto; height: 26vh; min-height: 11rem; }
+  .about-carousel__item { flex: 0 0 calc(50cqi - 1rem); }
+  /* Mismos 16 s pero con fotos al doble de ancho relativo: en vertical la
+     cinta recorre menos píxeles por segundo y se arrastra. */
+  .about-carousel__track { animation-duration: 11s; }
+  .about__content { gap: 2.2rem; }
   .about__video-wrap { width: 100%; aspect-ratio: 16 / 9; }
   .about__media { margin-top: 2rem; justify-content: flex-start; }
   .about__media-box { width: 100%; }
@@ -2965,10 +3269,23 @@ img { display: block; max-width: 100%; }
   .stats-card:last-child { border-bottom: none; }
 
   /* --- Work CTA --- */
-  .work-cta { grid-template-columns: 1fr; padding: 5rem 1.6rem; gap: 2.4rem; }
+  .work-cta { grid-template-columns: 1fr; padding: var(--nav-safe) 1.6rem 0; gap: 2rem; }
+  /* El botón y su pista se apilan centrados; el titular sigue alineado a
+     la izquierda para no romper el ritmo del resto de secciones. */
+  .work-cta__actions {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .work-cta__hint { text-align: center; max-width: 26ch; }
 
   /* --- Services Grid --- */
-  .sg-section { padding: 5rem 1.6rem; }
+  /* Catálogo son dos capas pinadas seguidas (.work-cta y esta), así que
+     entre la pista y las fotos se sumaban los dos rellenos más el centrado
+     vertical: casi 140 px de aire. La rejilla arranca arriba y el sobrante
+     del viewport queda por debajo. */
+  .sg-section { padding: 4.4rem 1.6rem 4rem; justify-content: flex-start; }
   .sg-outer { grid-template-columns: 1fr; gap: 2.4rem; }
   /* Las dos columnas de rótulos se disuelven para poder intercalarlos:
      en vertical deben leerse en el mismo orden que las imágenes de la
@@ -2990,13 +3307,23 @@ img { display: block; max-width: 100%; }
   .sd-header { grid-template-columns: 1fr; margin-bottom: 1.2rem; }
   .sd-canvas { flex: 1; min-height: 0; }
 
-  /* --- Footer --- */
+  /* --- Footer ---
+     En vertical el pie se lee centrado de arriba abajo: logotipo, las dos
+     columnas de enlaces y los datos de contacto sobre el mismo eje. */
   .footer { padding: 0 1.6rem; }
-  .footer__grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .footer__logo-wrap { grid-column: 1 / -1; }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 2.4rem 2rem; text-align: center; }
+  .footer__logo-wrap { grid-column: 1 / -1; justify-content: center; }
   .footer__logo { width: clamp(14rem, 50vw, 22rem); }
-  .footer__legal { flex-wrap: wrap; gap: .8rem; padding: 1.4rem 0; }
-  .footer__bottom { flex-direction: column; align-items: flex-start; gap: .6rem; padding: 1.6rem 0; }
+  .footer__nav,
+  .footer__social { align-items: center; }
+  /* Los datos ocupan el ancho completo para poder centrarse en la página
+     y no dentro de media rejilla. */
+  .footer__contact { grid-column: 1 / -1; align-items: center; gap: 1.6rem; }
+  .footer__contact-row { justify-content: center; align-items: center; gap: .9rem; }
+  .footer__contact-key { padding-top: 0; width: auto; }
+  .footer__contact-val { text-align: center; }
+  .footer__legal { flex-wrap: wrap; justify-content: center; gap: .8rem 1.6rem; padding: 1.4rem 0; }
+  .footer__bottom { flex-direction: column; align-items: center; gap: .6rem; padding: 1.6rem 0; }
 
   /* --- Catalog --- */
   .catalog-page { padding-top: 6rem; }
@@ -3007,6 +3334,7 @@ img { display: block; max-width: 100%; }
 
   /* --- Catalog nav responsive (mobile) --- */
   .cat-nav__header { padding: 3rem 1.6rem 2rem; flex-direction: column; align-items: flex-start; gap: .8rem; }
+  .cat-nav__hint { padding: 1.2rem 1.6rem; font-size: 1.15rem; }
   .cat-macros { grid-template-columns: repeat(2, 1fr); }
   .cat-macro-card__body { padding: 1rem 1.2rem 1.4rem; }
   .cat-macro-card__label { font-size: 1.9rem; }
@@ -3015,7 +3343,38 @@ img { display: block; max-width: 100%; }
   .cat-adv-btn { flex: 1; justify-content: center; }
   .cat-adv-panel__inner { padding: 1.6rem 1.6rem; }
   .cat-adv-row { flex-direction: column; align-items: flex-start; gap: .8rem; }
-  .cat-sub { min-width: 7.5rem; padding: 1.2rem 1.2rem; }
+  /* Todas las subcategorías a la vista: en vertical la tira se reparte en
+     varias filas en vez de obligar a arrastrar en horizontal. */
+  /* El desplegable estaba topado a la altura de una sola fila y recortaba
+     la segunda (aluminio tiene 8 subcategorías). */
+  .cat-subs-wrap--open { max-height: 28rem; }
+  .cat-subs {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    padding: 0 .8rem;
+  }
+  .cat-subs > :first-child,
+  .cat-subs > :last-child { margin: 0; }
+  .cat-sub {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: calc(25% - .4rem);
+    padding: 1.1rem .5rem;
+    border-right: none;
+  }
+  /* Con cuatro o menos subcategorías, repartirlas en cuatro columnas deja
+     los rótulos largos —«Polipropileno», «OPS Cuadrado»— pegados unos a
+     otros. A partir de ahí van de dos en dos. */
+  .cat-subs:not(:has(> :nth-child(5))) .cat-sub { width: calc(50% - .3rem); }
+  /* En plástico la pareja OPS baja a la segunda fila. */
+  .cat-subs [data-sub="polipropileno"] { order: 1; }
+  .cat-subs [data-sub="film"]          { order: 2; }
+  .cat-subs [data-sub="ops-ovalado"]   { order: 3; }
+  .cat-subs [data-sub="ops-cuadrado"]  { order: 4; }
+  .cat-sub__label { font-size: 1.15rem; text-align: center; line-height: 1.2; }
+  .cat-sub__icon { font-size: 3rem; }
+  .cat-sub__count { font-size: 1.25rem; }
 }
 
 /* =====================================================

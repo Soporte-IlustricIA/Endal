@@ -38,7 +38,7 @@ const NAV_ITEMS: { key: NavKey; label: string; href: string }[] = [
   { key: 'INICIO',       label: 'INICIO',       href: '/'          },
   { key: 'PRODUCTOS',    label: 'PRODUCTOS',    href: '/productos' },
   { key: 'NOSOTROS',     label: 'NOSOTROS',     href: '/nosotros'  },
-  { key: 'CATÁLOGO',     label: 'CATÁLOGO',     href: '#'          },
+  { key: 'CATÁLOGO',     label: 'CATÁLOGO',     href: '/catalogo'  },
 ]
 
 export default function Navbar() {
@@ -123,6 +123,14 @@ export default function Navbar() {
       onMouseEnter={scheduleClose}
       aria-hidden="true"
     />
+    {/* Captura el toque fuera del menú móvil sin tapar la página */}
+    {mobileMenuOpen && (
+      <div
+        className="mobile-menu__catch"
+        onClick={() => setMobileMenuOpen(false)}
+        aria-hidden="true"
+      />
+    )}
     <header
       className={`nav${(scrolled || !isHome) ? ' scrolled' : ''}`}
       onMouseLeave={scheduleClose}
@@ -177,7 +185,9 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu overlay */}
+      {/* Menú móvil: pestaña colgada de la barra, no una capa a pantalla
+          completa — el contenido de la página se sigue viendo detrás.
+          Sólo las páginas: contacto e Instagram viven en la propia barra. */}
       <div className={`mobile-menu${mobileMenuOpen ? ' mobile-menu--open' : ''}`}>
         <nav className="mobile-menu__nav">
           <ul>
@@ -190,9 +200,6 @@ export default function Navbar() {
             ))}
           </ul>
         </nav>
-        <a href="/contacto" className="mobile-menu__contact" onClick={() => setMobileMenuOpen(false)}>
-          CONTACTO
-        </a>
       </div>
 
       {/* Mega panel — el marco recorta y el contenido baja desde arriba */}

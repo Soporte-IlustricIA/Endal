@@ -6,18 +6,18 @@ type Slide = { src: string; alt: string; name: string }
 const SLIDES: Slide[] = [
   {
     src: '/fabrica-endal.webp',
-    alt: 'Instalaciones de producción ENDAL',
-    name: 'Instalaciones ENDAL',
+    alt: 'Línea de producción de ENDAL',
+    name: 'Planta de fabricación',
   },
   {
-    src: 'https://a.storyblok.com/f/285561750510308/1920x1080/20d97ea675/cellart_09_elevated-process.jpg',
-    alt: 'Línea de producción automatizada',
-    name: 'Línea de producción',
+    src: '/images/material/pres-maquinaria.webp',
+    alt: 'Línea automatizada de envasado',
+    name: 'Envasado automatizado',
   },
   {
     src: '/equipo-endal-1.webp',
-    alt: 'Equipo técnico de ENDAL',
-    name: 'Equipo técnico',
+    alt: 'Operaria controlando una termoselladora',
+    name: 'Control de línea',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function MaquinariaPresentation() {
             className={`al-pres__slide${i === current && !transitioning ? ' al-pres__slide--active' : ''}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={slide.src} alt={slide.alt} />
+            <img src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
           </div>
         ))}
         <div className="al-pres__caption">

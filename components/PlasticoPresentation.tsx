@@ -5,19 +5,19 @@ type Slide = { src: string; alt: string; name: string }
 
 const SLIDES: Slide[] = [
   {
-    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/48f73d339e/ref_mint_thumbnail-tuile.jpg',
-    alt: 'Envasado al vacío con film plástico',
-    name: 'Envasado al vacío',
+    src: '/images/material/pres-plastico-1.webp',
+    alt: 'Ensalada caprese en vasos de plástico transparente',
+    name: 'Vasos transparentes',
   },
   {
     src: '/papel-vegetal-1.webp',
-    alt: 'Film para hostelería y restauración',
-    name: 'Film para hostelería',
+    alt: 'Bobinas de film en la línea de producción',
+    name: 'Bobinas de film',
   },
   {
-    src: 'https://a.storyblok.com/f/285561750510308/2000x2000/4c93a6e157/ref_fromeo_thumbnail-tuile.jpg',
-    alt: 'Conservación flexible con bolsas',
-    name: 'Conservación flexible',
+    src: '/images/material/pres-plastico-2.webp',
+    alt: 'Platos preparados en envases de plástico',
+    name: 'Platos preparados',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function PlasticoPresentation() {
             className={`al-pres__slide${i === current && !transitioning ? ' al-pres__slide--active' : ''}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={slide.src} alt={slide.alt} />
+            <img src={slide.src} alt={slide.alt} loading="lazy" decoding="async" />
           </div>
         ))}
         <div className="al-pres__caption">

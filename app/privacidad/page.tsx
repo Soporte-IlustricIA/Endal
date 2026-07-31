@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Política de Privacidad y Cookies — ENDAL',
+  title: 'Política de privacidad y cookies',
+  description: 'Información legal de ENDAL S.L., fabricante de envases alimentarios en San Vicente del Raspeig (Alicante).',
+  alternates: { canonical: '/privacidad' },
+  robots: { index: false, follow: true },
 }
 
 export default function PrivacidadPage() {

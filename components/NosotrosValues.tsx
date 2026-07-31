@@ -31,7 +31,7 @@ const CARDS = [
     title: 'Calidad',
     category: 'Seguridad Alimentaria & Certificaciones',
     year: '2024',
-    alt: 'Operaria revisando una bobina de aluminio en planta',
+    alt: 'Moldes metálicos apilados, idénticos entre sí',
     image: '/images/nosotros/calidad.webp',
     magnets: [
       { x: 5,  y: 30, s: 16 }, { x: 10, y: 42, s: 10 }, { x: 3, y: 52, s: 7 },
@@ -43,7 +43,7 @@ const CARDS = [
     title: 'Innovación',
     category: 'Desarrollo de Producto & I+D',
     year: '2023',
-    alt: 'Ingeniero controlando una línea de fabricación con tableta',
+    alt: 'Paletizador automático al final de la línea de fabricación',
     image: '/images/nosotros/innovacion.webp',
     magnets: [
       { x: 82, y: 55, s: 16 }, { x: 88, y: 68, s: 10 }, { x: 78, y: 72, s: 7 },
@@ -67,7 +67,7 @@ const CARDS = [
     title: 'Sostenibilidad',
     category: 'Medio Ambiente & Reciclabilidad',
     year: '2021',
-    alt: 'Lámina de aluminio, material 100% reciclable',
+    alt: 'Aluminio en bruto, material reciclable de forma indefinida',
     image: '/images/nosotros/sostenibilidad.webp',
     magnets: [
       { x: 82, y: 26, s: 14 }, { x: 88, y: 38, s: 10 }, { x: 78, y: 44, s: 7 },
@@ -352,15 +352,10 @@ export default function NosotrosValues() {
         </div>
       </div>
 
-      {/* ── Cards grid — explicit height so cards render ── */}
-      <div
-        className="px-4 pb-4 sm:px-6"
-        style={{ height: 'calc(100vh - 11rem)' }}
-      >
-        <div
-          className="grid gap-2 md:grid-cols-2"
-          style={{ height: '100%', gridTemplateRows: '1fr 1fr' }}
-        >
+      {/* ── Rejilla de tarjetas: el alto lo fija el CSS, que en vertical
+             pasa a una columna con cuatro filas propias ── */}
+      <div className="nos-values__grid-wrap px-4 pb-4 sm:px-6">
+        <div className="nos-values__grid">
           {CARDS.map((card, i) => (
             <CaseCard key={card.id} card={card} index={i} />
           ))}

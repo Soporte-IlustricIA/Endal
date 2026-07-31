@@ -1,7 +1,7 @@
 const NAV_LINKS: { label: string; href: string }[] = [
   { label: 'Productos',  href: '/productos' },
-  { label: 'Nosotros',  href: '#' },
-  { label: 'Catálogo',  href: '#' },
+  { label: 'Nosotros',  href: '/nosotros' },
+  { label: 'Catálogo',  href: '/catalogo' },
   { label: 'Contacto',  href: '/contacto' },
 ]
 /* Sólo los perfiles que ENDAL tiene activos. El de Instagram es el mismo

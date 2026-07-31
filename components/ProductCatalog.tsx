@@ -27,7 +27,7 @@ type MacroDef  = { id: string; label: string; desc: string; image: string; subca
 const TAXONOMY: MacroDef[] = [
   {
     id: 'aluminio', label: 'Aluminio', desc: 'Envases de aluminio de alta calidad',
-    image: '/images/catalogo/endal%20envases%20de%20aluminio%201.webp',
+    image: '/images/catalogo/macro-aluminio.webp',
     subcats: [
       { id: 'redondos',      label: 'Redondos',      Icon: IconRound,     nombres: ['ENVASE REDONDO PARA TAPA', 'ENVASE REDONDO SIN TAPA'] },
       { id: 'rectangulares', label: 'Rectangulares',  Icon: IconRect,      nombres: ['ENVASE RECTANGULAR SIN TAPA', 'ENVASE RECTANGULAR PARA TAPA'] },
@@ -41,7 +41,7 @@ const TAXONOMY: MacroDef[] = [
   },
   {
     id: 'plastico', label: 'Plástico', desc: 'Transparencia y resistencia',
-    image: '/images/catalogo/envase%20ops%20ovalado.webp',
+    image: '/images/catalogo/macro-plastico.webp',
     subcats: [
       { id: 'ops-ovalado',   label: 'OPS Ovalado',   Icon: IconOPS,       nombres: ['ENVASE OPS OVALADO'] },
       { id: 'ops-cuadrado',  label: 'OPS Cuadrado',  Icon: IconSquare,    nombres: ['ENVASE OPS CUADRADO'] },
@@ -51,7 +51,7 @@ const TAXONOMY: MacroDef[] = [
   },
   {
     id: 'papel', label: 'Papel y Cartón', desc: 'Biodegradable y sostenible',
-    image: '/images/catalogo/pasteleria%20aluminio%20endal.webp',
+    image: '/images/catalogo/macro-papel.webp',
     subcats: [
       { id: 'papel-hornear', label: 'Papel para Hornear', Icon: IconPaper,   nombres: ['ENVASE DE PAPEL PARA HORNEAR', 'ENVASE 4590 PH'] },
       { id: 'papel-vegetal', label: 'Papel Vegetal',      Icon: IconVegetal, nombres: ['BOBINA DE PAPEL VEGETAL', 'BOBINA PAPEL VEGETAL'] },
@@ -59,7 +59,7 @@ const TAXONOMY: MacroDef[] = [
   },
   {
     id: 'maquinaria', label: 'Maquinaria', desc: 'Equipos de sellado y envasado',
-    image: '/images/catalogo/M42600.webp',
+    image: '/images/catalogo/macro-maquinaria.webp',
     subcats: [
       { id: 'maquinas',   label: 'Máquinas',  Icon: IconMachine,   nombres: ['MÁQUINA', 'MAQUINA'] },
       { id: 'accesorios', label: 'Accesorios', Icon: IconAccessory, nombres: ['PORTA ROLLO'] },
@@ -184,7 +184,9 @@ export default function ProductCatalog() {
       <div className="cat-nav__header">
         <div>
           <span className="section-label">Catálogo</span>
-          <h1 className="cat-nav__title">Todos los productos</h1>
+          {/* «Todos los productos» no dice de qué: el encabezado de la
+              página del catálogo es lo que Google lee como tema. */}
+          <h1 className="cat-nav__title">Envases de aluminio, plástico y papel</h1>
         </div>
         <div className="cat-nav__meta">
           <span className="cat-nav__count">{visible.length} {visible.length === 1 ? 'referencia' : 'referencias'}</span>
@@ -195,6 +197,13 @@ export default function ProductCatalog() {
           )}
         </div>
       </div>
+
+      {/* Guía de uso: en la home la pista va junto al CTA, aquí no hay CTA
+          que la sostenga, así que se apoya sobre la propia rejilla. */}
+      <p className="cat-nav__hint">
+        <span className="cat-nav__hint-arrow" aria-hidden="true">↓</span>
+        Elige el tipo de envase que buscas: aluminio, plástico, papel o maquinaria
+      </p>
 
       {/* ── LEVEL 1: MACRO CARDS ── */}
       <div className="cat-macros">
@@ -207,7 +216,7 @@ export default function ProductCatalog() {
           >
             <div className="cat-macro-card__img">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={m.image} alt={m.label} />
+              <img src={m.image} alt={m.label} width={900} height={675} decoding="async" />
             </div>
             <div className="cat-macro-card__body">
               <strong className="cat-macro-card__label">{m.label}</strong>
@@ -224,6 +233,7 @@ export default function ProductCatalog() {
           {subcats.map(s => (
             <button
               key={s.id}
+              data-sub={s.id}
               className={`cat-sub${subcatId === s.id ? ' cat-sub--active' : ''}`}
               onClick={() => selectSubcat(s.id)}
             >

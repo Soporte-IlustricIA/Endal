@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useMemo, useRef, useState } from 'react'
+import PlantVideo from './PlantVideo'
 
 export type Milestone = { year: string; title: string; desc: string }
 
@@ -95,7 +96,6 @@ interface Props {
   ctaHref?: string
   /* Modificador de apilado: cada página tiene su propia pila de sticky. */
   variant?: string
-  videoSrc?: string
 }
 
 export default function TrayectoriaSection({
@@ -106,7 +106,6 @@ export default function TrayectoriaSection({
   ctaLabel = 'Conoce ENDAL',
   ctaHref = '/nosotros',
   variant,
-  videoSrc = '/video.mp4',
 }: Props = {}) {
   const wrapRef = useRef<HTMLElement>(null)
   const holderRef = useRef<HTMLDivElement>(null)
@@ -213,15 +212,7 @@ export default function TrayectoriaSection({
         {/* ── Capa 1 · vídeo + titular ── */}
         <div className="tray__layer">
           <div className="tray__visual">
-            <video
-              className="tray__video"
-              src={videoSrc}
-              autoPlay
-              loop
-              muted
-              playsInline
-              aria-hidden="true"
-            />
+            <PlantVideo className="tray__video" />
             <div className="tray__ov tray__ov--solid" />
             <div className="tray__ov tray__ov--grad" />
             <div className="tray__ov tray__ov--scrim" />

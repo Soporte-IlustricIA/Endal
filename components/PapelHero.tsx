@@ -35,21 +35,22 @@ export default function PapelHero() {
     return () => observer.disconnect()
   }, [])
 
-  const count = useCounter(6, active)
+  const count = useCounter(13, active)
 
   return (
     <section className="al-hero" ref={ref}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="al-hero__img"
-        src="/bobinas-aluminio.webp"
-        alt="Papel de aluminio ENDAL"
+        src="/images/material/hero-papel.webp"
+        alt="Bandeja forrada con papel de hornear entrando en el horno"
+        fetchPriority="high"
       />
       <div className="al-hero__badge">
         <span className="al-hero__badge-label">Número de referencias</span>
         <div className="al-hero__badge-row">
           <span className="al-hero__badge-count">{count}</span>
-          <a href="#pp-catalog" className="al-hero__badge-btn" aria-label="Ver referencias">
+          <a href="#al-catalog" className="al-hero__badge-btn" aria-label="Ver referencias">
             →
           </a>
         </div>

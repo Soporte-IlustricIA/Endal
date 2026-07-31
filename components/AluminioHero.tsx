@@ -35,15 +35,16 @@ export default function AluminioHero() {
     return () => observer.disconnect()
   }, [])
 
-  const count = useCounter(12, active)
+  const count = useCounter(119, active)
 
   return (
     <section className="al-hero" ref={ref}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="al-hero__img"
-        src="/bandeja-lasana.webp"
-        alt="Recipientes de aluminio ENDAL"
+        src="/images/material/hero-aluminio.webp"
+        alt="Bandejas de aluminio con verduras y pescado listas para el horno"
+        fetchPriority="high"
       />
 
       <div className="al-hero__badge">

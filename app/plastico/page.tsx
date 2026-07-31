@@ -1,25 +1,33 @@
+import type { Metadata } from 'next'
+import JsonLd from '@/components/JsonLd'
+import { breadcrumbJsonLd } from '@/src/lib/site'
 import PlasticoHero         from '@/components/PlasticoHero'
-import PlasticoIntro        from '@/components/PlasticoIntro'
+import MaterialIntro      from '@/components/MaterialIntro'
 import PlasticoProperties   from '@/components/PlasticoProperties'
-import PlasticoCatalog      from '@/components/PlasticoCatalog'
+import MaterialCatalog     from '@/components/MaterialCatalog'
 import PlasticoPresentation from '@/components/PlasticoPresentation'
-import PlasticoNewsletter   from '@/components/PlasticoNewsletter'
 import PlasticoExpert       from '@/components/PlasticoExpert'
 
-export const metadata = {
-  title: 'Plástico — Film y bolsas alimentarias | ENDAL',
-  description: 'Gama completa de film estirable y bolsas alimentarias para conservación, vacío y envasado profesional.',
+export const metadata: Metadata = {
+  title: 'Envases de plástico OPS, polipropileno y film alimentario',
+  description:
+    'Envases OPS con tapa integrada, polipropileno para producto caliente y bobinas de film doméstico e industrial. 23 referencias para mostrador, reparto y envasado en línea.',
+  alternates: { canonical: '/plastico' },
+  openGraph: { title: 'Envases de plástico OPS, polipropileno y film alimentario | ENDAL', description: 'Envases OPS con tapa integrada, polipropileno para producto caliente y bobinas de film doméstico e industrial. 23 referencias para mostrador, reparto y envasado en línea.', url: '/plastico', type: 'website' },
 }
 
 export default function Plastico() {
   return (
     <main className="al-page">
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Inicio', url: '/' },
+        { name: 'Plástico', url: '/plastico' },
+      ])} />
       <PlasticoHero />
-      <PlasticoIntro />
+      <MaterialIntro material="plastico" />
       <PlasticoProperties />
-      <PlasticoCatalog />
+      <MaterialCatalog material="plastico" />
       <PlasticoPresentation />
-      <PlasticoNewsletter />
       <PlasticoExpert />
     </main>
   )
