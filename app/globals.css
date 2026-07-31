@@ -3191,7 +3191,7 @@ img { display: block; max-width: 100%; }
     gap: 1.4rem;
     min-height: auto;
   }
-  .hero-text__logo { grid-column: 1; grid-row: 1; padding-top: 0; }
+  .hero-text__logo { grid-column: 1; grid-row: 1; padding-top: 0; justify-content: center; }
   .hero-text__logo img { max-width: 24rem; }
   .hero-text__copy {
     grid-column: 1;
