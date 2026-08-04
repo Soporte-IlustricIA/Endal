@@ -5,9 +5,9 @@ type Slide = { src: string; alt: string; name: string }
 
 const SLIDES: Slide[] = [
   {
-    src: '/fabrica-endal.webp',
-    alt: 'Línea de producción de ENDAL',
-    name: 'Planta de fabricación',
+    src: '/bobinas-aluminio.webp',
+    alt: 'Brazo robótico ENDAL manipulando una bobina de aluminio',
+    name: 'Robótica en planta',
   },
   {
     src: '/images/material/pres-maquinaria.webp',

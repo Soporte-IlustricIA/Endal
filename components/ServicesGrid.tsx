@@ -55,7 +55,7 @@ export default function ServicesGrid() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/home/gama-maquinaria.webp"
-                alt="Línea de llenado y sellado en planta"
+                alt="Termoselladora ENDAL M42600"
                 loading="lazy"
                 decoding="async"
                 width={700}

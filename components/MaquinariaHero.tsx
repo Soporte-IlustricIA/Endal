@@ -43,7 +43,7 @@ export default function MaquinariaHero() {
       <img
         className="al-hero__img"
         src="/images/material/hero-maquinaria.webp"
-        alt="Equipo de acero inoxidable en una planta de envasado alimentario"
+        alt="Termoselladora ENDAL M42600, máquina de referencia para bandejas de gran formato"
         fetchPriority="high"
       />
       <div className="al-hero__badge">
